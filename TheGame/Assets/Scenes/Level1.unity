@@ -329,7 +329,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 834878936}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.52, y: -2.16, z: -0.018554688}
+  m_LocalPosition: {x: -3.62, y: -2.16, z: -0.018554688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -383,7 +383,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1120916010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.96, y: -2.04, z: -0.018554688}
+  m_LocalPosition: {x: 3.3, y: -2.23, z: -0.018554688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -854,9 +854,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfcb08477866fae4a945a0a676cc2ded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  z: {fileID: 0}
   textAD: {fileID: 1141339438801820, guid: 392837419cd3d5a4cae2fc7a74aaa759, type: 2}
   textZ: {fileID: 1141246556659690, guid: da824b65591ef7943b61bd3603be96a9, type: 2}
   textSPACE: {fileID: 1324421939581606, guid: 4b70d599e67d5ec4882976a382258d33, type: 2}
+  y: 1
 --- !u!4 &2065579659 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4290705133078804, guid: ecb8ee75c7107784480d0c1dbc04c7fa,
