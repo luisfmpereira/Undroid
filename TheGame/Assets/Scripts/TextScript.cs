@@ -39,8 +39,10 @@ public class TextScript : MonoBehaviour
 
 	public void OnTriggerExit2D (Collider2D col)
 	{
-		z.transform.parent = null;
-		GameObject.Destroy (z, 0);
+		if (col.gameObject.tag == "Text1" || col.gameObject.tag == "Text2") {
+			z.transform.parent = null;
+			GameObject.Destroy (z, 0);
+		}
 
 	}
 
