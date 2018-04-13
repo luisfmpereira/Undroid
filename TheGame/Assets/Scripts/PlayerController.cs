@@ -4,21 +4,24 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-	//get components
+	//components
 	private Rigidbody2D playerRB;
 	private SpriteRenderer playerSR;
 	private Animator playerAnim;
+	public CapsuleCollider2D stand;
+	public CapsuleCollider2D crouch;
 
 	//movement variables
 	public float maxSpeed = 5f;
 	public bool grounded = false;
+	public bool crouching = false;
 
 	//jump variables
-	public float jumpVelocity;
+	public float jumpVelocity = 5f;
 	public LayerMask groundLayer; 
 	private int doubleJumpCount = 0; //double jump counter
-	public float doubleJumpModifier; //add extra force to double jump
-	private bool allowDoubleJump = true; //unlock double jump
+	public float doubleJumpModifier = 1.0f; //add extra force to double jump
+	public bool allowDoubleJump = true; //unlock double jump
 
 
 	// Use this for initialization
@@ -28,25 +31,25 @@ public class PlayerController : MonoBehaviour {
 		playerSR = GetComponent<SpriteRenderer> ();
 		playerAnim = GetComponent<Animator> ();
 
-		//set jump forces
-		jumpVelocity = 5f;
-		doubleJumpModifier = 1.2f;
-		
+
+		stand.enabled = true;
+		crouch.enabled = false; 
+
 	}
 
 
 	void FixedUpdate () {
 
-		move (); //call move function
-		jump (); //call jump function
+		playerMove (); //call move function
+		playerJump (); //call jump function
+		playerCrouch (); // call crouch function
 
-
-	}
+		}
 
 
 
 	//control player movement
-	public void move(){
+	public void playerMove(){
 
 		float xMove = Input.GetAxis ("Horizontal"); //get player input for the movement
 		playerAnim.SetFloat ("Speed", Mathf.Abs (xMove)); //set "Speed" float on animator controller to start running
@@ -57,10 +60,10 @@ public class PlayerController : MonoBehaviour {
 	}
 
 
-	public void jump(){
+	public void playerJump(){
 		
 		//raycast test to grounded variable
-		if (Physics2D.Raycast (this.transform.position, Vector2.down, (playerSR.size.y) / 2 + 0.2f, groundLayer.value)) {
+		if (Physics2D.Raycast (this.transform.position, Vector2.down, (playerSR.size.y) / 2 + 0.5f, groundLayer.value)) {
 			grounded = true;
 			playerAnim.SetBool ("Jumping", false); //animation variables
 			doubleJumpCount = 1; //allow double jump once grounded
@@ -93,5 +96,22 @@ public class PlayerController : MonoBehaviour {
 
 		if (direction > 0)
 			SR.flipX = false;
+	}
+
+	public void playerCrouch(){
+
+		if (Input.GetKey (KeyCode.LeftControl)) {
+			stand.enabled = false;
+			crouch.enabled = true;
+			maxSpeed = 2.5f;
+			playerAnim.SetBool ("Crouching", true);
+		} else if (!Physics2D.Raycast (this.transform.position, Vector2.up, (playerSR.size.y) / 2 + 0.5f, groundLayer.value)){
+			//verify if ceiling above player
+			stand.enabled = true;
+			crouch.enabled = false;
+			maxSpeed = 5f;
+			playerAnim.SetBool ("Crouching", false);
+
+		}
 	}
 }
