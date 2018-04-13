@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour {
 	public float maxSpeed = 5f;
 	public bool grounded = false;
 	public bool crouching = false;
+	public bool iscrouching = false;
 
 	//jump variables
 	public float jumpVelocity = 5f;
@@ -105,12 +106,14 @@ public class PlayerController : MonoBehaviour {
 			crouch.enabled = true;
 			maxSpeed = 2.5f;
 			playerAnim.SetBool ("Crouching", true);
+			iscrouching = true;
 		} else if (!Physics2D.Raycast (this.transform.position, Vector2.up, (playerSR.size.y) / 2 + 0.5f, groundLayer.value)){
 			//verify if ceiling above player
 			stand.enabled = true;
 			crouch.enabled = false;
 			maxSpeed = 5f;
 			playerAnim.SetBool ("Crouching", false);
+			iscrouching = false;
 
 		}
 	}

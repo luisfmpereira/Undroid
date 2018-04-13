@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class TextScript : MonoBehaviour
 {
+	//components
 	public GameObject z;
 	public GameObject textAD;
 	public GameObject textZ;
 	public GameObject textSPACE;
 	private Transform trans;
+	//variables
 	public float y = 0.2f;
 
 
@@ -22,7 +24,7 @@ public class TextScript : MonoBehaviour
 
 	}
 
-
+	//Instantiate the Sprite
 	public void OnTriggerEnter2D (Collider2D col)
 	{
 		
@@ -37,6 +39,7 @@ public class TextScript : MonoBehaviour
 		}
 	}
 
+	//Destroy the Sprite
 	public void OnTriggerExit2D (Collider2D col)
 	{
 		if (col.gameObject.tag == "Text1" || col.gameObject.tag == "Text2") {

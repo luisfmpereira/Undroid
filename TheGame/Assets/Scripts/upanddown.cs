@@ -2,27 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class upanddown : MonoBehaviour {
+public class upanddown : MonoBehaviour
+{	
+	//components & variables
 	public GameObject platform;
-	SpriteRenderer player;
+	public LayerMask groundLayer;
+	private SpriteRenderer player;
+	private bool platbool = false;
 
-	public float y2;
-	public LayerMask groundLayer; 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 		player = GetComponent<SpriteRenderer> ();
+		platform = GameObject.FindGameObjectWithTag ("Platform");
 
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		y2 = platform.transform.position.y;
-		print (y2);
-		if (Physics2D.Raycast (this.transform.position, Vector2.up, (player.size.y)/2 + 0.2f, groundLayer.value)) {
-			platform.GetComponent<BoxCollider2D>().isTrigger = true;
+	void Update ()
+	{
+		up ();
+		if(platbool == true)
+		down ();
+	}
+
+	//habilita a o trigger para ficar na plataforma
+	private void up ()
+	{
+		if (Physics2D.Raycast (this.transform.position, Vector2.up, (player.size.y) / 1, groundLayer.value)) {
+			platform.GetComponent<BoxCollider2D> ().isTrigger = true;
+			platbool = false;
+		} else
+			platform.GetComponent<BoxCollider2D> ().isTrigger = false;
+            platbool = true;
+		
+	}
+	//desabilita o trigger para sair da plataforma
+	private void down ()
+	{
+		if (Input.GetKey (KeyCode.LeftControl) && Input.GetKey (KeyCode.Space)) {
+			platform.GetComponent<BoxCollider2D> ().isTrigger = true;
 		}
-		else 
-			platform.GetComponent<BoxCollider2D>().isTrigger = false;
 
 	}
 }
