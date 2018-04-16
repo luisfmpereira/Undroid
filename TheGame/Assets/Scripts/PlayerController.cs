@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour {
 	void FixedUpdate () {
 
 		playerMove (); //call move function
+		if(!iscrouching)
 		playerJump (); //call jump function
 		playerCrouch (); // call crouch function
 
@@ -64,7 +65,7 @@ public class PlayerController : MonoBehaviour {
 	public void playerJump(){
 		
 		//raycast test to grounded variable
-		if (Physics2D.Raycast (this.transform.position, Vector2.down, (playerSR.size.y) / 2 + 0.5f, groundLayer.value)) {
+		if (Physics2D.Raycast (new Vector3(this.transform.position.x,this.transform.position.y + 0.2f, this.transform.position.z), Vector2.down, (playerSR.size.y) / 2, groundLayer.value)) {
 			grounded = true;
 			playerAnim.SetBool ("Jumping", false); //animation variables
 			doubleJumpCount = 1; //allow double jump once grounded
@@ -106,12 +107,9 @@ public class PlayerController : MonoBehaviour {
 			crouch.enabled = true;
 			maxSpeed = 2.5f;
 			playerAnim.SetBool ("Crouching", true);
-<<<<<<< HEAD
 			iscrouching = true;
-		} else if (!Physics2D.Raycast (this.transform.position, Vector2.up, (playerSR.size.y) / 2 + 0.5f, groundLayer.value)){
-=======
-		} else if (!Physics2D.Raycast (this.transform.position, Vector2.up, (playerSR.size.y) / 2 + 0.01f, groundLayer.value)){
->>>>>>> c75d0169189dfeac97c96fc0d10e4fe70b3f167b
+		} else if (!Physics2D.Raycast (new Vector3(this.transform.position.x,this.transform.position.y + 0.2f, this.transform.position.z), Vector2.up, (playerSR.size.y)/2 + 0.25f, groundLayer.value)){
+
 			//verify if ceiling above player
 			stand.enabled = true;
 			crouch.enabled = false;

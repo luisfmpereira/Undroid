@@ -9,6 +9,7 @@ public class upanddown : MonoBehaviour
 	public LayerMask groundLayer;
 	private SpriteRenderer player;
 	private bool platbool = false;
+	public float plusy;
 
 	// Use this for initialization
 	void Start ()
@@ -29,7 +30,7 @@ public class upanddown : MonoBehaviour
 	//habilita a o trigger para ficar na plataforma
 	private void up ()
 	{
-		if (Physics2D.Raycast (this.transform.position, Vector2.up, (player.size.y) / 1, groundLayer.value)) {
+		if (Physics2D.Raycast (new Vector3(this.transform.position.x,this.transform.position.y + plusy, this.transform.position.z), Vector2.up, player.size.y, groundLayer.value)) {
 			platform.GetComponent<BoxCollider2D> ().isTrigger = true;
 			platbool = false;
 		} else
