@@ -106,8 +106,12 @@ public class PlayerController : MonoBehaviour {
 			crouch.enabled = true;
 			maxSpeed = 2.5f;
 			playerAnim.SetBool ("Crouching", true);
+<<<<<<< HEAD
 			iscrouching = true;
 		} else if (!Physics2D.Raycast (this.transform.position, Vector2.up, (playerSR.size.y) / 2 + 0.5f, groundLayer.value)){
+=======
+		} else if (!Physics2D.Raycast (this.transform.position, Vector2.up, (playerSR.size.y) / 2 + 0.01f, groundLayer.value)){
+>>>>>>> c75d0169189dfeac97c96fc0d10e4fe70b3f167b
 			//verify if ceiling above player
 			stand.enabled = true;
 			crouch.enabled = false;
