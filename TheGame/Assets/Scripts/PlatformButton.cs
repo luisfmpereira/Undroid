@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformButtom : MonoBehaviour
+public class PlatformButton : MonoBehaviour
 {
 	
 	//components & variables
@@ -36,12 +36,12 @@ public class PlatformButtom : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		//if(ispressed)
+		if(ispressed)
 			Move ();
 
 	}
 
-	public void OnCollisionEnter2D (Collision2D col)
+	public void OnTriggerEnter2D (Collider2D col)
 	{
 		if (col.gameObject.tag == "Box") {
 			ispressed = true;

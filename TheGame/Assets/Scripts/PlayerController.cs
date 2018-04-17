@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour {
 	public CapsuleCollider2D crouch;
 
 	//movement variables
-	public float maxSpeed = 5f;
+	public float maxSpeed = 3f;
 	public bool grounded = false;
 	public bool crouching = false;
 	public bool iscrouching = false;
@@ -105,7 +105,7 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetKey (KeyCode.LeftControl)) {
 			stand.enabled = false;
 			crouch.enabled = true;
-			maxSpeed = 2.5f;
+			maxSpeed = 2f;
 			playerAnim.SetBool ("Crouching", true);
 			iscrouching = true;
 		} else if (!Physics2D.Raycast (new Vector3(this.transform.position.x,this.transform.position.y + 0.2f, this.transform.position.z), Vector2.up, (playerSR.size.y)/2 + 0.25f, groundLayer.value)){
@@ -113,7 +113,7 @@ public class PlayerController : MonoBehaviour {
 			//verify if ceiling above player
 			stand.enabled = true;
 			crouch.enabled = false;
-			maxSpeed = 5f;
+			maxSpeed = 3f;
 			playerAnim.SetBool ("Crouching", false);
 			iscrouching = false;
 
