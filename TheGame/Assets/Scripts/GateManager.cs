@@ -23,7 +23,7 @@ public class GateManager : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D (Collider2D hit){
-		if(hit.gameObject.tag == "Player" && Input.GetButton("Z")) {
+		if(hit.gameObject.tag == "Player" && Input.GetKey(KeyCode.Z)){
 			gateTriggered = true;
 		}
 
