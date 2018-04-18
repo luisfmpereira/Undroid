@@ -9,12 +9,8 @@ public class PlatformButton : MonoBehaviour
 	public bool ispressed = false;
 
 	private Vector3 posA;
-
 	private Vector3 posB;
-
 	private Vector3 nextPos;
-
-	public GameObject button;
 
 
 	[SerializeField]
@@ -25,6 +21,7 @@ public class PlatformButton : MonoBehaviour
 
 	[SerializeField]
 	private Transform transformB;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -38,16 +35,8 @@ public class PlatformButton : MonoBehaviour
 	{
 		if(ispressed)
 			Move ();
-
 	}
 
-	public void OnTriggerEnter2D (Collider2D col)
-	{
-		if (col.gameObject.tag == "Box") {
-			ispressed = true;
-		} else
-			ispressed = false;
-	}
 
 	private void Move ()
 	{
@@ -61,5 +50,8 @@ public class PlatformButton : MonoBehaviour
 	{
 		nextPos = nextPos != posA ? posA : posB;
 	}
+
+
+
 }
 

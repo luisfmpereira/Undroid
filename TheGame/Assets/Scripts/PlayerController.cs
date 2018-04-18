@@ -25,6 +25,11 @@ public class PlayerController : MonoBehaviour {
 	public bool allowDoubleJump = true; //unlock double jump
 
 
+	private bool platbool = false;
+	public float plusy = 0.2f;
+	public GameObject platform;
+
+
 	// Use this for initialization
 	void Start () {
 
@@ -32,19 +37,27 @@ public class PlayerController : MonoBehaviour {
 		playerSR = GetComponent<SpriteRenderer> ();
 		playerAnim = GetComponent<Animator> ();
 
-
 		stand.enabled = true;
 		crouch.enabled = false; 
+
+
+		platform = GameObject.FindGameObjectWithTag ("Platform");
 
 	}
 
 
-	void FixedUpdate () {
+	void Update () {
 
 		playerMove (); //call move function
+
 		if(!iscrouching)
-		playerJump (); //call jump function
+			playerJump (); //call jump function
+		
 		playerCrouch (); // call crouch function
+
+		platformUp ();
+		if(platbool == true)
+			platformDown ();
 
 		}
 
@@ -118,5 +131,26 @@ public class PlayerController : MonoBehaviour {
 			iscrouching = false;
 
 		}
+	}
+
+
+	//habilita a o trigger para ficar na plataforma
+	private void platformUp ()
+	{
+		if (Physics2D.Raycast (new Vector3(this.transform.position.x,this.transform.position.y + plusy, this.transform.position.z), Vector2.up, playerSR.size.y, groundLayer.value)) {
+			platform.GetComponent<BoxCollider2D> ().isTrigger = true;
+			platbool = false;
+		} else
+			platform.GetComponent<BoxCollider2D> ().isTrigger = false;
+		platbool = true;
+
+	}
+	//desabilita o trigger para sair da plataforma
+	private void platformDown ()
+	{
+		if (Input.GetKey (KeyCode.LeftControl) && Input.GetKey (KeyCode.Space)) {
+			platform.GetComponent<BoxCollider2D> ().isTrigger = true;
+		}
+
 	}
 }
