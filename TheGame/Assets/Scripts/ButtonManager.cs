@@ -11,9 +11,15 @@ public class ButtonManager : MonoBehaviour {
 		if (hit.gameObject.CompareTag ("Box")) {
 			activated.GetComponent<MovingPlatformManager> ().isPressed = true;
 		
-		} else {
-			activated.GetComponent<MovingPlatformManager> ().isPressed = false;
 		}
+			
 
 	}
+	void OnTriggerExit2D(Collider2D hit){
+		if (hit.gameObject.CompareTag ("Box")) {
+			activated.GetComponent<MovingPlatformManager> ().isPressed = false;
+		}
+		
+	}
+
 }

@@ -8,6 +8,7 @@ public class GateManager : MonoBehaviour {
 	public Transform endPoint;
 	public float speed = 0.5f;
 	public bool gateTriggered = false;
+	private bool z;
 
 
 	// Use this for initialization
@@ -16,12 +17,13 @@ public class GateManager : MonoBehaviour {
 	}
 
 	void Update(){
+		z = Input.GetButton ("interaction");
 		if (gateTriggered)
 			gate.transform.position = Vector3.MoveTowards (gate.transform.position, endPoint.position, speed*Time.deltaTime);
 	}
 
-	void OnTriggerEnter2D (Collider2D hit){
-		if(hit.gameObject.tag == "Player" && Input.GetButton("interaction")){
+	void OnTriggerStay2D (Collider2D hit){
+		if(hit.gameObject.tag == "Player" && z == true){
 			gateTriggered = true;
 		}
 
