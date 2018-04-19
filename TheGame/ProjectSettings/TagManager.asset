@@ -22,8 +22,8 @@ TagManager:
   - 
   - 
   - groundedLayer
-  - 
-  - 
+  - Player
+  - button
   - 
   - 
   - 
@@ -54,4 +54,7 @@ TagManager:
     locked: 0
   - name: platform
     uniqueID: 2321258957
+    locked: 0
+  - name: player
+    uniqueID: 66600565
     locked: 0

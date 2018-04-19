@@ -4,26 +4,24 @@ using UnityEngine;
 
 public class GateManager : MonoBehaviour {
 
-	private Vector3 posB;
-	public Transform finalPos;
-	public float speed;
+	public GameObject gate;
+	public Transform endPoint;
+	public float speed = 0.5f;
 	public bool gateTriggered = false;
 
 
 	// Use this for initialization
 	void Start () {
-		posB = finalPos.localPosition;
-
-		speed = 0.5f;
+		
 	}
 
 	void Update(){
 		if (gateTriggered)
-		transform.localPosition = Vector3.MoveTowards(transform.localPosition, posB, speed * Time.deltaTime);
+			gate.transform.position = Vector3.MoveTowards (gate.transform.position, endPoint.position, speed*Time.deltaTime);
 	}
 
 	void OnTriggerEnter2D (Collider2D hit){
-		if(hit.gameObject.tag == "Player" && Input.GetKey(KeyCode.Z)){
+		if(hit.gameObject.tag == "Player" && Input.GetButton("interaction")){
 			gateTriggered = true;
 		}
 

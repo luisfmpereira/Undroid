@@ -13,18 +13,22 @@ public class PlayerController : MonoBehaviour {
 
 	//movement variables
 	public float maxSpeed = 3f;
-	public bool grounded = false;
 	public bool crouching = false;
-	public bool iscrouching = false;
+	public bool isCrouching = false;
 
 	//jump variables
 	public float jumpVelocity = 5f;
-	public LayerMask groundLayer; 
-	private int doubleJumpCount = 0; //double jump counter
-	public float doubleJumpModifier = 1.0f; //add extra force to double jump
+	private bool grounded = false;
+	private bool doubleJumped; //if has double jumped
+	public Transform groundCheck; //ground check GO
+	public Transform ceilCheck; //ceiling check GO
+	public float groundCheckRadius;
+	public LayerMask whatIsGround; 
+
 	public bool allowDoubleJump = true; //unlock double jump
+	public float doubleJumpModifier = 1.0f; //add extra force to double jump
 
-
+	//platform drop variables
 	private bool platbool = false;
 	public float plusy = 0.2f;
 	public GameObject platform;
@@ -37,6 +41,7 @@ public class PlayerController : MonoBehaviour {
 		playerSR = GetComponent<SpriteRenderer> ();
 		playerAnim = GetComponent<Animator> ();
 
+		//crouching properties
 		stand.enabled = true;
 		crouch.enabled = false; 
 
@@ -45,22 +50,25 @@ public class PlayerController : MonoBehaviour {
 
 	}
 
-
-	void Update () {
+	void FixedUpdate(){
 
 		playerMove (); //call move function
 
-		if(!iscrouching)
+		if(!isCrouching)
 			playerJump (); //call jump function
-		
+
 		playerCrouch (); // call crouch function
 
 		platformUp ();
 		if(platbool == true)
 			platformDown ();
+	}
+
+
+	void Update () {
+
 
 		}
-
 
 
 	//control player movement
@@ -77,29 +85,31 @@ public class PlayerController : MonoBehaviour {
 
 	public void playerJump(){
 		
-		//raycast test to grounded variable
-		if (Physics2D.Raycast (new Vector3(this.transform.position.x,this.transform.position.y + 0.2f, this.transform.position.z), Vector2.down, (playerSR.size.y) / 2, groundLayer.value)) {
-			grounded = true;
-			playerAnim.SetBool ("Jumping", false); //animation variables
-			doubleJumpCount = 1; //allow double jump once grounded
-		} else
-			grounded = false; //if not grounded, no jumping allowed
-		
-		if (Input.GetButtonDown ("Jump"))
-			
-		//regular jump
-			if (grounded) {
-			playerRB.velocity = (Vector2.up * jumpVelocity);
-		}
-		//double jump
-			else if (allowDoubleJump && doubleJumpCount == 1) {
-			playerRB.velocity = (Vector2.up * jumpVelocity * doubleJumpModifier);
-			doubleJumpCount = 0;
+		grounded = Physics2D.OverlapCircle (groundCheck.position, groundCheckRadius, whatIsGround);
+
+
+		if (Input.GetButtonDown ("Jump") && grounded) {
+			playerRB.velocity = (Vector2.up * jumpVelocity); //regular jump
 		}
 
-		if (playerRB.velocity.y > 0)
-			
-			playerAnim.SetBool ("Jumping", true); //set animation
+		if (Input.GetButtonDown ("Jump") && !grounded && !doubleJumped && allowDoubleJump) {
+			playerRB.velocity = (Vector2.up * jumpVelocity); //double jump
+			doubleJumped = true;
+		}
+
+		if (grounded){
+			doubleJumped = false; //reset double jump
+			playerAnim.SetBool ("Jumping", false); //set animation
+		}
+
+
+		if (Mathf.Abs(playerRB.velocity.y) > 0.1 )
+			playerAnim.SetBool ("Jumping", true);//animation variables
+		
+		else
+			playerAnim.SetBool ("Jumping", false);//animation variables
+
+
 	}
 
 
@@ -120,16 +130,14 @@ public class PlayerController : MonoBehaviour {
 			crouch.enabled = true;
 			maxSpeed = 2f;
 			playerAnim.SetBool ("Crouching", true);
-			iscrouching = true;
-		} else if (!Physics2D.Raycast (new Vector3(this.transform.position.x,this.transform.position.y + 0.2f, this.transform.position.z), Vector2.up, (playerSR.size.y)/2 + 0.25f, groundLayer.value)){
-
+			isCrouching = true;
+		} else if (!Physics2D.OverlapCircle(ceilCheck.position,groundCheckRadius,whatIsGround)){
 			//verify if ceiling above player
 			stand.enabled = true;
 			crouch.enabled = false;
 			maxSpeed = 3f;
 			playerAnim.SetBool ("Crouching", false);
-			iscrouching = false;
-
+			isCrouching = false;
 		}
 	}
 
@@ -137,7 +145,7 @@ public class PlayerController : MonoBehaviour {
 	//habilita a o trigger para ficar na plataforma
 	private void platformUp ()
 	{
-		if (Physics2D.Raycast (new Vector3(this.transform.position.x,this.transform.position.y + plusy, this.transform.position.z), Vector2.up, playerSR.size.y, groundLayer.value)) {
+		if (Physics2D.Raycast (new Vector3(this.transform.position.x,this.transform.position.y + plusy, this.transform.position.z), Vector2.up, playerSR.size.y, whatIsGround.value)) {
 			platform.GetComponent<BoxCollider2D> ().isTrigger = true;
 			platbool = false;
 		} else
