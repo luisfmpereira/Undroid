@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
 
 	//jump variables
 	public float jumpVelocity = 5f;
-	private bool grounded = false;
+	public bool grounded = false;
 	private bool doubleJumped; //if has double jumped
 	public Transform groundCheck; //ground check GO
 	public Transform ceilCheck; //ceiling check GO

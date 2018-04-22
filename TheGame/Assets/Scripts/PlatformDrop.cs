@@ -5,17 +5,18 @@ using UnityEngine;
 public class PlatformDrop : MonoBehaviour {
 
 	public GameObject platform;
-	public GameObject player;
 
 
-	void onTriggerStay2D(Collider2D hit){
 
-		if (hit.gameObject.CompareTag ("Player") && player.GetComponent<PlayerController>().isJumping && player.GetComponent<PlayerController>().isCrouching) {
+	void OnTriggerStay2D(Collider2D hit){
 
-			print ("aqui");
+		if (hit.gameObject.CompareTag ("Player") && Input.GetKey (KeyCode.Space) && Input.GetKey (KeyCode.LeftControl) ){
 
 			platform.GetComponent<BoxCollider2D> ().isTrigger = true;
 		}
 
+
 	}
+
+
 }
