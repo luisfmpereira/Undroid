@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
 
@@ -34,6 +35,36 @@ public class PlayerController : MonoBehaviour {
 	public float plusy = 0.2f;
 	public GameObject platform;
 
+	//life
+	public Image[] hearts;
+	private int currentHeart;
+
+	private SpriteRenderer spriteRenderer;
+
+	// usar isso no collisionenter quando tomar dano
+	//			Destroy (hit.gameObject);
+	//			hearts [currentHeart].enabled = false;
+	//			currentHeart--;
+	//
+	//			if (currentHeart < 0) {
+	//				SceneManager.LoadScene (0);
+	//			}
+
+	// usar isso quando ganhar vida 
+
+	//			Destroy (hit.gameObject);
+	//			currentHeart++;
+	//			if (currentHeart < hearts.Length) {
+	//				hearts [currentHeart].enabled = true;
+	//			} else {
+	//				currentHeart--;
+	//			}
+	//		}
+
+	void Awake() {
+		spriteRenderer = GetComponent<SpriteRenderer> ();
+		currentHeart = hearts.Length - 1;
+	}
 
 	// Use this for initialization
 	void Start () {
