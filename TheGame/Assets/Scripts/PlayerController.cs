@@ -27,13 +27,9 @@ public class PlayerController : MonoBehaviour {
 	public LayerMask whatIsGround;
 	public bool isJumping;
 
+	//double jump
 	public bool allowDoubleJump = true; //unlock double jump
 	public float doubleJumpModifier = 1.0f; //add extra force to double jump
-
-	//platform drop variables
-	private bool platbool = false;
-	public float plusy = 0.2f;
-	public GameObject platform;
 
 	//life
 	public Image[] hearts;
@@ -90,10 +86,7 @@ public class PlayerController : MonoBehaviour {
 			playerJump (); //call jump function
 
 		playerCrouch (); // call crouch function
-
-		platformUp ();
-		if(platbool == true)
-			platformDown ();
+	
 	}
 
 
@@ -175,24 +168,4 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-
-	//habilita a o trigger para ficar na plataforma
-	private void platformUp ()
-	{
-		if (Physics2D.Raycast (new Vector3(this.transform.position.x,this.transform.position.y + plusy, this.transform.position.z), Vector2.up, playerSR.size.y, whatIsGround.value)) {
-			platform.GetComponent<BoxCollider2D> ().isTrigger = true;
-			platbool = false;
-		} else
-			platform.GetComponent<BoxCollider2D> ().isTrigger = false;
-		platbool = true;
-
-	}
-	//desabilita o trigger para sair da plataforma
-	private void platformDown ()
-	{
-		if (Input.GetKey (KeyCode.LeftControl) && Input.GetKey (KeyCode.Space)) {
-			platform.GetComponent<BoxCollider2D> ().isTrigger = true;
-		}
-
-	}
 }
