@@ -6,7 +6,7 @@ public class ButtonManager : MonoBehaviour {
 	
 	public GameObject activated;
 
-	void OnTriggerEnter2D(Collider2D hit){
+	void OnTriggerStay2D(Collider2D hit){
 		
 		if (hit.gameObject.CompareTag ("Box")) {
 			activated.GetComponent<MovingPlatformManager> ().isPressed = true;

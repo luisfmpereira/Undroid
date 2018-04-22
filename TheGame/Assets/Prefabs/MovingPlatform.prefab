@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 114226409903690946}
   m_Layer: 0
   m_Name: MovingPlatform
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,7 +107,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1754617240783204}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.33, y: -2.965, z: 0}
+  m_LocalPosition: {x: 17.87, y: -1.69, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4827735206127292}
@@ -167,10 +167,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platform: {fileID: 1183997724440078}
   moveSpeed: 1
-  currentPoint: {fileID: 0}
-  points:
-  - {fileID: 4686820629295418}
-  - {fileID: 4049224572790728}
   isPressed: 0
 --- !u!212 &212874310841050356
 SpriteRenderer:

@@ -23,7 +23,8 @@ public class PlayerController : MonoBehaviour {
 	public Transform groundCheck; //ground check GO
 	public Transform ceilCheck; //ceiling check GO
 	public float groundCheckRadius;
-	public LayerMask whatIsGround; 
+	public LayerMask whatIsGround;
+	public bool isJumping;
 
 	public bool allowDoubleJump = true; //unlock double jump
 	public float doubleJumpModifier = 1.0f; //add extra force to double jump
@@ -90,6 +91,7 @@ public class PlayerController : MonoBehaviour {
 
 		if (Input.GetButtonDown ("Jump") && grounded) {
 			playerRB.velocity = (Vector2.up * jumpVelocity); //regular jump
+			isJumping = true;
 		}
 
 		if (Input.GetButtonDown ("Jump") && !grounded && !doubleJumped && allowDoubleJump) {
@@ -100,6 +102,7 @@ public class PlayerController : MonoBehaviour {
 		if (grounded){
 			doubleJumped = false; //reset double jump
 			playerAnim.SetBool ("Jumping", false); //set animation
+			isJumping = false;
 		}
 
 
