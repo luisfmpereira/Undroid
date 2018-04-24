@@ -12,6 +12,7 @@ TagManager:
   - Text3
   - Text4
   - Box
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -54,6 +55,9 @@ TagManager:
     locked: 0
   - name: platform
     uniqueID: 2321258957
+    locked: 0
+  - name: enemy
+    uniqueID: 3216929711
     locked: 0
   - name: player
     uniqueID: 66600565

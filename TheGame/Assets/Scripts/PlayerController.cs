@@ -62,7 +62,6 @@ public class PlayerController : MonoBehaviour {
 		currentHeart = hearts.Length - 1;
 	}
 
-	// Use this for initialization
 	void Start () {
 
 		playerRB = GetComponent<Rigidbody2D> ();
@@ -73,8 +72,6 @@ public class PlayerController : MonoBehaviour {
 		stand.enabled = true;
 		crouch.enabled = false; 
 
-
-		platform = GameObject.FindGameObjectWithTag ("Platform");
 
 	}
 

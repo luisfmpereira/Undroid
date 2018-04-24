@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MovingPlatformManager : MonoBehaviour {
-
-
+	
 	public GameObject platform;
 	public float moveSpeed;
 	public Transform currentPoint;
 	public Transform[] points;
-	private int pointSelection = 0;
+	private int pointSelected = 0;
 
 	public bool isPressed = false; 
 
 
 	// Use this for initialization
 	void Start () {
-		currentPoint = points [pointSelection];
+		currentPoint = points [pointSelected];
 
 	}
 	
@@ -31,12 +30,12 @@ public class MovingPlatformManager : MonoBehaviour {
 		platform.transform.position = Vector3.MoveTowards (platform.transform.position, currentPoint.position, moveSpeed*Time.deltaTime);
 
 		if (platform.transform.position == currentPoint.position)
-			pointSelection++;
+			pointSelected++;
 
-		if (pointSelection == points.Length)
-			pointSelection = 0;
+		if (pointSelected == points.Length)
+			pointSelected = 0;
 
-		currentPoint = points [pointSelection];
+		currentPoint = points [pointSelected];
 
 	}
 
