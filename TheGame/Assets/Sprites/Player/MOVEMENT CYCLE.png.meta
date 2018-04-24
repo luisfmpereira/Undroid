@@ -67,7 +67,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 265
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -258,10 +258,10 @@ TextureImporter:
       name: MOVEMENT CYCLE_11
       rect:
         serializedVersion: 2
-        x: 26
-        y: 315
-        width: 215
-        height: 325
+        x: 27
+        y: 316
+        width: 212
+        height: 323
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,10 +272,10 @@ TextureImporter:
       name: MOVEMENT CYCLE_12
       rect:
         serializedVersion: 2
-        x: 261
-        y: 315
-        width: 215
-        height: 325
+        x: 262
+        y: 316
+        width: 212
+        height: 323
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,10 +286,10 @@ TextureImporter:
       name: MOVEMENT CYCLE_13
       rect:
         serializedVersion: 2
-        x: 495
-        y: 315
-        width: 215
-        height: 325
+        x: 497
+        y: 316
+        width: 212
+        height: 323
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,10 +300,10 @@ TextureImporter:
       name: MOVEMENT CYCLE_14
       rect:
         serializedVersion: 2
-        x: 729
-        y: 315
-        width: 215
-        height: 325
+        x: 731
+        y: 316
+        width: 211
+        height: 323
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,10 +314,10 @@ TextureImporter:
       name: MOVEMENT CYCLE_15
       rect:
         serializedVersion: 2
-        x: 960
-        y: 315
-        width: 215
-        height: 325
+        x: 962
+        y: 316
+        width: 211
+        height: 323
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,10 +328,10 @@ TextureImporter:
       name: MOVEMENT CYCLE_16
       rect:
         serializedVersion: 2
-        x: 1190
-        y: 315
-        width: 215
-        height: 325
+        x: 1192
+        y: 316
+        width: 211
+        height: 323
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,10 +342,10 @@ TextureImporter:
       name: MOVEMENT CYCLE_17
       rect:
         serializedVersion: 2
-        x: 1423
-        y: 314
-        width: 215
-        height: 325
+        x: 1425
+        y: 316
+        width: 211
+        height: 323
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -356,10 +356,10 @@ TextureImporter:
       name: MOVEMENT CYCLE_18
       rect:
         serializedVersion: 2
-        x: 1666
-        y: 315
-        width: 215
-        height: 325
+        x: 1668
+        y: 316
+        width: 212
+        height: 323
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,10 +370,10 @@ TextureImporter:
       name: MOVEMENT CYCLE_19
       rect:
         serializedVersion: 2
-        x: 1901
-        y: 315
-        width: 215
-        height: 325
+        x: 1903
+        y: 316
+        width: 212
+        height: 323
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
