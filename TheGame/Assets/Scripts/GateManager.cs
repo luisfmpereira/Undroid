@@ -6,13 +6,16 @@ public class GateManager : MonoBehaviour {
 
 	public GameObject gate;
 	public Transform endPoint;
+	public GameObject camera;
 	public float speed = 0.5f;
 	public bool gateTriggered = false;
 	private bool z;
+	public Vector2 newmaxXAndY;
 
 
 	// Use this for initialization
 	void Start () {
+		newmaxXAndY = new Vector2(38.05f,-0.32f);
 		
 	}
 
@@ -25,6 +28,7 @@ public class GateManager : MonoBehaviour {
 	void OnTriggerStay2D (Collider2D hit){
 		if(hit.gameObject.tag == "Player" && z == true){
 			gateTriggered = true;
+			camera.GetComponent<CameraFollow> ().maxXAndY = newmaxXAndY;
 		}
 
 	}
