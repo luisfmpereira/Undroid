@@ -11,7 +11,6 @@ public class EnemyController : MonoBehaviour {
 	private int locationSelected = 0;
 
 	private SpriteRenderer enemySR;
-	private Rigidbody2D enemyRB2D;
 	public CircleCollider2D AIVision;
 	public Rigidbody2D bulletPrefab;
 	public bool isShooting = false;
@@ -25,13 +24,12 @@ public class EnemyController : MonoBehaviour {
 	void Start () {
 		enemyLocationSelected = enemyLocations [locationSelected];
 		enemySR = GetComponentInChildren<SpriteRenderer> ();
-		enemyRB2D = GetComponentInChildren <Rigidbody2D> ();
 		AIVision = GetComponentInChildren<CircleCollider2D> ();
 	}
-	
+
 	// Update is called once per frame
 	void FixedUpdate () {
-		
+
 		if (isShooting) 
 			EnemyShooting ();
 
@@ -65,22 +63,19 @@ public class EnemyController : MonoBehaviour {
 	void EnemyShooting(){
 
 		if (timer >= shootingCooldown) {
-			Rigidbody2D bullet = Instantiate (bulletPrefab, enemy.transform.position, Quaternion.identity) as Rigidbody2D;
+			Rigidbody2D bullet = Instantiate (bulletPrefab, enemy.transform.position, Quaternion.identity) as Rigidbody2D; //instantiate bullet prefab
 			if (direction.x > 0)
 				bulletDirection = 1;
 			else 
 				bulletDirection = -1;
-			
 
-			bullet.AddForce (new Vector2(bulletDirection,0) * 300);
+			bullet.AddForce (new Vector2(bulletDirection,0) * 300); //add movement to bullet
 
-			Destroy (bullet, 5);
-
-			timer = 0; 
+			timer = 0; //reset timer
 		}
 		else
 			timer += Time.deltaTime;
-			
+
 
 	}
 
@@ -98,4 +93,3 @@ public class EnemyController : MonoBehaviour {
 		}
 	}
 }
-

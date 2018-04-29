@@ -36,8 +36,6 @@ public class PlayerController : MonoBehaviour {
 	public Image[] hearts;
 	private int currentHeart;
 
-	private SpriteRenderer spriteRenderer;
-
 	// usar isso no collisionenter quando tomar dano
 
 
@@ -53,7 +51,6 @@ public class PlayerController : MonoBehaviour {
 	//		}
 
 	void Awake() {
-		spriteRenderer = GetComponent<SpriteRenderer> ();
 		currentHeart = hearts.Length - 1;
 	}
 
@@ -166,7 +163,6 @@ public class PlayerController : MonoBehaviour {
 			SceneManager.LoadScene (0);
 
 		if (hit.gameObject.CompareTag ("EnemyBullet")) {
-			Destroy (hit.gameObject);
 			hearts [currentHeart].enabled = false;
 			currentHeart--;
 		
