@@ -22,8 +22,9 @@ GameObject:
   - component: {fileID: 212156475143841386}
   - component: {fileID: 50214019752817142}
   - component: {fileID: 61430260956439712}
+  - component: {fileID: 114114700971008724}
   m_Layer: 11
-  m_Name: T-Laser_0
+  m_Name: EnemyBulletPrefab
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +79,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.9499999, y: 0.24}
+    oldSize: {x: 0.354717, y: 0.08679245}
     newSize: {x: 1.09, y: 0.74}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -87,6 +88,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9499999, y: 0.24}
   m_EdgeRadius: 0
+--- !u!114 &114114700971008724
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1755123324168226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8435e8bf0eb001743a9ca758e04b3a00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212156475143841386
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -121,7 +133,7 @@ SpriteRenderer:
   m_SortingLayerID: -1078037585
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 709a4542c8af6f64282a1834a81e648e, type: 3}
+  m_Sprite: {fileID: 21300014, guid: 709a4542c8af6f64282a1834a81e648e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

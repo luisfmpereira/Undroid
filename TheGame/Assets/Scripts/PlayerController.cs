@@ -36,9 +36,6 @@ public class PlayerController : MonoBehaviour {
 	public Image[] hearts;
 	private int currentHeart;
 
-	private SpriteRenderer spriteRenderer;
-
-	// usar isso no collisionenter quando tomar dano
 
 
 	// usar isso quando ganhar vida 
@@ -53,16 +50,14 @@ public class PlayerController : MonoBehaviour {
 	//		}
 
 	void Awake() {
-		spriteRenderer = GetComponent<SpriteRenderer> ();
 		currentHeart = hearts.Length - 1;
-	}
-
-	void Start () {
-
 		playerRB = GetComponent<Rigidbody2D> ();
 		playerSR = GetComponent<SpriteRenderer> ();
 		playerAnim = GetComponent<Animator> ();
+	}
 
+	void Start () {
+		
 		//crouching properties
 		stand.enabled = true;
 		crouch.enabled = false; 
@@ -165,13 +160,16 @@ public class PlayerController : MonoBehaviour {
 		if (currentHeart < 0) 
 			SceneManager.LoadScene (0);
 
+
+		//take damanage from enemy bullet
 		if (hit.gameObject.CompareTag ("EnemyBullet")) {
-			Destroy (hit.gameObject);
 			hearts [currentHeart].enabled = false;
 			currentHeart--;
 		
 		}
-			if(hit.gameObject.CompareTag("Enemy")) {
+
+		//take damage from enemy collision
+		if(hit.gameObject.CompareTag("Enemy")) {
 				hearts [currentHeart].enabled = false;
 				currentHeart--;
 		}

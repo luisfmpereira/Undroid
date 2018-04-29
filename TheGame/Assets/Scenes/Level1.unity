@@ -360,6 +360,11 @@ Prefab:
       propertyPath: m_Offset.y
       value: 0.4826008
       objectReference: {fileID: 0}
+    - target: {fileID: 212192168568143670, guid: 3f3a839f17077a546a972477d48715e6,
+        type: 2}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f3a839f17077a546a972477d48715e6, type: 2}
   m_IsPrefabParent: 0
@@ -402,9 +407,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
-    - target: {fileID: 1975087483087304, guid: a9a12af7df3667f41bcb6c59f8e26a72, type: 2}
-      propertyPath: m_Layer
-      value: 11
+    - target: {fileID: 212336743137077328, guid: a9a12af7df3667f41bcb6c59f8e26a72,
+        type: 2}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a9a12af7df3667f41bcb6c59f8e26a72, type: 2}

@@ -5,6 +5,13 @@ licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: T-Laser_0
+    21300002: T-Laser_1
+    21300004: T-Laser_2
+    21300006: T-Laser_3
+    21300008: T-Laser_4
+    21300010: T-Laser_5
+    21300012: enemybullet1
+    21300014: enemybullet2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -47,7 +54,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 265
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -84,10 +91,108 @@ TextureImporter:
       name: T-Laser_0
       rect:
         serializedVersion: 2
-        x: 1779
+        x: 0
+        y: 772
+        width: 210
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T-Laser_1
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 772
+        width: 210
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T-Laser_2
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 772
+        width: 210
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T-Laser_3
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 772
+        width: 210
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T-Laser_4
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 772
+        width: 210
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T-Laser_5
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 772
+        width: 210
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemybullet1
+      rect:
+        serializedVersion: 2
+        x: 1563
         y: 938
-        width: 95
-        height: 24
+        width: 75
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemybullet2
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 939
+        width: 94
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
