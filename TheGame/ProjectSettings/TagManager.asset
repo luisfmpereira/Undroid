@@ -13,6 +13,7 @@ TagManager:
   - Text4
   - Box
   - Enemy
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - groundedLayer
   - Player
   - button
-  - 
+  - enemy
   - 
   - 
   - 

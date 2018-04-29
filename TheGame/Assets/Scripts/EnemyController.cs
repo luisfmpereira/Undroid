@@ -13,23 +13,30 @@ public class EnemyController : MonoBehaviour {
 	private SpriteRenderer enemySR;
 	private Rigidbody2D enemyRB2D;
 	public CircleCollider2D AIVision;
+	public Rigidbody2D bulletPrefab;
+	public bool isShooting = false;
+	private float timer;
+	public float shootingCooldown = 5f;
 
 	private Vector3 direction;
+	private int bulletDirection;
 
 	// Use this for initialization
 	void Start () {
 		enemyLocationSelected = enemyLocations [locationSelected];
 		enemySR = GetComponentInChildren<SpriteRenderer> ();
 		enemyRB2D = GetComponentInChildren <Rigidbody2D> ();
-		//AIVision = GetComponentInChildren<CircleCollider2D> ();
+		AIVision = GetComponentInChildren<CircleCollider2D> ();
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		
+		if (isShooting) 
+			EnemyShooting ();
 
-
-		MoveEnemy ();
-		flipSprite (enemySR, direction.x, AIVision);
+		else
+			MoveEnemy ();
 
 	}
 
@@ -50,7 +57,33 @@ public class EnemyController : MonoBehaviour {
 
 		direction = enemyLocationSelected.position - enemy.transform.position;
 
+		flipSprite (enemySR, direction.x, AIVision);
+
 	}
+
+
+	void EnemyShooting(){
+
+		if (timer >= shootingCooldown) {
+			Rigidbody2D bullet = Instantiate (bulletPrefab, enemy.transform.position, Quaternion.identity) as Rigidbody2D;
+			if (direction.x > 0)
+				bulletDirection = 1;
+			else 
+				bulletDirection = -1;
+			
+
+			bullet.AddForce (new Vector2(bulletDirection,0) * 300);
+
+			Destroy (bullet, 5);
+
+			timer = 0; 
+		}
+		else
+			timer += Time.deltaTime;
+			
+
+	}
+
 
 	void flipSprite (SpriteRenderer SR, float direction, CircleCollider2D AI){
 

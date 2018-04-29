@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -38,13 +39,7 @@ public class PlayerController : MonoBehaviour {
 	private SpriteRenderer spriteRenderer;
 
 	// usar isso no collisionenter quando tomar dano
-	//			Destroy (hit.gameObject);
-	//			hearts [currentHeart].enabled = false;
-	//			currentHeart--;
-	//
-	//			if (currentHeart < 0) {
-	//				SceneManager.LoadScene (0);
-	//			}
+
 
 	// usar isso quando ganhar vida 
 
@@ -165,4 +160,22 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	void OnCollisionEnter2D(Collision2D hit){
+
+		if (currentHeart < 0) 
+			SceneManager.LoadScene (0);
+
+		if (hit.gameObject.CompareTag ("EnemyBullet")) {
+			Destroy (hit.gameObject);
+			hearts [currentHeart].enabled = false;
+			currentHeart--;
+		
+		}
+			if(hit.gameObject.CompareTag("Enemy")) {
+				hearts [currentHeart].enabled = false;
+				currentHeart--;
+		}
+	
+
+	}
 }

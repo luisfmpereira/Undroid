@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gate2 : MonoBehaviour {
+public class InteractionButtonManager : MonoBehaviour {
 	public GameObject platform;
 	private bool z;
 	public bool gateTriggered = false;

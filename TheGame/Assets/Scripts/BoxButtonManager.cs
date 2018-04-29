@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonManager : MonoBehaviour {
+public class BoxButtonManager : MonoBehaviour {
 	
 	public GameObject activated;
 
