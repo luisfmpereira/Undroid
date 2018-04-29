@@ -1,10 +1,14 @@
 fileFormatVersion: 2
-guid: 709a4542c8af6f64282a1834a81e648e
-timeCreated: 1525018236
+guid: 319f39a7bafa04f45b1eb8186cf16c97
+timeCreated: 1524587650
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: T-Laser_0
+    21300000: t laser_1
+    21300002: t laser_3
+    21300004: t laser_4
+    21300006: t laser_0
+    21300008: t laser_2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -47,7 +51,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -81,13 +85,41 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: T-Laser_0
+      name: t laser_0
       rect:
         serializedVersion: 2
-        x: 1779
-        y: 938
-        width: 95
-        height: 24
+        x: 657
+        y: 453
+        width: 229
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: t laser_2
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 458
+        width: 201
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: t laser_4
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 443
+        width: 140
+        height: 277
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

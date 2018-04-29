@@ -11,6 +11,7 @@ public class EnemyController : MonoBehaviour {
 	private int locationSelected = 0;
 
 	private SpriteRenderer enemySR;
+	private Rigidbody2D enemyRB2D;
 	public CircleCollider2D AIVision;
 	public Rigidbody2D bulletPrefab;
 	public bool isShooting = false;
@@ -24,6 +25,7 @@ public class EnemyController : MonoBehaviour {
 	void Start () {
 		enemyLocationSelected = enemyLocations [locationSelected];
 		enemySR = GetComponentInChildren<SpriteRenderer> ();
+		enemyRB2D = GetComponentInChildren <Rigidbody2D> ();
 		AIVision = GetComponentInChildren<CircleCollider2D> ();
 	}
 	
@@ -63,15 +65,18 @@ public class EnemyController : MonoBehaviour {
 	void EnemyShooting(){
 
 		if (timer >= shootingCooldown) {
-			Rigidbody2D bullet = Instantiate (bulletPrefab, enemy.transform.position, Quaternion.identity) as Rigidbody2D; //instantiate bullet prefab
+			Rigidbody2D bullet = Instantiate (bulletPrefab, enemy.transform.position, Quaternion.identity) as Rigidbody2D;
 			if (direction.x > 0)
 				bulletDirection = 1;
 			else 
 				bulletDirection = -1;
 			
-			bullet.AddForce (new Vector2(bulletDirection,0) * 300); //add movement to bullet
 
-			timer = 0; //reset timer
+			bullet.AddForce (new Vector2(bulletDirection,0) * 300);
+
+			Destroy (bullet, 5);
+
+			timer = 0; 
 		}
 		else
 			timer += Time.deltaTime;
@@ -83,12 +88,12 @@ public class EnemyController : MonoBehaviour {
 	void flipSprite (SpriteRenderer SR, float direction, CircleCollider2D AI){
 
 		if (direction > 0) {
-			SR.flipX = false; //flip sprite
+			SR.flipX = true; //flip sprite
 			AI.offset = new Vector2 (1.5f, AI.offset.y);  //flip AI Vision
 
 		}
 		if (direction < 0) {
-			SR.flipX = true;
+			SR.flipX = false;
 			AI.offset = new Vector2 (-1.5f, AI.offset.y);
 		}
 	}
