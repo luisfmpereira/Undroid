@@ -15,7 +15,6 @@ public class GateManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		newmaxXAndY = new Vector2(38.05f,-0.32f);
 		
 	}
 
