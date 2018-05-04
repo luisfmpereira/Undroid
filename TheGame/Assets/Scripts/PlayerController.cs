@@ -36,6 +36,8 @@ public class PlayerController : MonoBehaviour {
 	public Image[] hearts;
 	private int currentHeart;
 
+	private SpriteRenderer spriteRenderer;
+
 	// usar isso no collisionenter quando tomar dano
 
 
@@ -51,6 +53,7 @@ public class PlayerController : MonoBehaviour {
 	//		}
 
 	void Awake() {
+		spriteRenderer = GetComponent<SpriteRenderer> ();
 		currentHeart = hearts.Length - 1;
 	}
 
@@ -81,6 +84,9 @@ public class PlayerController : MonoBehaviour {
 
 	void Update () {
 
+		//restart level if all lives are lost
+		if (currentHeart < 0) 
+			SceneManager.LoadScene (0);
 
 		}
 
@@ -99,7 +105,7 @@ public class PlayerController : MonoBehaviour {
 
 	public void playerJump(){
 		
-		grounded = Physics2D.OverlapCircle (groundCheck.position, groundCheckRadius, whatIsGround);
+		grounded = Physics2D.OverlapCircle (groundCheck.position, groundCheckRadius, whatIsGround); // check if player is grounded
 
 
 		if (Input.GetButtonDown ("Jump") && grounded) {
@@ -118,6 +124,7 @@ public class PlayerController : MonoBehaviour {
 			isJumping = false;
 		}
 
+		///////////needs bug fix///////////
 
 		if (Mathf.Abs(playerRB.velocity.y) > 0.1 )
 			playerAnim.SetBool ("Jumping", true);//animation variables
@@ -159,10 +166,9 @@ public class PlayerController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D hit){
 
-		if (currentHeart < 0) 
-			SceneManager.LoadScene (0);
 
 		if (hit.gameObject.CompareTag ("EnemyBullet")) {
+			Destroy (hit.gameObject);
 			hearts [currentHeart].enabled = false;
 			currentHeart--;
 		

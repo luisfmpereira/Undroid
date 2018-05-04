@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class EnemyBullet : MonoBehaviour {
 
+	public float destroyBulletTime = 5f;
+
+
 	void OnCollisionEnter2D(){
 
-		Destroy (this.gameObject); //destroy bullet in any collision
+		Destroy (this.gameObject);
 	}
 
-	void Update(){
 
-		Destroy (this.gameObject, 5); //destroy bullet after 5 seconds
+	void Update () {
+		
+		Destroy (this.gameObject, destroyBulletTime);
+		
 	}
 }
