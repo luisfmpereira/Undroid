@@ -127,7 +127,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1884217677953500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 0, z: 0}
+  m_LocalPosition: {x: 3.18, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4507499439724066}
@@ -139,8 +139,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1343002521264488}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.52, y: -0.72, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.778536, y: 2.835507, z: 0.119006276}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4185479500471816}
@@ -254,15 +254,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 1975087483087304}
   enemyMoveSpeed: 1
-  enemyLocationSelected: {fileID: 0}
   enemyLocations:
   - {fileID: 4274531777823696}
   - {fileID: 4536056770018454}
-  AIVision: {fileID: 0}
+  shootingCooldown: 2
+  staticEnemy: 0
+  isShooting: 0
   bulletPrefab: {fileID: 50214019752817142, guid: 41cd647f7ff536d4d9db30847f4b461c,
     type: 2}
-  isShooting: 0
-  shootingCooldown: 2
 --- !u!212 &212336743137077328
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -6,21 +6,33 @@ public class EnemyController : MonoBehaviour {
 
 	public GameObject enemy;
 	public float enemyMoveSpeed;
-	public Transform enemyLocationSelected;
 	public Transform[] enemyLocations;
+
 	private int locationSelected = 0;
+	private Transform enemyLocationSelected;
+	public float timer;
+
+	public float shootingCooldown = 3f;
+	public bool isShooting = false;
+	public bool staticEnemy;//defines if enemy is static or not
+	public bool startShootingRight;
+
 
 	private SpriteRenderer enemySR;
-	public CircleCollider2D AIVision;
+	private CircleCollider2D AIVision;
 	public Rigidbody2D bulletPrefab;
-	public bool isShooting = false;
-	private float timer;
-	public float shootingCooldown = 3f;
+
+
 
 	private Vector3 direction;
 	private int bulletDirection;
 
-	// Use this for initialization
+
+
+	void Awake(){
+		bulletDirection = startShootingRight ? 1 : -1;
+	}
+
 	void Start () {
 		enemyLocationSelected = enemyLocations [locationSelected];
 		enemySR = GetComponentInChildren<SpriteRenderer> ();
@@ -29,11 +41,15 @@ public class EnemyController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		
-		if (isShooting) {
+
+		if (staticEnemy) {
+			StaticEnemyShooting ();
+		}
+
+		else if (isShooting) {
 			EnemyShooting ();
 
-		} else 
+		} else if(!staticEnemy)
 			MoveEnemy ();
 
 
@@ -69,17 +85,34 @@ public class EnemyController : MonoBehaviour {
 			Rigidbody2D bullet = Instantiate (bulletPrefab, enemy.transform.position, Quaternion.identity) as Rigidbody2D;
 			if (direction.x > 0)
 				bulletDirection = 1;
-			else 
+			else
 				bulletDirection = -1;
 			
 
-			bullet.AddForce (new Vector2(bulletDirection,0) * 300);
+			bullet.AddForce (new Vector2 (bulletDirection, 0) * 300);
 
 			timer = 0; 
-		}
-		else
+		} else {
 			timer += Time.deltaTime;
+		}
 			
+
+	}
+
+	void StaticEnemyShooting(){
+		
+		flipSprite (enemySR, bulletDirection, AIVision); //flips sprite according to next shot
+
+
+		if (timer >= shootingCooldown) {
+			Rigidbody2D bullet = Instantiate (bulletPrefab, enemy.transform.position, Quaternion.identity) as Rigidbody2D; //instantiate bullet
+			bullet.AddForce (new Vector2 (bulletDirection, 0) * 300); //add force to the prefab
+			timer = 0; //reset cooldown
+			bulletDirection *= -1; //change direction
+		} else {
+			timer += Time.deltaTime;
+
+		}
 
 	}
 

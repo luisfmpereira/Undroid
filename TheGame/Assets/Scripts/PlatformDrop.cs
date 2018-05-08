@@ -17,16 +17,16 @@ public class PlatformDrop : MonoBehaviour {
 
 
 	void Update(){
+		//test if player is crouching
 		if (Input.GetButtonDown ("S")) {
-
 			dropCounter++;
-
-
 		}
 
+		//start timer if player has started dropping routine
 		if(dropCounter>0)
 			dropTimer -= Time.deltaTime;
 
+		//reset dropping routine 
 		if (dropTimer <= 0) {
 			dropCounter = 0;
 			dropTimer = maxDropTimer;
@@ -37,7 +37,7 @@ public class PlatformDrop : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D hit){
 
-		if ((hit.gameObject.CompareTag ("Player") && Input.GetKey (KeyCode.Space) && Input.GetKey (KeyCode.LeftControl)) || dropCounter >= 2 ){
+		if ((hit.gameObject.CompareTag ("Player") && Input.GetKey (KeyCode.Space) && Input.GetKey (KeyCode.LeftControl)) || hit.gameObject.CompareTag ("Player") && dropCounter >= 2 ){
 
 			platform.GetComponent<BoxCollider2D> ().enabled = false;
 

@@ -54,6 +54,12 @@ TagManager:
   - name: Background
     uniqueID: 3997822393
     locked: 0
+  - name: Ceiling Buttons
+    uniqueID: 2701320719
+    locked: 0
+  - name: Level
+    uniqueID: 2726900917
+    locked: 0
   - name: platform
     uniqueID: 2321258957
     locked: 0
