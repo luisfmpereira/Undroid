@@ -9,7 +9,7 @@ public class PlatformUp : MonoBehaviour {
 
 		if (hit.gameObject.CompareTag ("Player")) {
 
-			platform.GetComponent<BoxCollider2D> ().isTrigger = true;
+			platform.GetComponent<BoxCollider2D> ().enabled = false;
 
 		}
 
@@ -18,7 +18,7 @@ public class PlatformUp : MonoBehaviour {
 
 		if (hit.gameObject.CompareTag ("Player")) {
 
-			platform.GetComponent<BoxCollider2D> ().isTrigger = false;
+			platform.GetComponent<BoxCollider2D> ().enabled = true;
 		}
 	}
 

@@ -26,7 +26,9 @@ public class PlayerController : MonoBehaviour {
 	public Transform ceilCheck; //ceiling check GO
 	public float groundCheckRadius;
 	public LayerMask whatIsGround;
-	public bool isJumping;
+	public float groundedTimer;
+	private float maxGroundedTimer = 0.5f;
+	public int jumpCounter;
 
 	//double jump
 	public bool allowDoubleJump = true; //unlock double jump
@@ -69,7 +71,7 @@ public class PlayerController : MonoBehaviour {
 
 		playerMove (); //call move function
 
-		if(!isCrouching)
+		//if(!isCrouching)
 			playerJump (); //call jump function
 
 		playerCrouch (); // call crouch function
@@ -100,12 +102,26 @@ public class PlayerController : MonoBehaviour {
 
 	public void playerJump(){
 		
-		grounded = Physics2D.OverlapCircle (groundCheck.position, groundCheckRadius, whatIsGround); // check if player is grounded
 
+
+		// check if player is grounded and reset regular jump
+		if (Physics2D.OverlapCircle (groundCheck.position, groundCheckRadius, whatIsGround) ) {
+			groundedTimer = maxGroundedTimer;
+			jumpCounter = 0;//reset off-platform jump
+
+		} else {
+			groundedTimer -= Time.deltaTime;//countdown off-platform jump
+		}
+
+		//test if still under off-platform jump countdown or already jumped
+		if (groundedTimer <= 0 || jumpCounter >=1) { 
+			grounded = false;
+		} else
+			grounded = true;
 
 		if (Input.GetButtonDown ("Jump") && grounded) {
 			playerRB.velocity = (Vector2.up * jumpVelocity); //regular jump
-			isJumping = true;
+			jumpCounter++;
 		}
 
 		if (Input.GetButtonDown ("Jump") && !grounded && !doubleJumped && allowDoubleJump) {
@@ -116,12 +132,11 @@ public class PlayerController : MonoBehaviour {
 		if (grounded){
 			doubleJumped = false; //reset double jump
 			playerAnim.SetBool ("Jumping", false); //set animation
-			isJumping = false;
 		}
 
 		///////////needs bug fix///////////
 
-		if (Mathf.Abs(playerRB.velocity.y) > 0.1 )
+		if (Mathf.Abs(playerRB.velocity.y) > 0.1)
 			playerAnim.SetBool ("Jumping", true);//animation variables
 		
 		else
@@ -143,7 +158,7 @@ public class PlayerController : MonoBehaviour {
 
 	public void playerCrouch(){
 
-		if (Input.GetKey (KeyCode.LeftControl)) {
+		if (Input.GetKey (KeyCode.LeftControl) || Input.GetAxis("Vertical")<0) {
 			stand.enabled = false;
 			crouch.enabled = true;
 			maxSpeed = 2f;
