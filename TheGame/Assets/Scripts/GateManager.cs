@@ -6,7 +6,7 @@ public class GateManager : MonoBehaviour {
 
 	public GameObject gate;
 	public Transform endPoint;
-	public GameObject camera;
+	public GameObject cameraPos;
 	public float speed = 0.5f;
 	public bool gateTriggered = false;
 	private bool z;
@@ -21,7 +21,7 @@ public class GateManager : MonoBehaviour {
 	void OnTriggerStay2D (Collider2D hit){
 		if(hit.gameObject.tag == "Player" && z == true){
 			gateTriggered = true;
-			camera.GetComponent<CameraFollow> ().maxXAndY = newmaxXAndY;
+			cameraPos.GetComponent<CameraFollow> ().maxXAndY = newmaxXAndY;
 		}
 
 	}

@@ -36,11 +36,6 @@ public class PlayerController : MonoBehaviour {
 	public Image[] hearts;
 	private int currentHeart;
 
-	private SpriteRenderer spriteRenderer;
-
-	// usar isso no collisionenter quando tomar dano
-
-
 	// usar isso quando ganhar vida 
 
 	//			Destroy (hit.gameObject);
@@ -53,20 +48,20 @@ public class PlayerController : MonoBehaviour {
 	//		}
 
 	void Awake() {
-		spriteRenderer = GetComponent<SpriteRenderer> ();
-		currentHeart = hearts.Length - 1;
-	}
-
-	void Start () {
-
 		playerRB = GetComponent<Rigidbody2D> ();
 		playerSR = GetComponent<SpriteRenderer> ();
 		playerAnim = GetComponent<Animator> ();
 
+		transform.parent = null; //remove player from platform children if he dies while connected
+
+		currentHeart = hearts.Length - 1; //reset player hearts
+	}
+
+	void Start () {
+		
 		//crouching properties
 		stand.enabled = true;
 		crouch.enabled = false; 
-
 
 	}
 
@@ -166,18 +161,36 @@ public class PlayerController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D hit){
 
-
+		//damage taken by enemy bullet
 		if (hit.gameObject.CompareTag ("EnemyBullet")) {
 			Destroy (hit.gameObject);
 			hearts [currentHeart].enabled = false;
 			currentHeart--;
 		
 		}
+
+		//damage taken by enemy contact
 			if(hit.gameObject.CompareTag("Enemy")) {
 				hearts [currentHeart].enabled = false;
 				currentHeart--;
 		}
+
+		//turn plyer child of the platform - used to smooth movement
+		if (hit.gameObject.CompareTag ("Platform")) {
+
+			transform.parent = hit.transform;
+		}
 	
+
+	}
+
+	void OnCollisionExit2D(Collision2D hit){
+
+
+		if (hit.gameObject.CompareTag ("Platform")) {
+
+			transform.parent = null;
+		}
 
 	}
 }

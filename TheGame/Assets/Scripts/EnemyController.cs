@@ -11,12 +11,11 @@ public class EnemyController : MonoBehaviour {
 	private int locationSelected = 0;
 
 	private SpriteRenderer enemySR;
-	private Rigidbody2D enemyRB2D;
 	public CircleCollider2D AIVision;
 	public Rigidbody2D bulletPrefab;
 	public bool isShooting = false;
 	private float timer;
-	public float shootingCooldown = 5f;
+	public float shootingCooldown = 3f;
 
 	private Vector3 direction;
 	private int bulletDirection;
@@ -25,7 +24,6 @@ public class EnemyController : MonoBehaviour {
 	void Start () {
 		enemyLocationSelected = enemyLocations [locationSelected];
 		enemySR = GetComponentInChildren<SpriteRenderer> ();
-		enemyRB2D = GetComponentInChildren <Rigidbody2D> ();
 		AIVision = GetComponentInChildren<CircleCollider2D> ();
 	}
 	
@@ -35,10 +33,9 @@ public class EnemyController : MonoBehaviour {
 		if (isShooting) {
 			EnemyShooting ();
 
-		} else {
+		} else 
 			MoveEnemy ();
 
-		}
 
 	}
 
@@ -57,8 +54,10 @@ public class EnemyController : MonoBehaviour {
 		//reassign current selected point
 		enemyLocationSelected = enemyLocations [locationSelected];
 
+		//calculate enemy direction using the next location
 		direction = enemyLocationSelected.position - enemy.transform.position;
 
+		//flip enemy sprite and AI
 		flipSprite (enemySR, direction.x, AIVision);
 
 	}
