@@ -12,13 +12,6 @@ public class GateManager : MonoBehaviour {
 	private bool z;
 	public Vector2 newmaxXAndY;
 
-
-	// Use this for initialization
-	void Start () {
-		newmaxXAndY = new Vector2(38.05f,-0.32f);
-		
-	}
-
 	void Update(){
 		z = Input.GetButton ("interaction");
 		if (gateTriggered)

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlatformDrop : MonoBehaviour {
 
 	public GameObject platform;
-
+	public Transform player;
 
 
 	void OnTriggerStay2D(Collider2D hit){
@@ -17,6 +17,14 @@ public class PlatformDrop : MonoBehaviour {
 
 
 	}
+
+	void OnTriggerEnter2D(Collider2D hit){
+		if (hit.gameObject.CompareTag ("Player"))
+			platform.transform.SetParent(player);
+	}
+
+
+
 
 
 }
