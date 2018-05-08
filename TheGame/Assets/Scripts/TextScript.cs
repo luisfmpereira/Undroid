@@ -11,7 +11,9 @@ public class TextScript : MonoBehaviour
 	public GameObject textZ;
 	public GameObject textSPACE;
 	public GameObject textCTRLSPACE;
+	public GameObject textCTRL;
 	private Transform trans;
+
 	//variables
 	public float y = 0.2f;
 
@@ -34,16 +36,20 @@ public class TextScript : MonoBehaviour
 			z.transform.parent = trans.transform;
 
 		}
-		if (col.gameObject.tag == "Text2") {
+		else if (col.gameObject.tag == "Text2") {
 			z = GameObject.Instantiate (textSPACE, new Vector3(trans.transform.position.x, trans.transform.position.y + y, trans.transform.position.z), Quaternion.identity);
 			z.transform.parent = trans.transform;
 		}
-		if (col.gameObject.tag == "Text3") {
+		else if (col.gameObject.tag == "Text3") {
 			z = GameObject.Instantiate (textZ, new Vector3(trans.transform.position.x, trans.transform.position.y + y, trans.transform.position.z), Quaternion.identity);
 			z.transform.parent = trans.transform;
 		}
-		if (col.gameObject.tag == "Text4") {
+		else if (col.gameObject.tag == "Text4") {
 			z = GameObject.Instantiate (textCTRLSPACE, new Vector3(trans.transform.position.x, trans.transform.position.y + y, trans.transform.position.z), Quaternion.identity);
+			z.transform.parent = trans.transform;
+		}
+		else if (col.gameObject.tag == "Text5") {
+			z = GameObject.Instantiate (textCTRL, new Vector3(trans.transform.position.x, trans.transform.position.y + y, trans.transform.position.z), Quaternion.identity);
 			z.transform.parent = trans.transform;
 		}
 	}
@@ -51,7 +57,7 @@ public class TextScript : MonoBehaviour
 	//Destroy the Sprite
 	public void OnTriggerExit2D (Collider2D col)
 	{
-		if (col.gameObject.tag == "Text1" || col.gameObject.tag == "Text2"|| col.gameObject.tag == "Text3"|| col.gameObject.tag == "Text4") {
+		if (col.gameObject.tag == "Text1" || col.gameObject.tag == "Text2"|| col.gameObject.tag == "Text3"|| col.gameObject.tag == "Text4" || col.gameObject.tag == "Text5") {
 			z.transform.parent = null;
 			GameObject.Destroy (z, 0);
 		}

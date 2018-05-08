@@ -5,7 +5,6 @@ using UnityEngine;
 public class InteractionButtonManager : MonoBehaviour {
 	public GameObject platform;
 	private bool z;
-	public bool gateTriggered = false;
 	// Use this for initialization
 	void Start () {
 		

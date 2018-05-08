@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour {
 
 		playerMove (); //call move function
 
-		//if(!isCrouching)
+	//	if(!isCrouching)
 			playerJump (); //call jump function
 
 		playerCrouch (); // call crouch function
@@ -136,7 +136,7 @@ public class PlayerController : MonoBehaviour {
 
 		///////////needs bug fix///////////
 
-		if (Mathf.Abs(playerRB.velocity.y) > 0.1)
+		if (Mathf.Abs(playerRB.velocity.y) > 0.0001)
 			playerAnim.SetBool ("Jumping", true);//animation variables
 		
 		else
