@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Text1
+  - Text2
+  - Ground
+  - Platform
+  - button
+  - Text3
+  - Text4
+  - Box
+  - Enemy
+  - EnemyBullet
+  - Text5
+  - PlayerBullet
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - groundedLayer
+  - player
+  - button
+  - enemy
+  - playerBullet
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 3997822393
+    locked: 0
+  - name: Ceiling Buttons
+    uniqueID: 2701320719
+    locked: 0
+  - name: Level
+    uniqueID: 2726900917
+    locked: 0
+  - name: platform
+    uniqueID: 2321258957
+    locked: 0
+  - name: enemy
+    uniqueID: 3216929711
+    locked: 0
+  - name: player
+    uniqueID: 66600565
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
