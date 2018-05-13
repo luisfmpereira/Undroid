@@ -18,7 +18,7 @@ public class PlatformDrop : MonoBehaviour {
 
 	void Update(){
 		//test if player is crouching
-		if (Input.GetButtonDown ("S") || Input.GetButtonDown ("Fire1"))  {
+		if (Input.GetButtonDown ("Fire2"))  {
 			dropCounter++;
 		}
 

@@ -4,6 +4,23 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
+
+/// <summary>
+/// Player controller.
+/// 
+/// Fire 1 = JoyA = e - interact
+/// Fire 2 = JoyB = s - crouch
+/// Fire 3 = JoyX = x or c - fire
+/// Jump = JoyY = space - jump
+///  
+/// </summary>
+
+
+
+
+
+
 public class PlayerController : MonoBehaviour {
 
 	//components
@@ -169,7 +186,7 @@ public class PlayerController : MonoBehaviour {
 
 	public void playerCrouch(){
 
-		if (Input.GetKey (KeyCode.LeftControl) || Input.GetAxis("Vertical")<0) {
+		if (Input.GetButton ("Fire2")) {
 			stand.enabled = false;
 			crouch.enabled = true;
 			maxSpeed = 2f;
@@ -185,7 +202,7 @@ public class PlayerController : MonoBehaviour {
 
 	public void playerShoot(){
 
-		if(Input.GetKeyDown(KeyCode.X)){
+		if(Input.GetButtonDown ("Fire3")){
 			Rigidbody2D bullet;
 			bullet = Instantiate(playerBulletPrefab,muzzlePos.position,Quaternion.identity) as Rigidbody2D;
 			//add force to bullet

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InteractionButtonManager : MonoBehaviour {
 	public GameObject platform;
-	private bool z;
+	private bool interacted;
 	// Use this for initialization
 	void Start () {
 		
@@ -12,12 +12,12 @@ public class InteractionButtonManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		z = Input.GetButtonDown ("interaction");
+		interacted = Input.GetButtonDown ("Fire1");
 	}
 
 	void OnTriggerStay2D (Collider2D hit)
 	{
-		if (hit.gameObject.tag == "Player" && z == true) {
+		if (hit.gameObject.tag == "Player" && interacted == true) {
 			platform.GetComponent<MovingPlatformManager> ().isPressed = true;
 		}
 	}

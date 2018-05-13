@@ -9,17 +9,17 @@ public class GateManager : MonoBehaviour {
 	public GameObject cameraPos;
 	public float speed = 0.5f;
 	public bool gateTriggered = false;
-	private bool z;
+	private bool interacted;
 	public Vector2 newmaxXAndY;
 
 	void Update(){
-		z = Input.GetButton ("interaction");
+		interacted = Input.GetButtonDown ("Fire1");
 		if (gateTriggered)
 			gate.transform.position = Vector3.MoveTowards (gate.transform.position, endPoint.position, speed*Time.deltaTime);
 	}
 
 	void OnTriggerStay2D (Collider2D hit){
-		if(hit.gameObject.tag == "Player" && z == true){
+		if(hit.gameObject.tag == "Player" && interacted == true){
 			gateTriggered = true;
 			cameraPos.GetComponent<CameraFollow> ().maxXAndY = newmaxXAndY;
 		}
