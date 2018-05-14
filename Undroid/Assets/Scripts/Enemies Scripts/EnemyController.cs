@@ -26,6 +26,7 @@ public class EnemyController : MonoBehaviour {
 
 	private Vector3 direction;
 	private int bulletDirection;
+	public bool heFlip = false;
 
 
 
@@ -100,7 +101,7 @@ public class EnemyController : MonoBehaviour {
 	}
 
 	void StaticEnemyShooting(){
-		
+		if(heFlip)
 		flipSprite (enemySR, bulletDirection, AIVision); //flips sprite according to next shot
 
 
