@@ -169,12 +169,12 @@ TextureImporter:
       name: door00
       rect:
         serializedVersion: 2
-        x: 52
-        y: 337
-        width: 425
-        height: 475
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 57
+        y: 339
+        width: 416
+        height: 464
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -183,12 +183,12 @@ TextureImporter:
       name: door01
       rect:
         serializedVersion: 2
-        x: 579
-        y: 335
-        width: 425
-        height: 475
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 586
+        y: 340
+        width: 416
+        height: 464
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: door02
       rect:
         serializedVersion: 2
-        x: 1106
-        y: 335
-        width: 425
-        height: 475
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1113
+        y: 340
+        width: 416
+        height: 464
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,12 +211,12 @@ TextureImporter:
       name: door03
       rect:
         serializedVersion: 2
-        x: 1638
-        y: 335
-        width: 425
-        height: 475
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1642
+        y: 339
+        width: 416
+        height: 464
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -225,12 +225,12 @@ TextureImporter:
       name: door04
       rect:
         serializedVersion: 2
-        x: 2165
-        y: 335
-        width: 425
-        height: 475
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2172
+        y: 339
+        width: 416
+        height: 464
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,12 +239,12 @@ TextureImporter:
       name: door05
       rect:
         serializedVersion: 2
-        x: 2691
-        y: 335
-        width: 425
-        height: 475
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2700
+        y: 339
+        width: 416
+        height: 464
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: door06
       rect:
         serializedVersion: 2
-        x: 3225
-        y: 335
-        width: 425
-        height: 475
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 3228
+        y: 339
+        width: 416
+        height: 464
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -267,12 +267,12 @@ TextureImporter:
       name: door07
       rect:
         serializedVersion: 2
-        x: 3749
-        y: 335
-        width: 425
-        height: 475
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 3758
+        y: 339
+        width: 416
+        height: 464
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -281,12 +281,12 @@ TextureImporter:
       name: door08
       rect:
         serializedVersion: 2
-        x: 4281
-        y: 335
-        width: 425
-        height: 475
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 4286
+        y: 339
+        width: 416
+        height: 464
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -295,12 +295,12 @@ TextureImporter:
       name: door09
       rect:
         serializedVersion: 2
-        x: 4808
-        y: 335
-        width: 425
-        height: 475
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 4815
+        y: 339
+        width: 416
+        height: 464
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -309,12 +309,12 @@ TextureImporter:
       name: door10
       rect:
         serializedVersion: 2
-        x: 5333
-        y: 335
-        width: 425
-        height: 475
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 5343
+        y: 339
+        width: 416
+        height: 464
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
