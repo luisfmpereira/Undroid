@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: efc3b338d8552984d8fa298d1c0d75c4
+timeCreated: 1526267223
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: philip 1_0
+    21300002: philip 1_1
+    21300004: philip 1_2
+    21300006: philip 1_3
+    21300008: philip 1_4
+    21300010: philip 1_5
+    21300012: philip 1_6
+    21300014: philip 1_7
+    21300016: philip 1_8
+    21300018: philip 1_9
+    21300020: philip 1_10
+    21300022: philip 1_11
+    21300024: philip 1_12
+    21300026: philip 1_13
+    21300028: philip 1_14
+    21300030: philip 1_15
+    21300032: philip 1_16
+    21300034: philip 1_17
+    21300036: philip 1_18
+    21300038: philip 1_19
+    21300040: philip 1_20
+    21300042: philip 1_21
+    21300044: philip 1_22
+    21300046: philip 1_23
+    21300048: philip 1_24
+    21300050: philip 1_25
+    21300052: philip 1_26
+    21300054: philip 1_27
+    21300056: philip 1_28
+    21300058: philip 1_29
+    21300060: philip 1_30
+    21300062: philip 1_31
+    21300064: philip 1_32
+    21300066: philip 1_33
+    21300068: philip 1_34
+    21300070: philip 1_35
+    21300072: philip 1_36
+    21300074: philip 1_37
+    21300076: philip 1_38
+    21300078: philip 1_39
+    21300080: philip 1_40
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: philip 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_1
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1400
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_2
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1400
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_3
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1400
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_4
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1400
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_5
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 1400
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_6
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1400
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_7
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1400
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_8
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1400
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_9
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 1400
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_10
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 1400
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1090
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_12
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1090
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_13
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1090
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_14
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1090
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_15
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1090
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_16
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 1090
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_17
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1090
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_18
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1090
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_19
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1090
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_20
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 1090
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 780
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_22
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 780
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_23
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 780
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_24
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 780
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_25
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 780
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_26
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 780
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_27
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 780
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_28
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 780
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_29
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 780
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 470
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_31
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 470
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_32
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 470
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_33
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 470
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_34
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 470
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_35
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 470
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_36
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 470
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_38
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 160
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_39
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 160
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: philip 1_40
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 160
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
