@@ -1,0 +1,762 @@
+fileFormatVersion: 2
+guid: d8cfbdb9aa7ff3341a00749d31b65bfb
+timeCreated: 1526270272
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GridSpriteSheet_0
+    21300002: GridSpriteSheet_1
+    21300004: GridSpriteSheet_2
+    21300006: GridSpriteSheet_3
+    21300008: GridSpriteSheet_4
+    21300010: GridSpriteSheet_5
+    21300012: GridSpriteSheet_6
+    21300014: GridSpriteSheet_7
+    21300016: GridSpriteSheet_8
+    21300018: GridSpriteSheet_9
+    21300020: GridSpriteSheet_10
+    21300022: GridSpriteSheet_11
+    21300024: GridSpriteSheet_12
+    21300026: GridSpriteSheet_13
+    21300028: GridSpriteSheet_14
+    21300030: GridSpriteSheet_15
+    21300032: GridSpriteSheet_16
+    21300034: GridSpriteSheet_17
+    21300036: GridSpriteSheet_18
+    21300038: GridSpriteSheet_19
+    21300040: GridSpriteSheet_20
+    21300042: GridSpriteSheet_21
+    21300044: GridSpriteSheet_22
+    21300046: GridSpriteSheet_23
+    21300048: GridSpriteSheet_24
+    21300050: GridSpriteSheet_25
+    21300052: GridSpriteSheet_26
+    21300054: GridSpriteSheet_27
+    21300056: GridSpriteSheet_28
+    21300058: GridSpriteSheet_29
+    21300060: GridSpriteSheet_30
+    21300062: GridSpriteSheet_31
+    21300064: GridSpriteSheet_32
+    21300066: GridSpriteSheet_33
+    21300068: GridSpriteSheet_34
+    21300070: GridSpriteSheet_35
+    21300072: GridSpriteSheet_36
+    21300074: GridSpriteSheet_37
+    21300076: GridSpriteSheet_38
+    21300078: GridSpriteSheet_39
+    21300080: GridSpriteSheet_40
+    21300082: GridSpriteSheet_41
+    21300084: GridSpriteSheet_42
+    21300086: GridSpriteSheet_43
+    21300088: GridSpriteSheet_44
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GridSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1240
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1240
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1240
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1240
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1240
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 1240
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1240
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1240
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1240
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 1240
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 1240
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 930
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 930
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 930
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 930
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 930
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 930
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 930
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 930
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 930
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 930
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 930
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 620
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 620
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 620
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 620
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 620
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 620
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 620
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 620
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 620
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 620
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 310
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 310
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 310
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 310
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 310
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 310
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 310
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 310
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 310
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 0
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GridSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 0
+        width: 265
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
