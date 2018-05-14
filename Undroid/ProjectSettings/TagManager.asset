@@ -4,18 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Text1
-  - Text2
   - Ground
   - Platform
   - button
-  - Text3
-  - Text4
-  - Box
   - Enemy
   - EnemyBullet
-  - Text5
   - PlayerBullet
+  - WoodBox
+  - MetalBox
   layers:
   - Default
   - TransparentFX

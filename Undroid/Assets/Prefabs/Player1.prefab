@@ -25,7 +25,6 @@ GameObject:
   - component: {fileID: 70176184431369240}
   - component: {fileID: 95223065097283532}
   - component: {fileID: 114656062254117818}
-  - component: {fileID: 114222104181463070}
   m_Layer: 9
   m_Name: Player1
   m_TagString: Player
@@ -124,7 +123,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1066224756947368}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.86, y: -4.76, z: 0}
+  m_LocalPosition: {x: -15.11, y: -4.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4279597204669532}
@@ -200,25 +199,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114222104181463070
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1066224756947368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfcb08477866fae4a945a0a676cc2ded, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  z: {fileID: 1141246556659690, guid: da824b65591ef7943b61bd3603be96a9, type: 2}
-  textAD: {fileID: 1141339438801820, guid: 392837419cd3d5a4cae2fc7a74aaa759, type: 2}
-  textZ: {fileID: 1141246556659690, guid: da824b65591ef7943b61bd3603be96a9, type: 2}
-  textSPACE: {fileID: 1324421939581606, guid: 4b70d599e67d5ec4882976a382258d33, type: 2}
-  textCTRLSPACE: {fileID: 1833935019882836, guid: 4032b3f348b333944b08aae0bfc3d8b8,
-    type: 2}
-  textCTRL: {fileID: 1167997355955916, guid: 5b10597a84e634544820b073787b10dc, type: 2}
-  y: 1.85
 --- !u!114 &114656062254117818
 MonoBehaviour:
   m_ObjectHideFlags: 1

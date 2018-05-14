@@ -5,7 +5,7 @@ using UnityEngine;
 public class InteractRunningMachine : MonoBehaviour {
 	private bool interacted = false;
 
-	public GameObject runningmachine;
+	public GameObject conveyorBelt;
 
 
 	void Update(){
@@ -13,9 +13,9 @@ public class InteractRunningMachine : MonoBehaviour {
 
 	}
 
-	void OnCollisionStay2D (Collision2D hit){
+	void OnTriggerStay2D (Collider2D hit){
 		if (hit.gameObject.CompareTag ("Player") && interacted) {
-			runningmachine.GetComponent<runningmachine> ().isrunning = true;
+			conveyorBelt.GetComponent<ConveyorController> ().isrunning = true;
 		}
 	}
 }

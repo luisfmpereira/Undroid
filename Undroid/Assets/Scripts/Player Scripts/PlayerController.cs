@@ -201,15 +201,16 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	public void playerShoot(){
+		if (allowShooting) {
+			if (Input.GetButtonDown ("Fire3")) {
+				Rigidbody2D bullet;
+				bullet = Instantiate (playerBulletPrefab, muzzlePos.position, Quaternion.identity) as Rigidbody2D;
+				//add force to bullet
+				bullet.AddForce (new Vector2 (moveDirection, 0) * bulletSpeed);
 
-		if(Input.GetButtonDown ("Fire3")){
-			Rigidbody2D bullet;
-			bullet = Instantiate(playerBulletPrefab,muzzlePos.position,Quaternion.identity) as Rigidbody2D;
-			//add force to bullet
-			bullet.AddForce(new Vector2(moveDirection,0)*bulletSpeed);
+				Destroy (bullet.gameObject, 3);
 
-			Destroy (bullet.gameObject, 3);
-
+			}
 		}
 	}
 

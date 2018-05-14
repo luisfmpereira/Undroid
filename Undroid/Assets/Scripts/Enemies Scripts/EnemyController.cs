@@ -109,7 +109,8 @@ public class EnemyController : MonoBehaviour {
 			Rigidbody2D bullet = Instantiate (bulletPrefab, enemy.transform.position, Quaternion.identity) as Rigidbody2D; //instantiate bullet
 			bullet.AddForce (new Vector2 (bulletDirection, 0) * 300); //add force to the prefab
 			timer = 0; //reset cooldown
-			bulletDirection *= -1; //change direction
+			if(heFlip)
+				bulletDirection *= -1; //change direction
 		} else {
 			timer += Time.deltaTime;
 
@@ -130,6 +131,11 @@ public class EnemyController : MonoBehaviour {
 			AI.offset = new Vector2 (-1.5f, AI.offset.y);
 		}
 	}
+
+
+
+
+
 
 }
 

@@ -10,6 +10,8 @@ public class EnemyBullet : MonoBehaviour {
 	void OnCollisionEnter2D(){
 
 		Destroy (this.gameObject);
+
+
 	}
 
 
