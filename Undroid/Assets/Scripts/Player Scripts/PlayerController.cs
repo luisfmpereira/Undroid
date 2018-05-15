@@ -58,6 +58,14 @@ public class PlayerController : MonoBehaviour {
 	private int currentHeart;
 	public string currentSceneName;
 
+	//dash
+	public bool allowDash;
+	public float dashCounter = 0;
+	public float dropTimer;
+	public float maxDropTimer = 1;
+	float number = Mathf.PI;
+
+
 	// usar isso quando ganhar vida 
 
 	//			Destroy (hit.gameObject);
@@ -78,6 +86,7 @@ public class PlayerController : MonoBehaviour {
 		transform.parent = null; //remove player from platform children if he dies while connected
 
 		currentHeart = hearts.Length - 1; //reset player hearts
+		dropTimer = maxDropTimer;
 	}
 
 	void Start () {
@@ -98,6 +107,8 @@ public class PlayerController : MonoBehaviour {
 		playerCrouch (); // call crouch function
 
 		playerShoot();
+
+		playerDash ();
 	
 	}
 
@@ -108,6 +119,15 @@ public class PlayerController : MonoBehaviour {
 		if (currentHeart < 0) {
 			SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
 		}
+
+		if(dashCounter>0 || dashCounter <0)
+			dropTimer -= Time.deltaTime;
+			 
+		if (dropTimer <= 0) {
+			dashCounter = 0;
+			dropTimer = maxDropTimer;
+		}
+			
 	}
 
 	//control player movement
@@ -210,6 +230,29 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	public void playerDash(){
+		if (allowDash) {
+			if(Input.GetButtonDown("A")){
+				float moveDash = 1;
+				dashCounter -= moveDash;
+			}
+
+			if(Input.GetButtonDown("D")){
+				float moveDash = +1;
+				dashCounter += moveDash;
+			}
+
+			if (dashCounter == 2) {
+				playerRB.position = new Vector2 (playerRB.position.x + 10 * Time.deltaTime, playerRB.position.y);
+
+			}
+			if (dashCounter == -2) {
+				playerRB.position = new Vector2 (playerRB.position.x - 10 * Time.deltaTime, playerRB.position.y);
+			}
+		}
+
+	}
+
 
 
 	//collisions
@@ -245,6 +288,19 @@ public class PlayerController : MonoBehaviour {
 
 			transform.parent = null;
 		}
+
+	}
+
+	void OnTriggerEnter2D(Collider2D hit){
+		if(hit.gameObject.CompareTag("Life") && currentHeart < 2){
+					Destroy (hit.gameObject);
+					currentHeart++;
+					if (currentHeart < hearts.Length) {
+						hearts [currentHeart].enabled = true;
+					} else {
+						currentHeart--;
+					}
+				}
 
 	}
 }

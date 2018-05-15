@@ -17,6 +17,7 @@ TagManager:
   - Text4
   - Text5
   - Text2
+  - Life
   layers:
   - Default
   - TransparentFX
