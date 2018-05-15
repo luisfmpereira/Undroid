@@ -9,16 +9,12 @@ using UnityEngine.SceneManagement;
 /// <summary>
 /// Player controller.
 /// 
-/// Fire 1 = JoyA = e - interact
+/// Fire 1 = JoyY = e - interact
 /// Fire 2 = JoyB = s - crouch
 /// Fire 3 = JoyX = x or c - fire
-/// Jump = JoyY = space - jump
+/// Jump = JoyA = space - jump
 ///  
 /// </summary>
-
-
-
-
 
 
 public class PlayerController : MonoBehaviour {

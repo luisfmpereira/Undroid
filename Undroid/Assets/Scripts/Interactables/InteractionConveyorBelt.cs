@@ -2,46 +2,50 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractionButtonManager : MonoBehaviour {
-	public GameObject platform;
-	private bool interacted;
+public class InteractionConveyorBelt : MonoBehaviour {
+	public GameObject conveyorBelt;
+	private bool interacted = false;
 
-	void FixedUpdate () {
+
+
+
+	void FixedUpdate(){
+		//checks if player has pressed button
 		interacted = Input.GetButtonDown ("Fire1");
 
 		if(useFocus)
 			FocusCameraOnPOI ();
+
 	}
 
-	void OnTriggerStay2D (Collider2D hit)
-	{
-		if (hit.gameObject.tag == "Player" && interacted == true) {
-			if (!platform.GetComponent<MovingPlatformManager> ().isPressed) {
+	void OnTriggerStay2D (Collider2D hit){
+		if (hit.gameObject.CompareTag ("Player") && interacted) {
+
+			//set camera focus for the first time
+			if (!conveyorBelt.GetComponent<ConveyorController> ().isrunning) {
 				focusCamera = true;
 				focusCounter = focusTime;
 			}
 
-			platform.GetComponent<MovingPlatformManager> ().isPressed = true;
+			//activate conveyor belt
+			conveyorBelt.GetComponent<ConveyorController> ().isrunning = true;
+
 		}
 	}
 
-
+	void Awake(){
+		cam = GameObject.FindGameObjectWithTag ("MainCamera");
+	}
 
 	//focus variables
 	public GameObject cam;
-	private GameObject focusObject;
+	public GameObject focusObject;
 	private bool focusCamera = false;
-	public float focusTime = 3f;
+	public float focusTime = 5f;
 	private float focusCounter = 0;
 	public float camMoveSpeed = 0.5f;
 
 	public bool useFocus = true;
-
-
-	void Awake(){
-		focusObject = platform.gameObject;
-		cam = GameObject.FindGameObjectWithTag ("MainCamera");
-	}
 
 	void FocusCameraOnPOI(){
 
@@ -58,9 +62,4 @@ public class InteractionButtonManager : MonoBehaviour {
 
 
 	}
-
-
-
-
-
 }

@@ -2,34 +2,44 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractionButtonManager : MonoBehaviour {
-	public GameObject platform;
-	private bool interacted;
+public class InteractionGate : MonoBehaviour {
 
-	void FixedUpdate () {
+	public GameObject gate;
+	public Transform endPoint;
+	public GameObject cameraPos;
+	public float speed = 0.5f;
+	public bool gateTriggered = false;
+	private bool interacted;
+	public Vector2 newmaxXAndY;
+
+	void FixedUpdate(){
 		interacted = Input.GetButtonDown ("Fire1");
+		if (gateTriggered)
+			gate.transform.position = Vector3.MoveTowards (gate.transform.position, endPoint.position, speed*Time.deltaTime);
 
 		if(useFocus)
 			FocusCameraOnPOI ();
+
 	}
 
-	void OnTriggerStay2D (Collider2D hit)
-	{
-		if (hit.gameObject.tag == "Player" && interacted == true) {
-			if (!platform.GetComponent<MovingPlatformManager> ().isPressed) {
+	void OnTriggerStay2D (Collider2D hit){
+		if(hit.gameObject.tag == "Player" && interacted == true){
+			if (!gateTriggered) {
 				focusCamera = true;
 				focusCounter = focusTime;
 			}
 
-			platform.GetComponent<MovingPlatformManager> ().isPressed = true;
-		}
-	}
 
+			gateTriggered = true;
+			cameraPos.GetComponent<CameraFollow> ().maxXAndY = newmaxXAndY;
+		}
+
+	}
 
 
 	//focus variables
 	public GameObject cam;
-	private GameObject focusObject;
+	public GameObject focusObject;
 	private bool focusCamera = false;
 	public float focusTime = 3f;
 	private float focusCounter = 0;
@@ -39,7 +49,6 @@ public class InteractionButtonManager : MonoBehaviour {
 
 
 	void Awake(){
-		focusObject = platform.gameObject;
 		cam = GameObject.FindGameObjectWithTag ("MainCamera");
 	}
 
@@ -58,8 +67,6 @@ public class InteractionButtonManager : MonoBehaviour {
 
 
 	}
-
-
 
 
 

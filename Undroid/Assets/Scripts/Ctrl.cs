@@ -14,6 +14,6 @@ public class Ctrl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		textCol.enabled = activated.gameObject.GetComponent<GateManager> ().gateTriggered;
+		textCol.enabled = activated.gameObject.GetComponent<InteractionGate> ().gateTriggered;
 	}
 }

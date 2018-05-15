@@ -9,12 +9,9 @@ public class PlayerBullet : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D hit){
 
 		if (hit.gameObject.CompareTag ("Enemy")) {
-			enemy = hit.transform.parent.gameObject;
-			Destroy (enemy.gameObject);
+			hit.gameObject.GetComponentInChildren<EnemyDamageController>().enemyLife--;
 		}
-
 		Destroy (this.gameObject);
-
 	}
 
 

@@ -12,6 +12,11 @@ TagManager:
   - PlayerBullet
   - WoodBox
   - MetalBox
+  - Text1
+  - Text3
+  - Text4
+  - Text5
+  - Text2
   layers:
   - Default
   - TransparentFX
@@ -26,7 +31,7 @@ TagManager:
   - button
   - enemy
   - playerBullet
-  - 
+  - enemyBullet
   - 
   - 
   - 

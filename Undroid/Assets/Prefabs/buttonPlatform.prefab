@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4679344196957048}
   - component: {fileID: 212535627061379230}
-  - component: {fileID: 114465925364862536}
   - component: {fileID: 61803102594342014}
+  - component: {fileID: 114465925364862536}
   m_Layer: 0
   m_Name: buttonPlatform
   m_TagString: Untagged
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1910787110991578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 83.99, y: 6.33, z: 0}
+  m_LocalPosition: {x: 52.47, y: -5.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,6 +79,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platform: {fileID: 0}
+  cam: {fileID: 0}
+  focusTime: 3
+  camMoveSpeed: 0.5
+  useFocus: 1
 --- !u!212 &212535627061379230
 SpriteRenderer:
   m_ObjectHideFlags: 1
