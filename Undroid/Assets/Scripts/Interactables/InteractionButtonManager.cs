@@ -52,6 +52,7 @@ public class InteractionButtonManager : MonoBehaviour {
 		}
 
 		if (focusCounter <= 0 && focusCamera) {
+			
 			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, GameObject.FindGameObjectWithTag("Player").transform.position.y, -10), camMoveSpeed);
 			focusCamera = false;
 		}
