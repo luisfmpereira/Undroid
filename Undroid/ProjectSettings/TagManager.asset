@@ -18,6 +18,8 @@ TagManager:
   - Text5
   - Text2
   - Life
+  - Laser
+  - LaserDamage
   layers:
   - Default
   - TransparentFX

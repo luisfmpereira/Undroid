@@ -18,7 +18,8 @@ using UnityEngine.SceneManagement;
 /// </summary>
 
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
 	//components
 	private Rigidbody2D playerRB;
@@ -32,8 +33,10 @@ public class PlayerController : MonoBehaviour {
 	private int moveDirection;
 
 	//jump variables
-	public Transform groundCheck; //ground check GO
-	public Transform ceilCheck; //ceiling check GO
+	public Transform groundCheck;
+	//ground check GO
+	public Transform ceilCheck;
+	//ceiling check GO
 	public LayerMask whatIsGround;
 	public float jumpVelocity;
 	public float maxGroundedTimer = 0.5f;
@@ -43,9 +46,12 @@ public class PlayerController : MonoBehaviour {
 	public bool grounded;
 
 	//double jump
-	public bool allowDoubleJump; //unlock double jump
-	public float doubleJumpModifier = 1.0f; //add extra force to double jump
-	private bool doubleJumped; //if has double jumped
+	public bool allowDoubleJump;
+	//unlock double jump
+	public float doubleJumpModifier = 1.0f;
+	//add extra force to double jump
+	private bool doubleJumped;
+	//if has double jumped
 
 	//shooting variables
 	public Rigidbody2D playerBulletPrefab;
@@ -65,8 +71,12 @@ public class PlayerController : MonoBehaviour {
 	private float dashTimer;
 	public float dashCooldown = 1f;
 
+	//laser
+	public Animator laseAnim;
 
-	void Awake() {
+
+	void Awake ()
+	{
 		playerRB = GetComponent<Rigidbody2D> ();
 		playerSR = GetComponent<SpriteRenderer> ();
 		playerAnim = GetComponent<Animator> ();
@@ -77,7 +87,8 @@ public class PlayerController : MonoBehaviour {
 		currentHeart = hearts.Length - 1; //reset player hearts
 	}
 
-	void Start () {
+	void Start ()
+	{
 		
 		//crouching properties
 		stand.enabled = true;
@@ -86,7 +97,8 @@ public class PlayerController : MonoBehaviour {
 
 	}
 
-	void FixedUpdate(){
+	void FixedUpdate ()
+	{
 
 		playerMove (); //call move function
 
@@ -94,18 +106,19 @@ public class PlayerController : MonoBehaviour {
 
 		playerCrouch (); // call crouch function
 
-		playerShoot();
+		playerShoot ();
 
 		playerDash ();
 	
 	}
 
 
-	void Update () {
+	void Update ()
+	{
 
 		//restart level if all lives are lost
 		if (currentHeart < 0) {
-			SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
+			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
 		}
 
 		//dash cooldown
@@ -116,7 +129,8 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	//control player movement
-	public void playerMove(){
+	public void playerMove ()
+	{
 
 		float xMove = Input.GetAxis ("Horizontal"); //get player input for the movement
 		playerAnim.SetFloat ("Speed", Mathf.Abs (xMove)); //set "Speed" float on animator controller to start running
@@ -132,10 +146,11 @@ public class PlayerController : MonoBehaviour {
 	}
 
 
-	public void playerJump(){
+	public void playerJump ()
+	{
 
 		// check if player is grounded and reset regular jump
-		if (Physics2D.OverlapCircle (groundCheck.position, groundCheckRadius, whatIsGround) ) {
+		if (Physics2D.OverlapCircle (groundCheck.position, groundCheckRadius, whatIsGround)) {
 			groundedTimer = maxGroundedTimer;
 			jumpCounter = 0;//reset off-platform jump
 
@@ -144,7 +159,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		//test if still under off-platform jump countdown or already jumped
-		if (groundedTimer <= 0 || jumpCounter >=1) { 
+		if (groundedTimer <= 0 || jumpCounter >= 1) { 
 			grounded = false;
 		} else
 			grounded = true;
@@ -159,12 +174,12 @@ public class PlayerController : MonoBehaviour {
 			doubleJumped = true;
 		}
 
-		if (grounded){
+		if (grounded) {
 			doubleJumped = false; //reset double jump
 			playerAnim.SetBool ("Jumping", false); //set animation
 		}
 
-		if (Mathf.Abs(playerRB.velocity.y) > 0.0001)
+		if (Mathf.Abs (playerRB.velocity.y) > 0.0001)
 			playerAnim.SetBool ("Jumping", true);//animation variables
 		
 		else
@@ -175,7 +190,8 @@ public class PlayerController : MonoBehaviour {
 
 
 	//function for flipping spirte
-	public void flipSprite(SpriteRenderer SR, float direction) {
+	public void flipSprite (SpriteRenderer SR, float direction)
+	{
 
 		if (direction < 0)
 			SR.flipX = true;
@@ -185,14 +201,15 @@ public class PlayerController : MonoBehaviour {
 	}
 
 
-	public void playerCrouch(){
+	public void playerCrouch ()
+	{
 
 		if (Input.GetButton ("Fire2")) {
 			stand.enabled = false;
 			crouch.enabled = true;
 			maxSpeed = 2f;
 			playerAnim.SetBool ("Crouching", true);
-		} else if (!Physics2D.OverlapCircle(ceilCheck.position,groundCheckRadius,whatIsGround)){
+		} else if (!Physics2D.OverlapCircle (ceilCheck.position, groundCheckRadius, whatIsGround)) {
 			//verify if ceiling above player
 			stand.enabled = true;
 			crouch.enabled = false;
@@ -201,7 +218,8 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-	public void playerShoot(){
+	public void playerShoot ()
+	{
 		if (allowShooting) {
 			if (Input.GetButtonDown ("Fire3")) {
 				Rigidbody2D bullet;
@@ -215,10 +233,11 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-	public void playerDash(){
+	public void playerDash ()
+	{
 		if (allowDash) {
-			if(Input.GetButtonDown("Dash") && dashTimer <= 0){
-				playerRB.AddForce(new Vector2(moveDirection * dashSpeed,0));
+			if (Input.GetButtonDown ("Dash") && dashTimer <= 0) {
+				playerRB.AddForce (new Vector2 (moveDirection * dashSpeed, 0));
 				dashTimer = dashCooldown;
 			}
 
@@ -229,7 +248,8 @@ public class PlayerController : MonoBehaviour {
 
 
 	//collisions
-	void OnCollisionEnter2D(Collision2D hit){
+	void OnCollisionEnter2D (Collision2D hit)
+	{
 
 		//damage taken by enemy bullet
 		if (hit.gameObject.CompareTag ("EnemyBullet")) {
@@ -240,9 +260,9 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		//damage taken by enemy contact
-			if(hit.gameObject.CompareTag("Enemy")) {
-				hearts [currentHeart].enabled = false;
-				currentHeart--;
+		if (hit.gameObject.CompareTag ("Enemy")) {
+			hearts [currentHeart].enabled = false;
+			currentHeart--;
 		}
 
 		//turn plyer child of the platform - used to smooth movement
@@ -250,11 +270,19 @@ public class PlayerController : MonoBehaviour {
 
 			transform.parent = hit.transform;
 		}
-	
 
+		if (hit.gameObject.CompareTag ("LaserDamage")) {
+			
+			hearts [currentHeart].enabled = false;
+			currentHeart--;
+
+			playerRB.AddForce (new Vector2 (moveDirection * 225 * -1, 0));
+
+		}
 	}
 
-	void OnCollisionExit2D(Collision2D hit){
+	void OnCollisionExit2D (Collision2D hit)
+	{
 
 
 		if (hit.gameObject.CompareTag ("Platform")) {
@@ -264,16 +292,21 @@ public class PlayerController : MonoBehaviour {
 
 	}
 
-	void OnTriggerEnter2D(Collider2D hit){
-		if(hit.gameObject.CompareTag("Life") && currentHeart < 2){
-					Destroy (hit.gameObject);
-					currentHeart++;
-					if (currentHeart < hearts.Length) {
-						hearts [currentHeart].enabled = true;
-					} else {
-						currentHeart--;
-					}
-				}
 
+
+	void OnTriggerEnter2D (Collider2D hit)
+	{
+		if (hit.gameObject.CompareTag ("Life") && currentHeart < 2) {
+			Destroy (hit.gameObject);
+			currentHeart++;
+			if (currentHeart < hearts.Length) {
+				hearts [currentHeart].enabled = true;
+			} else {
+				currentHeart--;
+			}
+		}
+		if (hit.gameObject.CompareTag ("Laser")) {
+			hit.transform.GetChild(1).transform.GetComponent<Animator>().SetBool("start", true);
+		}
 	}
 }
