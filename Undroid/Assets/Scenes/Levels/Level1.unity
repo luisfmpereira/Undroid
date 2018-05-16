@@ -2973,6 +2973,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114021669923086858, guid: fce48ef4339bd624da7593cb0fa98443,
+        type: 2}
+      propertyPath: maxXAndY.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 20477873757682458, guid: fce48ef4339bd624da7593cb0fa98443,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0.19607845
+      objectReference: {fileID: 0}
+    - target: {fileID: 20477873757682458, guid: fce48ef4339bd624da7593cb0fa98443,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0.27058825
+      objectReference: {fileID: 0}
+    - target: {fileID: 20477873757682458, guid: fce48ef4339bd624da7593cb0fa98443,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0.43529415
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fce48ef4339bd624da7593cb0fa98443, type: 2}
   m_IsPrefabParent: 0
@@ -30505,7 +30525,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 16.266666, y: 12.2}
+    oldSize: {x: 1.90625, y: 1.4296875}
     newSize: {x: 17.48, y: 24.800001}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -30583,7 +30603,7 @@ Transform:
   m_GameObject: {fileID: 1717528939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 172.66, y: 3.29, z: 0}
-  m_LocalScale: {x: 0.08523754, y: 0.08523747, z: 0.08523747}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 22
@@ -30608,11 +30628,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4830327034297316, guid: 862edc54382103e48bd33f4d7437a5ca, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 60.05
+      value: -14.49
       objectReference: {fileID: 0}
     - target: {fileID: 4830327034297316, guid: 862edc54382103e48bd33f4d7437a5ca, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: -4.99
       objectReference: {fileID: 0}
     - target: {fileID: 4830327034297316, guid: 862edc54382103e48bd33f4d7437a5ca, type: 2}
       propertyPath: m_LocalPosition.z

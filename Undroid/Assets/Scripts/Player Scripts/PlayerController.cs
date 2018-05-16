@@ -13,6 +13,7 @@ using UnityEngine.SceneManagement;
 /// Fire 2 = JoyB = s - crouch
 /// Fire 3 = JoyX = x or c - fire
 /// Jump = JoyA = space - jump
+/// Dash = JoyRT = shift = dash
 ///  
 /// </summary>
 
@@ -60,22 +61,10 @@ public class PlayerController : MonoBehaviour {
 
 	//dash
 	public bool allowDash;
-	public float dashCounter = 0;
-	public float dropTimer;
-	public float maxDropTimer = 1;
-	float number = Mathf.PI;
+	public float dashSpeed = 6f;
+	private float dashTimer;
+	public float dashCooldown = 1f;
 
-
-	// usar isso quando ganhar vida 
-
-	//			Destroy (hit.gameObject);
-	//			currentHeart++;
-	//			if (currentHeart < hearts.Length) {
-	//				hearts [currentHeart].enabled = true;
-	//			} else {
-	//				currentHeart--;
-	//			}
-	//		}
 
 	void Awake() {
 		playerRB = GetComponent<Rigidbody2D> ();
@@ -86,7 +75,6 @@ public class PlayerController : MonoBehaviour {
 		transform.parent = null; //remove player from platform children if he dies while connected
 
 		currentHeart = hearts.Length - 1; //reset player hearts
-		dropTimer = maxDropTimer;
 	}
 
 	void Start () {
@@ -120,12 +108,9 @@ public class PlayerController : MonoBehaviour {
 			SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
 		}
 
-		if(dashCounter>0 || dashCounter <0)
-			dropTimer -= Time.deltaTime;
-			 
-		if (dropTimer <= 0) {
-			dashCounter = 0;
-			dropTimer = maxDropTimer;
+		//dash cooldown
+		if (dashTimer > 0) {
+			dashTimer -= Time.deltaTime;
 		}
 			
 	}
@@ -232,23 +217,11 @@ public class PlayerController : MonoBehaviour {
 
 	public void playerDash(){
 		if (allowDash) {
-			if(Input.GetButtonDown("A")){
-				float moveDash = 1;
-				dashCounter -= moveDash;
+			if(Input.GetButtonDown("Dash") && dashTimer <= 0){
+				playerRB.AddForce(new Vector2(moveDirection * dashSpeed,0));
+				dashTimer = dashCooldown;
 			}
 
-			if(Input.GetButtonDown("D")){
-				float moveDash = +1;
-				dashCounter += moveDash;
-			}
-
-			if (dashCounter == 2) {
-				playerRB.position = new Vector2 (playerRB.position.x + 10 * Time.deltaTime, playerRB.position.y);
-
-			}
-			if (dashCounter == -2) {
-				playerRB.position = new Vector2 (playerRB.position.x - 10 * Time.deltaTime, playerRB.position.y);
-			}
 		}
 
 	}
