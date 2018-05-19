@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
 
 	}
 
-	void FixedUpdate ()
+	void Update ()
 	{
 
 		playerMove (); //call move function
@@ -110,11 +110,6 @@ public class PlayerController : MonoBehaviour
 
 		playerDash ();
 	
-	}
-
-
-	void Update ()
-	{
 
 		//restart level if all lives are lost
 		if (currentHeart < 0) {
