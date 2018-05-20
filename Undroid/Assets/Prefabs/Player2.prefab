@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 95223065097283532}
   - component: {fileID: 114656062254117818}
   m_Layer: 9
-  m_Name: Player1
+  m_Name: Player2
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,7 +97,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1686696418733374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.071, z: 0}
+  m_LocalPosition: {x: 0, y: -0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4830327034297316}
@@ -110,7 +110,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1373907700747530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.475, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7039999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4830327034297316}
@@ -123,7 +123,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1066224756947368}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.11, y: -4.98, z: 0}
+  m_LocalPosition: {x: -8.03, y: 2.335, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4279597204669532}
@@ -164,8 +164,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.4826008}
-  m_Size: {x: 0.4, y: 0.84320474}
+  m_Offset: {x: 0, y: -0.3}
+  m_Size: {x: 0.4, y: 0.85}
   m_Direction: 0
 --- !u!70 &70374067465194338
 CapsuleCollider2D:
@@ -179,8 +179,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.7735121}
-  m_Size: {x: 0.4, y: 1.4250269}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.4, y: 1.45}
   m_Direction: 0
 --- !u!95 &95223065097283532
 Animator:
@@ -191,7 +191,7 @@ Animator:
   m_GameObject: {fileID: 1066224756947368}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ef34ef0fe835a6749829b9a15b45d485, type: 2}
+  m_Controller: {fileID: 9100000, guid: 492eb3b39b0532b45a2c33075f3df3ce, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
@@ -221,7 +221,7 @@ MonoBehaviour:
   jumpVelocity: 6.5
   maxGroundedTimer: 0.5
   grounded: 0
-  allowDoubleJump: 0
+  allowDoubleJump: 1
   doubleJumpModifier: 1
   playerBulletPrefab: {fileID: 50524648910763498, guid: f8e10c703a395394c98434eadb11cd07,
     type: 2}
@@ -271,7 +271,7 @@ SpriteRenderer:
   m_SortingLayerID: 66600565
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d8cfbdb9aa7ff3341a00749d31b65bfb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 897ccfe124f629a4698b30539c60d38a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

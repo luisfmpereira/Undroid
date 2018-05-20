@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4933011136740714}
   - component: {fileID: 212230115808567262}
+  - component: {fileID: 61177978017595854}
   - component: {fileID: 61510811822606462}
   - component: {fileID: 114187839778159354}
-  - component: {fileID: 61177978017595854}
   m_Layer: 8
   m_Name: ConveyorBelt
   m_TagString: Untagged
@@ -36,9 +36,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1314704987034866}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.89, y: 2.93, z: 0}
-  m_LocalScale: {x: 9.48354, y: 0.79956764, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -20.962423, y: -2.1628017, z: 0.04296875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -55,18 +55,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1}
+  m_Offset: {x: 0, y: 0.75}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.67, y: 1.52}
+    oldSize: {x: 7.328125, y: 1.046875}
     newSize: {x: 0.67, y: 1.52}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 0.5}
+  m_Size: {x: 8, y: 0.4}
   m_EdgeRadius: 0
 --- !u!61 &61510811822606462
 BoxCollider2D:
@@ -84,14 +84,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.67, y: 1.52}
+    oldSize: {x: 7.328125, y: 1.046875}
     newSize: {x: 0.67, y: 1.52}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.67, y: 1.52}
+  m_Size: {x: 7.328125, y: 1.046875}
   m_EdgeRadius: 0
 --- !u!114 &114187839778159354
 MonoBehaviour:
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 2
   isrunning: 1
-  goRight: 1
+  goRight: 0
 --- !u!212 &212230115808567262
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -141,7 +141,7 @@ SpriteRenderer:
   m_SortingLayerID: -1973708339
   m_SortingLayer: -3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 86351be93e76b5542a5e4f1592c7df35, type: 3}
+  m_Sprite: {fileID: 21300058, guid: 6d9aba537a428a84ab2207c1e03ff711, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

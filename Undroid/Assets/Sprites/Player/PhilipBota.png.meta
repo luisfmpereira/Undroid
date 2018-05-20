@@ -1,50 +1,54 @@
 fileFormatVersion: 2
-guid: efc3b338d8552984d8fa298d1c0d75c4
-timeCreated: 1526267223
+guid: 897ccfe124f629a4698b30539c60d38a
+timeCreated: 1526831581
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: philip 1_0
-    21300002: philip 1_1
-    21300004: philip 1_2
-    21300006: philip 1_3
-    21300008: philip 1_4
-    21300010: philip 1_5
-    21300012: philip 1_6
-    21300014: philip 1_7
-    21300016: philip 1_8
-    21300018: philip 1_9
-    21300020: philip 1_10
-    21300022: philip 1_11
-    21300024: philip 1_12
-    21300026: philip 1_13
-    21300028: philip 1_14
-    21300030: philip 1_15
-    21300032: philip 1_16
-    21300034: philip 1_17
-    21300036: philip 1_18
-    21300038: philip 1_19
-    21300040: philip 1_20
-    21300042: philip 1_21
-    21300044: philip 1_22
-    21300046: philip 1_23
-    21300048: philip 1_24
-    21300050: philip 1_25
-    21300052: philip 1_26
-    21300054: philip 1_27
-    21300056: philip 1_28
-    21300058: philip 1_29
-    21300060: philip 1_30
-    21300062: philip 1_31
-    21300064: philip 1_32
-    21300066: philip 1_33
-    21300068: philip 1_34
-    21300070: philip 1_35
-    21300072: philip 1_36
-    21300074: philip 1_37
-    21300076: philip 1_38
-    21300078: philip 1_39
-    21300080: philip 1_40
+    21300000: PhilipBota_0
+    21300002: PhilipBota_1
+    21300004: PhilipBota_2
+    21300006: PhilipBota_3
+    21300008: PhilipBota_4
+    21300010: PhilipBota_5
+    21300012: PhilipBota_6
+    21300014: PhilipBota_7
+    21300016: PhilipBota_8
+    21300018: PhilipBota_9
+    21300020: PhilipBota_10
+    21300022: PhilipBota_11
+    21300024: PhilipBota_12
+    21300026: PhilipBota_13
+    21300028: PhilipBota_14
+    21300030: PhilipBota_15
+    21300032: PhilipBota_16
+    21300034: PhilipBota_17
+    21300036: PhilipBota_18
+    21300038: PhilipBota_19
+    21300040: PhilipBota_20
+    21300042: PhilipBota_21
+    21300044: PhilipBota_22
+    21300046: PhilipBota_23
+    21300048: PhilipBota_24
+    21300050: PhilipBota_25
+    21300052: PhilipBota_26
+    21300054: PhilipBota_27
+    21300056: PhilipBota_28
+    21300058: PhilipBota_29
+    21300060: PhilipBota_30
+    21300062: PhilipBota_31
+    21300064: PhilipBota_32
+    21300066: PhilipBota_33
+    21300068: PhilipBota_34
+    21300070: PhilipBota_35
+    21300072: PhilipBota_36
+    21300074: PhilipBota_37
+    21300076: PhilipBota_38
+    21300078: PhilipBota_39
+    21300080: PhilipBota_40
+    21300082: PhilipBota_41
+    21300084: PhilipBota_42
+    21300086: PhilipBota_43
+    21300088: PhilipBota_44
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -121,575 +125,589 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: philip 1_0
+      name: PhilipBota_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1400
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_1
+      name: PhilipBota_1
       rect:
         serializedVersion: 2
         x: 265
-        y: 1400
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_2
+      name: PhilipBota_2
       rect:
         serializedVersion: 2
         x: 530
-        y: 1400
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_3
+      name: PhilipBota_3
       rect:
         serializedVersion: 2
         x: 795
-        y: 1400
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_4
+      name: PhilipBota_4
       rect:
         serializedVersion: 2
         x: 1060
-        y: 1400
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_5
+      name: PhilipBota_5
       rect:
         serializedVersion: 2
         x: 1325
-        y: 1400
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_6
+      name: PhilipBota_6
       rect:
         serializedVersion: 2
         x: 1590
-        y: 1400
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_7
+      name: PhilipBota_7
       rect:
         serializedVersion: 2
         x: 1855
-        y: 1400
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_8
+      name: PhilipBota_8
       rect:
         serializedVersion: 2
         x: 2120
-        y: 1400
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_9
+      name: PhilipBota_9
       rect:
         serializedVersion: 2
         x: 2385
-        y: 1400
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_10
+      name: PhilipBota_10
       rect:
         serializedVersion: 2
         x: 2650
-        y: 1400
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_11
+      name: PhilipBota_11
       rect:
         serializedVersion: 2
         x: 0
-        y: 1090
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_12
+      name: PhilipBota_12
       rect:
         serializedVersion: 2
         x: 265
-        y: 1090
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_13
+      name: PhilipBota_13
       rect:
         serializedVersion: 2
         x: 530
-        y: 1090
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_14
+      name: PhilipBota_14
       rect:
         serializedVersion: 2
         x: 795
-        y: 1090
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_15
+      name: PhilipBota_15
       rect:
         serializedVersion: 2
         x: 1060
-        y: 1090
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_16
+      name: PhilipBota_16
       rect:
         serializedVersion: 2
         x: 1325
-        y: 1090
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_17
+      name: PhilipBota_17
       rect:
         serializedVersion: 2
         x: 1590
-        y: 1090
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_18
+      name: PhilipBota_18
       rect:
         serializedVersion: 2
         x: 1855
-        y: 1090
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_19
+      name: PhilipBota_19
       rect:
         serializedVersion: 2
         x: 2120
-        y: 1090
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_20
+      name: PhilipBota_20
       rect:
         serializedVersion: 2
         x: 2385
-        y: 1090
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_21
+      name: PhilipBota_21
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 926
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipBota_22
       rect:
         serializedVersion: 2
         x: 0
-        y: 780
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_22
+      name: PhilipBota_23
       rect:
         serializedVersion: 2
         x: 265
-        y: 780
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_23
+      name: PhilipBota_24
       rect:
         serializedVersion: 2
         x: 530
-        y: 780
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_24
+      name: PhilipBota_25
       rect:
         serializedVersion: 2
         x: 795
-        y: 780
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_25
+      name: PhilipBota_26
       rect:
         serializedVersion: 2
         x: 1060
-        y: 780
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_26
+      name: PhilipBota_27
       rect:
         serializedVersion: 2
         x: 1325
-        y: 780
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_27
+      name: PhilipBota_28
       rect:
         serializedVersion: 2
         x: 1590
-        y: 780
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_28
+      name: PhilipBota_29
       rect:
         serializedVersion: 2
         x: 1855
-        y: 780
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_29
+      name: PhilipBota_30
       rect:
         serializedVersion: 2
         x: 2120
-        y: 780
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_30
+      name: PhilipBota_31
       rect:
         serializedVersion: 2
         x: 0
-        y: 470
+        y: 302
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_31
+      name: PhilipBota_32
       rect:
         serializedVersion: 2
         x: 265
-        y: 470
+        y: 302
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_32
+      name: PhilipBota_33
       rect:
         serializedVersion: 2
         x: 530
-        y: 470
+        y: 302
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_33
+      name: PhilipBota_34
       rect:
         serializedVersion: 2
         x: 795
-        y: 470
+        y: 302
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_34
+      name: PhilipBota_35
       rect:
         serializedVersion: 2
         x: 1060
-        y: 470
+        y: 302
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_35
+      name: PhilipBota_36
       rect:
         serializedVersion: 2
         x: 1325
-        y: 470
+        y: 302
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_36
+      name: PhilipBota_37
       rect:
         serializedVersion: 2
         x: 1590
-        y: 470
+        y: 302
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_37
+      name: PhilipBota_38
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 302
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipBota_39
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
+        y: 0
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_38
+      name: PhilipBota_40
       rect:
         serializedVersion: 2
         x: 265
-        y: 160
+        y: 0
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: philip 1_39
+      name: PhilipBota_41
       rect:
         serializedVersion: 2
         x: 530
-        y: 160
+        y: 0
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: philip 1_40
-      rect:
-        serializedVersion: 2
-        x: 1325
-        y: 160
-        width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

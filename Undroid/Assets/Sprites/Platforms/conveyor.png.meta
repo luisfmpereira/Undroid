@@ -1,42 +1,39 @@
 fileFormatVersion: 2
-guid: ab4f72e032ecf0b4da9d4234144f6e3f
-timeCreated: 1525031006
+guid: 6d9aba537a428a84ab2207c1e03ff711
+timeCreated: 1526830764
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Philip_0
-    21300002: Philip_1
-    21300004: Philip_2
-    21300006: Philip_3
-    21300008: Philip_4
-    21300010: Philip_5
-    21300012: Philip_6
-    21300014: Philip_7
-    21300016: Philip_8
-    21300018: Philip_9
-    21300020: Philip_10
-    21300022: Philip_11
-    21300024: Philip_12
-    21300026: Philip_13
-    21300028: Philip_14
-    21300030: Philip_15
-    21300032: Philip_16
-    21300034: Philip_17
-    21300036: Philip_18
-    21300038: Philip_19
-    21300040: Philip_20
-    21300042: Philip_21
-    21300044: Philip_22
-    21300046: Philip_23
-    21300048: Philip_24
-    21300050: Philip_25
-    21300052: Philip_26
-    21300054: Philip_27
-    21300056: Philip_28
-    21300058: Philip_29
-    21300060: Philip_30
-    21300062: Philip_31
-    21300064: Philip_32
+    21300000: conveyor_0
+    21300002: conveyor_1
+    21300004: conveyor_2
+    21300006: conveyor_3
+    21300008: conveyor_4
+    21300010: conveyor_5
+    21300012: conveyor_6
+    21300014: conveyor_7
+    21300016: conveyor_8
+    21300018: conveyor_9
+    21300020: conveyor_10
+    21300022: conveyor_11
+    21300024: conveyor_12
+    21300026: conveyor_13
+    21300028: conveyor_14
+    21300030: conveyor_15
+    21300032: conveyor_16
+    21300034: conveyor_17
+    21300036: conveyor_18
+    21300038: conveyor_19
+    21300040: conveyor_20
+    21300042: conveyor_21
+    21300044: conveyor_22
+    21300046: conveyor_23
+    21300048: conveyor_24
+    21300050: conveyor_25
+    21300052: conveyor_26
+    21300054: conveyor_27
+    21300056: conveyor_28
+    21300058: conveyor_29
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -79,7 +76,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 64
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -113,449 +110,421 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Philip_0
+      name: conveyor_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 772
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 29
+        y: 394
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_1
+      name: conveyor_1
       rect:
         serializedVersion: 2
-        x: 265
-        y: 772
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 99
+        y: 392
+        width: 49
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_2
+      name: conveyor_2
       rect:
         serializedVersion: 2
-        x: 530
-        y: 772
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 164
+        y: 397
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_3
+      name: conveyor_3
       rect:
         serializedVersion: 2
-        x: 795
-        y: 772
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 231
+        y: 394
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_4
+      name: conveyor_4
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 772
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 296
+        y: 394
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_5
+      name: conveyor_5
       rect:
         serializedVersion: 2
-        x: 1325
-        y: 772
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 360
+        y: 395
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_6
+      name: conveyor_6
       rect:
         serializedVersion: 2
-        x: 1590
-        y: 772
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 424
+        y: 392
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_7
+      name: conveyor_7
       rect:
         serializedVersion: 2
-        x: 1855
-        y: 772
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 487
+        y: 395
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_8
+      name: conveyor_8
       rect:
         serializedVersion: 2
-        x: 2120
-        y: 772
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 551
+        y: 394
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_9
+      name: conveyor_9
       rect:
         serializedVersion: 2
-        x: 2385
-        y: 772
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 610
+        y: 396
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_10
+      name: conveyor_10
       rect:
         serializedVersion: 2
-        x: 2650
-        y: 772
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 676
+        y: 392
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_11
+      name: conveyor_11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 464
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 740
+        y: 395
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_12
+      name: conveyor_12
       rect:
         serializedVersion: 2
-        x: 265
-        y: 464
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 799
+        y: 392
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_13
+      name: conveyor_13
       rect:
         serializedVersion: 2
-        x: 530
-        y: 464
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 859
+        y: 394
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_14
+      name: conveyor_14
       rect:
         serializedVersion: 2
-        x: 795
-        y: 464
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 29
+        y: 316
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_15
+      name: conveyor_15
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 464
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 99
+        y: 316
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_16
+      name: conveyor_16
       rect:
         serializedVersion: 2
-        x: 1325
-        y: 464
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 165
+        y: 319
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_17
+      name: conveyor_17
       rect:
         serializedVersion: 2
-        x: 1590
-        y: 464
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 231
+        y: 316
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_18
+      name: conveyor_18
       rect:
         serializedVersion: 2
-        x: 1855
-        y: 464
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 297
+        y: 316
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_19
+      name: conveyor_19
       rect:
         serializedVersion: 2
-        x: 2120
-        y: 464
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 361
+        y: 316
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_20
+      name: conveyor_20
       rect:
         serializedVersion: 2
-        x: 2388
-        y: 464
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 425
+        y: 316
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_21
+      name: conveyor_21
       rect:
         serializedVersion: 2
-        x: 2650
-        y: 464
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 487
+        y: 317
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_22
+      name: conveyor_22
       rect:
         serializedVersion: 2
-        x: 0
-        y: 156
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 551
+        y: 316
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_23
+      name: conveyor_23
       rect:
         serializedVersion: 2
-        x: 265
-        y: 156
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 608
+        y: 318
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_24
+      name: conveyor_24
       rect:
         serializedVersion: 2
-        x: 530
-        y: 156
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 676
+        y: 316
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_25
+      name: conveyor_25
       rect:
         serializedVersion: 2
-        x: 795
-        y: 156
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 740
+        y: 316
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_26
+      name: conveyor_26
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 156
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 799
+        y: 316
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_27
+      name: conveyor_27
       rect:
         serializedVersion: 2
-        x: 1325
-        y: 156
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 859
+        y: 316
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_28
+      name: conveyor_28
       rect:
         serializedVersion: 2
-        x: 1590
-        y: 156
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 49
+        y: 75
+        width: 67
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Philip_29
+      name: conveyor_29
       rect:
         serializedVersion: 2
-        x: 1855
-        y: 156
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Philip_30
-      rect:
-        serializedVersion: 2
-        x: 2120
-        y: 156
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Philip_31
-      rect:
-        serializedVersion: 2
-        x: 2385
-        y: 156
-        width: 265
-        height: 308
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 361
+        y: 104
+        width: 469
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

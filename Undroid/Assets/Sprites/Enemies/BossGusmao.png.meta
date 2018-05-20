@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 68abd28bb95ae0d4b9dd67153b0a54a5
-timeCreated: 1524619114
+guid: f65ea2a19a961a347bd4be0c352008a2
+timeCreated: 1526830247
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: buttonCeiling1_0
+    21300000: BossGusmao_0
+    21300002: BossGusmao_1
+    21300004: BossGusmao_2
+    21300006: BossGusmao_3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -47,7 +50,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -81,13 +84,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: buttonCeiling1_0
+      name: BossGusmao_0
       rect:
         serializedVersion: 2
-        x: 291
-        y: 148
-        width: 36
-        height: 42
+        x: 0
+        y: 656.5
+        width: 524
+        height: 656.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BossGusmao_1
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 656.5
+        width: 524
+        height: 656.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BossGusmao_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.5
+        width: 524
+        height: 656.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BossGusmao_3
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 0.5
+        width: 524
+        height: 656.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
