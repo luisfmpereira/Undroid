@@ -129,11 +129,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1240
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -143,11 +143,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 265
-        y: 1240
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,11 +157,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 530
-        y: 1240
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,11 +171,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 795
-        y: 1240
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -185,11 +185,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1060
-        y: 1240
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,11 +199,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1325
-        y: 1240
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,11 +213,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1590
-        y: 1240
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -227,11 +227,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1855
-        y: 1240
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,11 +241,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2120
-        y: 1240
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -255,11 +255,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2385
-        y: 1240
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -269,11 +269,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2650
-        y: 1240
+        y: 1238
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,11 +283,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 930
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -297,11 +297,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 265
-        y: 930
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -311,11 +311,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 530
-        y: 930
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,11 +325,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 795
-        y: 930
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -339,11 +339,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1060
-        y: 930
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -353,11 +353,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1325
-        y: 930
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -367,11 +367,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1590
-        y: 930
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -381,11 +381,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1855
-        y: 930
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -395,11 +395,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2120
-        y: 930
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,11 +409,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2385
-        y: 930
+        y: 926
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -422,12 +422,12 @@ TextureImporter:
       name: GridSpriteSheet_21
       rect:
         serializedVersion: 2
-        x: 2650
-        y: 930
+        x: 0
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -436,12 +436,12 @@ TextureImporter:
       name: GridSpriteSheet_22
       rect:
         serializedVersion: 2
-        x: 0
-        y: 620
+        x: 265
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -450,12 +450,12 @@ TextureImporter:
       name: GridSpriteSheet_23
       rect:
         serializedVersion: 2
-        x: 265
-        y: 620
+        x: 530
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -464,12 +464,12 @@ TextureImporter:
       name: GridSpriteSheet_24
       rect:
         serializedVersion: 2
-        x: 530
-        y: 620
+        x: 795
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -478,12 +478,12 @@ TextureImporter:
       name: GridSpriteSheet_25
       rect:
         serializedVersion: 2
-        x: 795
-        y: 620
+        x: 1060
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -492,12 +492,12 @@ TextureImporter:
       name: GridSpriteSheet_26
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 620
+        x: 1325
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -506,12 +506,12 @@ TextureImporter:
       name: GridSpriteSheet_27
       rect:
         serializedVersion: 2
-        x: 1325
-        y: 620
+        x: 1590
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -520,12 +520,12 @@ TextureImporter:
       name: GridSpriteSheet_28
       rect:
         serializedVersion: 2
-        x: 1590
-        y: 620
+        x: 1855
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -534,12 +534,12 @@ TextureImporter:
       name: GridSpriteSheet_29
       rect:
         serializedVersion: 2
-        x: 1855
-        y: 620
+        x: 2120
+        y: 614
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -548,12 +548,12 @@ TextureImporter:
       name: GridSpriteSheet_30
       rect:
         serializedVersion: 2
-        x: 2120
-        y: 620
+        x: 0
+        y: 302
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -562,12 +562,12 @@ TextureImporter:
       name: GridSpriteSheet_31
       rect:
         serializedVersion: 2
-        x: 2385
-        y: 620
+        x: 265
+        y: 302
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -576,12 +576,12 @@ TextureImporter:
       name: GridSpriteSheet_32
       rect:
         serializedVersion: 2
-        x: 0
-        y: 310
+        x: 530
+        y: 302
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -590,12 +590,12 @@ TextureImporter:
       name: GridSpriteSheet_33
       rect:
         serializedVersion: 2
-        x: 265
-        y: 310
+        x: 795
+        y: 302
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -604,12 +604,12 @@ TextureImporter:
       name: GridSpriteSheet_34
       rect:
         serializedVersion: 2
-        x: 530
-        y: 310
+        x: 1060
+        y: 302
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -618,12 +618,12 @@ TextureImporter:
       name: GridSpriteSheet_35
       rect:
         serializedVersion: 2
-        x: 795
-        y: 310
+        x: 1325
+        y: 302
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -632,12 +632,12 @@ TextureImporter:
       name: GridSpriteSheet_36
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 310
+        x: 1590
+        y: 302
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -646,12 +646,12 @@ TextureImporter:
       name: GridSpriteSheet_37
       rect:
         serializedVersion: 2
-        x: 1325
-        y: 310
+        x: 0
+        y: 0
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -660,12 +660,12 @@ TextureImporter:
       name: GridSpriteSheet_38
       rect:
         serializedVersion: 2
-        x: 1590
-        y: 310
+        x: 265
+        y: 0
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -674,82 +674,12 @@ TextureImporter:
       name: GridSpriteSheet_39
       rect:
         serializedVersion: 2
-        x: 1855
-        y: 310
-        width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: GridSpriteSheet_40
-      rect:
-        serializedVersion: 2
-        x: 2120
-        y: 310
-        width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: GridSpriteSheet_41
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: GridSpriteSheet_42
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 0
-        width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: GridSpriteSheet_43
-      rect:
-        serializedVersion: 2
         x: 530
         y: 0
         width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: GridSpriteSheet_44
-      rect:
-        serializedVersion: 2
-        x: 1325
-        y: 0
-        width: 265
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

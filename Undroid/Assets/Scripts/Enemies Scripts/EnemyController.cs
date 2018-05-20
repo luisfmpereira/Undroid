@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour {
 
 	private int locationSelected = 0;
 	private Transform enemyLocationSelected;
-	public float timer;
+	private float timer;
 
 	public float shootingCooldown = 3f;
 	public bool isShooting = false;
