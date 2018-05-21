@@ -9,7 +9,7 @@ public class InteractionConveyorBelt : MonoBehaviour {
 
 
 
-	void FixedUpdate(){
+	void Update(){
 		//checks if player has pressed button
 		interacted = Input.GetButtonDown ("Fire1");
 

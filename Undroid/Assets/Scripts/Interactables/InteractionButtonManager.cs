@@ -6,7 +6,7 @@ public class InteractionButtonManager : MonoBehaviour {
 	public GameObject platform;
 	private bool interacted;
 
-	void FixedUpdate () {
+	void Update () {
 		interacted = Input.GetButtonDown ("Fire1");
 
 		if(useFocus)

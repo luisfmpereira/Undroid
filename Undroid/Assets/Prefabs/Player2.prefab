@@ -123,7 +123,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1066224756947368}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.03, y: 2.335, z: 0}
+  m_LocalPosition: {x: -7.7734976, y: -0.3579352, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4279597204669532}
@@ -158,14 +158,14 @@ CapsuleCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1066224756947368}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.3}
-  m_Size: {x: 0.4, y: 0.85}
+  m_Offset: {x: 0.005654007, y: -0.31696242}
+  m_Size: {x: 0.411308, y: 0.88392484}
   m_Direction: 0
 --- !u!70 &70374067465194338
 CapsuleCollider2D:
@@ -179,8 +179,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.4, y: 1.45}
+  m_Offset: {x: 0.005654007, y: -0.022616744}
+  m_Size: {x: 0.411308, y: 1.4952335}
   m_Direction: 0
 --- !u!95 &95223065097283532
 Animator:
@@ -191,7 +191,7 @@ Animator:
   m_GameObject: {fileID: 1066224756947368}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 492eb3b39b0532b45a2c33075f3df3ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: 77b31653d047a47458211fa827fbfad0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
@@ -233,8 +233,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   currentSceneName: 
-  allowDash: 0
-  dashSpeed: 6
+  allowDash: 1
+  dashSpeed: 300
   dashCooldown: 1
   laseAnim: {fileID: 0}
 --- !u!212 &212679727438097800

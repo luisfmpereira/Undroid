@@ -7,7 +7,7 @@ public class DisableLaser : MonoBehaviour
 	private bool interacted;
 	public GameObject laserobj;
 
-	void FixedUpdate ()
+	void Update ()
 	{
 		interacted = Input.GetButtonDown ("Fire1");
 	}

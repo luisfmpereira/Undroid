@@ -12,7 +12,7 @@ public class InteractionGate : MonoBehaviour {
 	private bool interacted;
 	public Vector2 newmaxXAndY;
 
-	void FixedUpdate(){
+	void Update(){
 		interacted = Input.GetButtonDown ("Fire1");
 		if (gateTriggered)
 			gate.transform.position = Vector3.MoveTowards (gate.transform.position, endPoint.position, speed*Time.deltaTime);
