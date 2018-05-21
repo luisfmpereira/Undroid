@@ -11,9 +11,14 @@ public class Boss : MonoBehaviour {
 	public float bulletForce = 300;
 	public float shootCooldown = 2f;
 	protected float shootTimer;
-
+	public int BossLevel;
+	public GameObject PowerUpDropBoss;
+	public Transform spawnPU;
 	protected void KillBoss(){
 		if (bossHealth <= 0) {
+			if (BossLevel == 2) {
+				Instantiate (PowerUpDropBoss, spawnPU);
+			}
 			Destroy (this.gameObject);
 		}
 	}

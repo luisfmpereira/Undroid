@@ -844,7 +844,7 @@ Prefab:
         type: 0}
     - target: {fileID: 1985747218764032, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
@@ -1856,7 +1856,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4830327034297316, guid: d9bfd9dcf019f8b4e8915809c49a8b5b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 65.06
+      value: -6.3
       objectReference: {fileID: 0}
     - target: {fileID: 4830327034297316, guid: d9bfd9dcf019f8b4e8915809c49a8b5b, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2273,6 +2273,22 @@ Prefab:
       propertyPath: bossHealthBar
       value: 
       objectReference: {fileID: 348525112}
+    - target: {fileID: 114720731256205894, guid: ad3f7fb60d7db8f48be4c110faa7b901,
+        type: 2}
+      propertyPath: BossLevel
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114720731256205894, guid: ad3f7fb60d7db8f48be4c110faa7b901,
+        type: 2}
+      propertyPath: PowerUpDropBoss
+      value: 
+      objectReference: {fileID: 1483513792898868, guid: 2dc4e9ee08402fe4c9ebb23ce4936c1b,
+        type: 2}
+    - target: {fileID: 114720731256205894, guid: ad3f7fb60d7db8f48be4c110faa7b901,
+        type: 2}
+      propertyPath: spawnPU
+      value: 
+      objectReference: {fileID: 1877915545}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad3f7fb60d7db8f48be4c110faa7b901, type: 2}
   m_IsPrefabParent: 0
@@ -76982,17 +76998,17 @@ CompositeCollider2D:
         Y: 10000002
       - X: 1320000000
         Y: 10000000
-    - - X: 1270000000
-        Y: 0
-      - X: 1280000000
-        Y: 1
-      - X: 1280000000
-        Y: 0
     - - X: 150000000
         Y: 0
       - X: 160000000
         Y: 1
       - X: 160000000
+        Y: 0
+    - - X: 1270000000
+        Y: 0
+      - X: 1280000000
+        Y: 1
+      - X: 1280000000
         Y: 0
     - - X: 10000000
         Y: -9999998
@@ -77002,17 +77018,17 @@ CompositeCollider2D:
         Y: -1
       - X: 1
         Y: -10000000
-    - - X: 140000000
-        Y: -10000000
-      - X: 150000000
-        Y: -9999998
-      - X: 150000000
-        Y: -10000000
     - - X: 1230000000
         Y: -10000000
       - X: 1240000000
         Y: -9999998
       - X: 1240000000
+        Y: -10000000
+    - - X: 140000000
+        Y: -10000000
+      - X: 150000000
+        Y: -9999998
+      - X: 150000000
         Y: -10000000
   m_CompositePaths:
     m_Paths:
@@ -77203,22 +77219,22 @@ CompositeCollider2D:
     - - {x: 131, y: 1}
       - {x: 132, y: 1.0000002}
       - {x: 132, y: 1}
-    - - {x: 127, y: 0}
-      - {x: 128, y: 0.0000001}
-      - {x: 128, y: 0}
     - - {x: 15, y: 0}
       - {x: 16, y: 0.0000001}
       - {x: 16, y: 0}
+    - - {x: 127, y: 0}
+      - {x: 128, y: 0.0000001}
+      - {x: 128, y: 0}
     - - {x: 1, y: -0.9999998}
       - {x: 0.9999998, y: 0}
       - {x: 0, y: -0.0000001}
       - {x: 0.0000001, y: -1}
-    - - {x: 14, y: -1}
-      - {x: 15, y: -0.9999998}
-      - {x: 15, y: -1}
     - - {x: 123, y: -1}
       - {x: 124, y: -0.9999998}
       - {x: 124, y: -1}
+    - - {x: 14, y: -1}
+      - {x: 15, y: -0.9999998}
+      - {x: 15, y: -1}
   m_VertexDistance: 0.0005
 --- !u!50 &1855406246
 Rigidbody2D:
@@ -77426,6 +77442,34 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3712bbbd43d7e8d4e808cff24db37585, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1877915544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1877915545}
+  m_Layer: 0
+  m_Name: Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1877915545
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1877915544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 89.92, y: 1.94, z: 0.005000691}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1885455591 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4007050670440572, guid: 3712bbbd43d7e8d4e808cff24db37585,
