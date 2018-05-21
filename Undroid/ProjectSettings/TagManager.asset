@@ -12,11 +12,6 @@ TagManager:
   - PlayerBullet
   - WoodBox
   - MetalBox
-  - Text1
-  - Text3
-  - Text4
-  - Text5
-  - Text2
   - Life
   - Laser
   - LaserDamage
@@ -35,7 +30,7 @@ TagManager:
   - enemy
   - playerBullet
   - enemyBullet
-  - 
+  - bossBullet
   - 
   - 
   - 

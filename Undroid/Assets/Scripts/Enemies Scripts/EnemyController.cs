@@ -16,6 +16,7 @@ public class EnemyController : MonoBehaviour {
 	public bool isShooting = false;
 	public bool staticEnemy;//defines if enemy is static or not
 	public bool startShootingRight;
+	public bool canShoot = true;
 
 
 	private SpriteRenderer enemySR;
@@ -47,7 +48,7 @@ public class EnemyController : MonoBehaviour {
 			StaticEnemyShooting ();
 		}
 
-		else if (isShooting) {
+		else if (isShooting && canShoot) {
 			EnemyShooting ();
 
 		} else if(!staticEnemy)

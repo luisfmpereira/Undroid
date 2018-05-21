@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Openlevel : MonoBehaviour {
 	private bool interaction;
 	private Animator anim;
-	public int level;
+	public string SceneName;
 
 	void Awake(){
 		anim = GetComponent<Animator>();
@@ -23,6 +23,6 @@ public class Openlevel : MonoBehaviour {
 	}
 
 	public void LoadScene(){
-		SceneManager.LoadScene(level);
+		SceneManager.LoadScene(SceneName);
 	}
 }

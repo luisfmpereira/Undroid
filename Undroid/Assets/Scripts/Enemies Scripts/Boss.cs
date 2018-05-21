@@ -7,14 +7,19 @@ public class Boss : MonoBehaviour {
 
 	public int bossHealth = 3;
 
-	public void KillBoss(){
+	public Rigidbody2D bulletPrefab;
+	public float bulletForce = 300;
+	public float shootCooldown = 2f;
+	protected float shootTimer;
+
+	protected void KillBoss(){
 		if (bossHealth <= 0) {
 			Destroy (this.gameObject);
 		}
 	}
 
 
-	void OnTriggerEnter2D(Collider2D hit){
+	protected void DamageByBoxes(Collider2D hit){
 		//damage by wood box
 		if (hit.gameObject.CompareTag ("WoodBox")) {
 			Destroy (hit.gameObject);
@@ -28,14 +33,12 @@ public class Boss : MonoBehaviour {
 
 	}
 
-	void OnCollisionEnter2D(Collision2D hit){
+	protected void DamageByPlayer(Collision2D hit){
 
 		//damage by player bullet
 		if (hit.gameObject.CompareTag ("PlayerBullet")) {
 			bossHealth--;
 		}
 	}
-
-
-
+		
 }

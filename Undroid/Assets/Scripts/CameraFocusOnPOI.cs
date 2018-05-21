@@ -49,7 +49,7 @@ public class CameraFocusOnPOI : MonoBehaviour {
 		if (focusCamera) {
 			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(focusObject.transform.position.x, focusObject.transform.position.y, -10), camMoveSpeed);
 			focusCounter -= Time.deltaTime;
-			cam.GetComponent<Camera>().GetComponent<Camera> ().orthographicSize = Mathf.Lerp(originalCamSize,newCamSize,5f);
+			cam.GetComponent<Camera>().orthographicSize = Mathf.Lerp(originalCamSize,newCamSize,5f);
 
 
 		}
@@ -57,7 +57,7 @@ public class CameraFocusOnPOI : MonoBehaviour {
 		if (focusCounter <= 0 && focusCamera) {
 			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, GameObject.FindGameObjectWithTag("Player").transform.position.y, -10), camMoveSpeed);
 			focusCamera = false;
-			cam.GetComponent<Camera>().GetComponent<Camera> ().orthographicSize = Mathf.Lerp(newCamSize,originalCamSize,5f);
+			cam.GetComponent<Camera>().orthographicSize = Mathf.Lerp(newCamSize,originalCamSize,5f);
 
 		}
 

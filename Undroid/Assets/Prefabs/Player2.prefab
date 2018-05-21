@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212679727438097800}
   - component: {fileID: 50643734484718168}
   - component: {fileID: 70374067465194338}
-  - component: {fileID: 70176184431369240}
   - component: {fileID: 95223065097283532}
   - component: {fileID: 114656062254117818}
   m_Layer: 9
@@ -123,7 +122,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1066224756947368}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.7734976, y: -0.3579352, z: 0}
+  m_LocalPosition: {x: 65.06, y: 0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4279597204669532}
@@ -152,21 +151,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &70176184431369240
-CapsuleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1066224756947368}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.005654007, y: -0.31696242}
-  m_Size: {x: 0.411308, y: 0.88392484}
-  m_Direction: 0
 --- !u!70 &70374067465194338
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -179,8 +163,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.005654007, y: -0.022616744}
-  m_Size: {x: 0.411308, y: 1.4952335}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.4, y: 1.5}
   m_Direction: 0
 --- !u!95 &95223065097283532
 Animator:
@@ -210,8 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cca3e7cab968124280aba8b191b8f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stand: {fileID: 70374067465194338}
-  crouch: {fileID: 70176184431369240}
+  playerCollider: {fileID: 0}
   maxSpeed: 4
   groundCheck: {fileID: 4674259514544310}
   ceilCheck: {fileID: 4785073148206354}
@@ -236,7 +219,6 @@ MonoBehaviour:
   allowDash: 1
   dashSpeed: 300
   dashCooldown: 1
-  laseAnim: {fileID: 0}
 --- !u!212 &212679727438097800
 SpriteRenderer:
   m_ObjectHideFlags: 1

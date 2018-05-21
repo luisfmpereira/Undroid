@@ -25,8 +25,13 @@ public class PlayerController : MonoBehaviour
 	private Rigidbody2D playerRB;
 	private SpriteRenderer playerSR;
 	private Animator playerAnim;
-	public CapsuleCollider2D stand;
-	public CapsuleCollider2D crouch;
+	public CapsuleCollider2D playerCollider;
+
+	//capsule collider modifications for crouching/standing
+	private Vector2 crouchSizeColl = new Vector2(0.4f,0.8f);
+	private Vector2 crouchOffColl = new Vector2(0f,-0.33f);
+	private Vector2 standSizeColl = new Vector2(0.4f,1.5f);
+	private Vector2 standOffColl = new Vector2(0f,0f);
 
 	//movement variables
 	public float maxSpeed = 3f;
@@ -71,32 +76,25 @@ public class PlayerController : MonoBehaviour
 	private float dashTimer;
 	public float dashCooldown = 1f;
 
-	//laser
-	public Animator laseAnim;
-
-
 	void Awake ()
 	{
 		playerRB = GetComponent<Rigidbody2D> ();
 		playerSR = GetComponent<SpriteRenderer> ();
 		playerAnim = GetComponent<Animator> ();
+		playerCollider = GetComponent<CapsuleCollider2D>();
+
+		playerCollider.size = standSizeColl;
+		playerCollider.offset = standOffColl;
 
 		moveDirection = 1;
 		transform.parent = null; //remove player from platform children if he dies while connected
 
 		currentHeart = hearts.Length - 1; //reset player hearts
-	}
 
-	void Start ()
-	{
+		groundCheckRadius = 0.1f; //radius for grounded
+
+	}
 		
-		//crouching properties
-		stand.enabled = true;
-		crouch.enabled = false;
-		groundCheckRadius = 0.1f;
-
-	}
-
 	void Update ()
 	{
 
@@ -117,7 +115,7 @@ public class PlayerController : MonoBehaviour
 		}
 
 		//dash cooldown
-		if (dashTimer > 0) {
+		if (allowDash && dashTimer > 0) {
 			dashTimer -= Time.deltaTime;
 		}
 			
@@ -200,14 +198,14 @@ public class PlayerController : MonoBehaviour
 	{
 
 		if (Input.GetButton ("Fire2")) {
-			stand.enabled = false;
-			crouch.enabled = true;
+			playerCollider.size = crouchSizeColl;
+			playerCollider.offset = crouchOffColl;
 			maxSpeed = 2f;
 			playerAnim.SetBool ("Crouching", true);
 		} else if (!Physics2D.OverlapCircle (ceilCheck.position, groundCheckRadius, whatIsGround)) {
 			//verify if ceiling above player
-			stand.enabled = true;
-			crouch.enabled = false;
+			playerCollider.size = standSizeColl;
+			playerCollider.offset = standOffColl;
 			maxSpeed = 3f;
 			playerAnim.SetBool ("Crouching", false);
 		}
