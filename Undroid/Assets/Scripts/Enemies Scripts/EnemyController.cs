@@ -42,16 +42,17 @@ public class EnemyController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
 
 		if (staticEnemy) {
 			StaticEnemyShooting ();
 		}
 
-		else if (isShooting && canShoot) {
+		if (isShooting) {
 			EnemyShooting ();
 
-		} else if(!staticEnemy)
+		} 
+		if(!staticEnemy)
 			MoveEnemy ();
 
 
@@ -106,7 +107,7 @@ public class EnemyController : MonoBehaviour {
 		flipSprite (enemySR, bulletDirection, AIVision); //flips sprite according to next shot
 
 
-		if (timer >= shootingCooldown) {
+		if (timer >= shootingCooldown && canShoot) {
 			Rigidbody2D bullet = Instantiate (bulletPrefab, enemy.transform.position, Quaternion.identity) as Rigidbody2D; //instantiate bullet
 			bullet.AddForce (new Vector2 (bulletDirection, 0) * 300); //add force to the prefab
 			timer = 0; //reset cooldown

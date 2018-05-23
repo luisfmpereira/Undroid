@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4365471628965818}
   m_Layer: 0
-  m_Name: 2
+  m_Name: EndPoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -36,9 +36,8 @@ GameObject:
   - component: {fileID: 4144422029073668}
   - component: {fileID: 212113861006813838}
   - component: {fileID: 61244834008487866}
-  - component: {fileID: 114430989048033858}
   m_Layer: 0
-  m_Name: dano
+  m_Name: DamageCollider
   m_TagString: LaserDamage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,8 +51,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4758487366405156}
+  - component: {fileID: 114181329617059310}
   m_Layer: 0
-  m_Name: pressing machine
+  m_Name: PressingMachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,9 +68,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4330704008238836}
   m_Layer: 0
-  m_Name: 1
+  m_Name: StartPoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -81,8 +81,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1399213322846412}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3492031, y: 1.26, z: -0.12792523}
-  m_LocalScale: {x: 2.1706717, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 1.39, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4758487366405156}
   m_RootOrder: 0
@@ -94,8 +94,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1874018638569184}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3492031, y: 1.21, z: -0.12792523}
-  m_LocalScale: {x: 2.1706717, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 1.39, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4758487366405156}
   m_RootOrder: 1
@@ -107,8 +107,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1135460777592816}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3492031, y: -1.3721919, z: -0.12792523}
-  m_LocalScale: {x: 2.1706717, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalScale: {x: 0, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4758487366405156}
   m_RootOrder: 2
@@ -120,7 +120,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1482974106106386}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4007969, y: 7.9421916, z: 0.12792523}
+  m_LocalPosition: {x: 1.85, y: 0.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4144422029073668}
@@ -154,24 +154,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.67, y: 1.52}
   m_EdgeRadius: 0
---- !u!114 &114430989048033858
+--- !u!114 &114181329617059310
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1399213322846412}
+  m_GameObject: {fileID: 1482974106106386}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58f6723c0c4483e40a548210d6aff2a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 0352dd9ff9d9dd3419792e14dc215686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platform: {fileID: 1399213322846412}
-  moveSpeed: 2
-  currentPoint: {fileID: 0}
-  points:
-  - {fileID: 4330704008238836}
-  - {fileID: 4365471628965818}
-  isPressed: 1
+  pressMachine: {fileID: 1399213322846412}
+  startPosition: {fileID: 4330704008238836}
+  endPosition: {fileID: 4365471628965818}
+  downSpeed: 10
+  upSpeed: 5
 --- !u!212 &212113861006813838
 SpriteRenderer:
   m_ObjectHideFlags: 1

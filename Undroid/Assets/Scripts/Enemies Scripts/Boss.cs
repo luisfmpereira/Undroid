@@ -14,6 +14,8 @@ public class Boss : MonoBehaviour {
 	public int BossLevel;
 	public GameObject PowerUpDropBoss;
 	public Transform spawnPU;
+
+
 	protected void KillBoss(){
 		if (bossHealth <= 0) {
 			if (BossLevel == 2) {
