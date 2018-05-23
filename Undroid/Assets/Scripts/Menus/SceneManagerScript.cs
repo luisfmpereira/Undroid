@@ -11,9 +11,23 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagerScript : MonoBehaviour {
 
+	public bool useQuit;
+	private float originalFixedTime;
+
+
+	void Awake(){
+		originalFixedTime = Time.fixedDeltaTime;
+
+		if(useQuit)
+			areYouSureQuit.SetActive (false);
+
+	}
+
 	public void LoadScene (string sceneName){
 
 		SceneManager.LoadScene (sceneName);
+		Time.timeScale = 1;
+		Time.fixedDeltaTime = originalFixedTime;
 
 	}
 
@@ -21,10 +35,6 @@ public class SceneManagerScript : MonoBehaviour {
 	public GameObject areYouSureQuit;
 
 
-	void Awake(){
-		areYouSureQuit.SetActive (false);
-
-	}
 
 	public void SureQuit(){
 		areYouSureQuit.SetActive (true);

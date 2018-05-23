@@ -208,13 +208,13 @@ MonoBehaviour:
   doubleJumpModifier: 1
   playerBulletPrefab: {fileID: 50524648910763498, guid: f8e10c703a395394c98434eadb11cd07,
     type: 2}
-  allowShooting: 1
+  allowShooting: 0
   bulletSpeed: 300
   muzzlePos: {fileID: 4279597204669532}
   hearts:
-  - {fileID: 114445124333131518, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
-  - {fileID: 114499406705975946, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
-  - {fileID: 114437819149339516, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   currentSceneName: 
   allowDash: 1
   dashSpeed: 300
