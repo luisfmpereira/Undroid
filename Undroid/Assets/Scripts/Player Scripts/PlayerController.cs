@@ -253,7 +253,7 @@ public class PlayerController : MonoBehaviour
 		}
 
 		//damage taken by enemy contact
-		if (hit.gameObject.CompareTag ("Enemy")) {
+		if (hit.gameObject.CompareTag ("Enemy") || hit.gameObject.CompareTag ("Boss") ) {
 			hearts [currentHeart].enabled = false;
 			currentHeart--;
 		}

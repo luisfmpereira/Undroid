@@ -40,8 +40,9 @@ public class Boss : MonoBehaviour {
 
 	}
 
-	protected void DamageByPlayer(Collision2D hit){
+	protected void DamageByPlayer(Collider2D hit){
 
+		Destroy (hit.gameObject);
 		//damage by player bullet
 		if (hit.gameObject.CompareTag ("PlayerBullet")) {
 			bossHealth--;
