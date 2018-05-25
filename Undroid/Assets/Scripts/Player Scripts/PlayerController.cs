@@ -11,9 +11,9 @@ using UnityEngine.SceneManagement;
 /// 
 /// Fire 1 = JoyY = e - interact
 /// Fire 2 = JoyB = s - crouch
-/// Fire 3 = JoyX = x or c - fire
+/// Fire 3 = JoyRB = x - fire
 /// Jump = JoyA = space - jump
-/// Dash = JoyRT = shift = dash
+/// Dash = JoyX = shift = dash
 ///  
 /// </summary>
 
@@ -186,10 +186,10 @@ public class PlayerController : MonoBehaviour
 	public void flipSprite (SpriteRenderer SR, float direction)
 	{
 
-		if (direction < 0)
+		if (direction < 0) 
 			SR.flipX = true;
 
-		if (direction > 0)
+		if (direction > 0) 
 			SR.flipX = false;
 	}
 

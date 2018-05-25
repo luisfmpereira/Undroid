@@ -13,14 +13,11 @@ public class Boss : MonoBehaviour {
 	protected float shootTimer;
 	public int BossLevel;
 	public GameObject PowerUpDropBoss;
-	public Transform spawnPU;
 
 
 	protected void KillBoss(){
 		if (bossHealth <= 0) {
-			if (BossLevel == 2) {
-				Instantiate (PowerUpDropBoss, spawnPU);
-			}
+			PowerUpDropBoss.SetActive (true);
 			Destroy (this.gameObject);
 		}
 	}
@@ -41,11 +38,10 @@ public class Boss : MonoBehaviour {
 	}
 
 	protected void DamageByPlayer(Collider2D hit){
-
-		Destroy (hit.gameObject);
 		//damage by player bullet
 		if (hit.gameObject.CompareTag ("PlayerBullet")) {
 			bossHealth--;
+			Destroy (hit.gameObject);
 		}
 	}
 		

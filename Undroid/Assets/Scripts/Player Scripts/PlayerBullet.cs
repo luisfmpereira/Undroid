@@ -13,6 +13,10 @@ public class PlayerBullet : MonoBehaviour {
 			Destroy (this.gameObject);
 		}
 
+		if (hit.gameObject.CompareTag ("MetalBox") || hit.gameObject.CompareTag ("WoodBox") ) {
+			Destroy (this.gameObject);
+		}
+
 	}
 
 

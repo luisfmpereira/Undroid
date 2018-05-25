@@ -7,6 +7,7 @@ public class AddPU : MonoBehaviour {
 	public bool powerUpBoot = false;
 	public bool powerUpShoot = false;
 	public bool powerUpDash = false;
+	public GameObject textColliderToActivate;
 
 	public RuntimeAnimatorController Player2;
 
@@ -16,6 +17,7 @@ public class AddPU : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D hit){
 		if (hit.gameObject.CompareTag ("Player") && interaction) {
+			textColliderToActivate.SetActive (true);
 			if (powerUpBoot) {
 				hit.gameObject.GetComponent<PlayerController> ().allowDoubleJump = true;
 				hit.gameObject.GetComponent<Animator> ().runtimeAnimatorController = Player2;
@@ -28,7 +30,9 @@ public class AddPU : MonoBehaviour {
 				hit.gameObject.GetComponent<PlayerController> ().allowDash = true;
 				hit.gameObject.GetComponent<Animator> ().runtimeAnimatorController = Player2;
 			}
+
 			gameObject.SetActive (false);
+
 		}
 	}
 }

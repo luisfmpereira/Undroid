@@ -11,6 +11,10 @@ public class BossLevel3 : Boss {
 	private bool move = true;
 
 
+	private float moveCooldown = 2f;
+	private float moveTimer = 0f;
+
+
 	void Start(){
 		bossRB = GetComponent<Rigidbody2D> ();
 		bossSR = GetComponent<SpriteRenderer> ();
@@ -19,13 +23,20 @@ public class BossLevel3 : Boss {
 
 	void Update(){
 		KillBoss ();
+
 		if (move)
 			MoveBoss ();
 
 		if (Mathf.Abs( bossRB.velocity.x ) <= 0.01 && !move) {
-			bossSR.flipX = !bossSR.flipX;
-			moveSpeed *= -1;
-			move = true;
+			
+			moveTimer -= Time.deltaTime;
+
+			if(moveTimer == moveCooldown)
+				bossSR.flipX = !bossSR.flipX;
+			if (moveTimer <= 0) {
+				moveSpeed *= -1;
+				move = true;
+			}
 
 		}
 		
@@ -38,7 +49,7 @@ public class BossLevel3 : Boss {
 	void MoveBoss(){
 
 		bossRB.velocity = new Vector2(moveSpeed,0);
-
+		moveTimer = moveCooldown;
 		move = false;
 
 
