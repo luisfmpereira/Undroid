@@ -77,7 +77,11 @@ public class BossLevel2 : Boss {
 	void OnTriggerEnter2D(Collider2D hit){
 
 		DamageByBoxes (hit);
-		DamageByPlayer (hit);
 	}
 
+	void OnCollisionEnter2D(Collision2D hit){
+
+		DamageByPlayer (hit);
+
+	}
 }

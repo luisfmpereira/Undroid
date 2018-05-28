@@ -23,7 +23,7 @@ public class PauseMenuController : MonoBehaviour {
 		}
 
 		void Update(){
-			if (Input.GetButtonDown ("Pause")) {
+			if (Input.GetKeyDown (KeyCode.Escape)) {
 			pause = !pause;
 
 			if (pause)

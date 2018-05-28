@@ -15,7 +15,6 @@ TagManager:
   - Life
   - Laser
   - LaserDamage
-  - Boss
   layers:
   - Default
   - TransparentFX

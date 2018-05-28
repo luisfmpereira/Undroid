@@ -11,9 +11,9 @@ using UnityEngine.SceneManagement;
 /// 
 /// Fire 1 = JoyY = e - interact
 /// Fire 2 = JoyB = s - crouch
-/// Fire 3 = JoyRB = x - fire
+/// Fire 3 = JoyX = x or c - fire
 /// Jump = JoyA = space - jump
-/// Dash = JoyX = shift = dash
+/// Dash = JoyRT = shift = dash
 ///  
 /// </summary>
 
@@ -186,10 +186,10 @@ public class PlayerController : MonoBehaviour
 	public void flipSprite (SpriteRenderer SR, float direction)
 	{
 
-		if (direction < 0) 
+		if (direction < 0)
 			SR.flipX = true;
 
-		if (direction > 0) 
+		if (direction > 0)
 			SR.flipX = false;
 	}
 
@@ -253,7 +253,7 @@ public class PlayerController : MonoBehaviour
 		}
 
 		//damage taken by enemy contact
-		if (hit.gameObject.CompareTag ("Enemy") || hit.gameObject.CompareTag ("Boss") ) {
+		if (hit.gameObject.CompareTag ("Enemy")) {
 			hearts [currentHeart].enabled = false;
 			currentHeart--;
 		}
