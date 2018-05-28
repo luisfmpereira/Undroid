@@ -6,12 +6,17 @@ public class PlayerBullet : MonoBehaviour {
 
 	public GameObject enemy;
 
-	void OnCollisionEnter2D(Collision2D hit){
-
+	void OnTriggerEnter2D(Collider2D hit){
+		
 		if (hit.gameObject.CompareTag ("Enemy")) {
 			hit.gameObject.GetComponentInChildren<EnemyDamageController>().enemyLife--;
+			Destroy (this.gameObject);
 		}
-		Destroy (this.gameObject);
+
+		if (hit.gameObject.CompareTag ("MetalBox") || hit.gameObject.CompareTag ("WoodBox") ) {
+			Destroy (this.gameObject);
+		}
+
 	}
 
 
