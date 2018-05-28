@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114720731256205894}
   m_Layer: 11
   m_Name: BossGusmao
-  m_TagString: Enemy
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,11 +144,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossHealth: 3
-  jumpForce: 1000
-  jumpCooldown: 5
   bulletPrefab: {fileID: 50214019752817142, guid: 1e4205ad3f2b0c746928f4415bbd0ba7,
     type: 2}
   bulletForce: 300
+  shootCooldown: 2
+  BossLevel: 0
+  PowerUpDropBoss: {fileID: 0}
+  spawnPU: {fileID: 0}
+  jumpForce: 1000
+  jumpCooldown: 5
+  bossHealthBar: {fileID: 0}
 --- !u!212 &212961534573986880
 SpriteRenderer:
   m_ObjectHideFlags: 1
