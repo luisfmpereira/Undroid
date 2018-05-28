@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CameraFollow : MonoBehaviour 
 {
+	public bool isWorking = true;
 	public float xMargin = 1f;		// Distance in the x axis the player can move before the camera follows.
 	public float yMargin = 1f;		// Distance in the y axis the player can move before the camera follows.
 	public float xSmooth = 8f;		// How smoothly the camera catches up with it's target movement in the x axis.
@@ -37,6 +38,7 @@ public class CameraFollow : MonoBehaviour
 
 	void FixedUpdate ()
 	{
+		if(isWorking)
 		TrackPlayer();
 	}
 

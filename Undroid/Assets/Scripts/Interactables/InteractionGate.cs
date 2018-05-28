@@ -11,6 +11,8 @@ public class InteractionGate : MonoBehaviour {
 	public bool gateTriggered = false;
 	private bool interacted;
 	public Vector2 newmaxXAndY;
+	public Sprite green;
+	public GameObject button;
 
 	void Update(){
 		interacted = Input.GetButtonDown ("Fire1");
@@ -25,8 +27,11 @@ public class InteractionGate : MonoBehaviour {
 	void OnTriggerStay2D (Collider2D hit){
 		if(hit.gameObject.tag == "Player" && interacted == true){
 			if (!gateTriggered) {
+				cam.GetComponent<CameraFollow> ().isWorking = false;
 				focusCamera = true;
 				focusCounter = focusTime;
+				button.gameObject.GetComponent<SpriteRenderer> ().sprite = green;
+
 			}
 
 
@@ -43,7 +48,7 @@ public class InteractionGate : MonoBehaviour {
 	private bool focusCamera = false;
 	public float focusTime = 3f;
 	private float focusCounter = 0;
-	public float camMoveSpeed = 0.5f;
+	public float camMoveSpeed = 10;
 
 	public bool useFocus = true;
 
@@ -56,14 +61,15 @@ public class InteractionGate : MonoBehaviour {
 
 		//camera focusing on POI
 		if (focusCamera) {
-			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(focusObject.transform.position.x, focusObject.transform.position.y, -10), camMoveSpeed);
+			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(focusObject.transform.position.x, focusObject.transform.position.y, -10), camMoveSpeed * Time.deltaTime);
 			focusCounter -= Time.deltaTime;
 		}
 
 		if (focusCounter <= 0 && focusCamera) {
 			
-			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, GameObject.FindGameObjectWithTag("Player").transform.position.y, -10), camMoveSpeed);
+			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, GameObject.FindGameObjectWithTag("Player").transform.position.y, -10), camMoveSpeed * Time.deltaTime);
 			focusCamera = false;
+			cam.GetComponent<CameraFollow> ().isWorking = true;
 		}
 
 
