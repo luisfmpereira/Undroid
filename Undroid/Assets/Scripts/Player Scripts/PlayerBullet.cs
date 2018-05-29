@@ -8,7 +8,7 @@ public class PlayerBullet : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D hit){
 		
-		if (hit.gameObject.CompareTag ("Enemy")) {
+		if (hit.gameObject.CompareTag ("Enemy") || hit.gameObject.CompareTag ("MovableEnemy")){
 			hit.gameObject.GetComponentInChildren<EnemyDamageController>().enemyLife--;
 			Destroy (this.gameObject);
 		}

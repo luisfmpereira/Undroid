@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
+using System.Linq; //used to compare multiple tags
 
 public class ConveyorController : MonoBehaviour {
 	public float maxSpeed = 2f;
@@ -9,7 +9,7 @@ public class ConveyorController : MonoBehaviour {
 	public bool goRight;
 	private int direction;
 
-	string[] movableTags = { "Player", "WoodBox", "MetalBox" };
+	string[] movableTags = { "Player", "WoodBox", "MetalBox", "MovableEnemy" };
 
 	void Update(){
 		if (goRight)

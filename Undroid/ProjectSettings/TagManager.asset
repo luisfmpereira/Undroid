@@ -16,6 +16,12 @@ TagManager:
   - Laser
   - LaserDamage
   - Boss
+  - Text1
+  - Text3
+  - Text4
+  - Text5
+  - Text2
+  - MovableEnemy
   layers:
   - Default
   - TransparentFX

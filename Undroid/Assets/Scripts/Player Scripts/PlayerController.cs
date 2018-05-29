@@ -4,8 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
-
 /// <summary>
 /// Player controller.
 /// 
@@ -258,12 +256,7 @@ public class PlayerController : MonoBehaviour
 			currentHeart--;
 		}
 
-		//turn plyer child of the platform - used to smooth movement
-		if (hit.gameObject.CompareTag ("Platform")) {
-
-			transform.parent = hit.transform;
-		}
-
+		//transfer movement to player in contact
 		if (hit.gameObject.CompareTag ("LaserDamage")) {
 			
 			hearts [currentHeart].enabled = false;
@@ -272,17 +265,18 @@ public class PlayerController : MonoBehaviour
 			playerRB.AddForce (new Vector2 (moveDirection * 225 * -1, 0));
 
 		}
+
+		//turn plyer child of the platform - used to smooth movement
+		if (hit.gameObject.CompareTag ("Platform"))
+			transform.parent = hit.transform;
+
+
 	}
 
 	void OnCollisionExit2D (Collision2D hit)
 	{
-
-
-		if (hit.gameObject.CompareTag ("Platform")) {
-
+		if (hit.gameObject.CompareTag ("Platform"))
 			transform.parent = null;
-		}
-
 	}
 
 

@@ -7,12 +7,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 
 public class SceneManagerScript : MonoBehaviour {
 
 	public bool useQuit;
 	private float originalFixedTime;
+	public GameObject quitYes;
+	public GameObject startGame;
 
 
 	void Awake(){
@@ -38,10 +41,13 @@ public class SceneManagerScript : MonoBehaviour {
 
 	public void SureQuit(){
 		areYouSureQuit.SetActive (true);
+		EventSystem.current.SetSelectedGameObject (quitYes);
+
 	}
 
 	public void SureQuitNo(){
 		areYouSureQuit.SetActive (false);
+		EventSystem.current.SetSelectedGameObject (startGame);
 	}
 
 	public void QuitGame(){

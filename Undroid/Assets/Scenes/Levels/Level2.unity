@@ -1295,15 +1295,24 @@ Prefab:
       objectReference: {fileID: 984540962}
     - target: {fileID: 1985747218764032, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1515021542062242, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1167925619601832, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &363193805 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1117692304079794, guid: 7334bb643264ccb41b59161c19cbe756,
+    type: 2}
+  m_PrefabInternal: {fileID: 363193804}
 --- !u!1 &368729357
 GameObject:
   m_ObjectHideFlags: 0
@@ -2779,6 +2788,7 @@ MonoBehaviour:
   dialogueText: {fileID: 114708309782742080, guid: 7334bb643264ccb41b59161c19cbe756,
     type: 2}
   dialogueTextSize: 50
+  maxTextTimer: 3
 --- !u!61 &703008156
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3089,6 +3099,11 @@ Prefab:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 894287887}
+    - target: {fileID: 114663754868089550, guid: c0945d960552a12408307ba92d6c57d7,
+        type: 2}
+      propertyPath: m_FirstSelected
+      value: 
+      objectReference: {fileID: 363193805}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c0945d960552a12408307ba92d6c57d7, type: 2}
   m_IsPrefabParent: 0
@@ -4201,6 +4216,10 @@ Prefab:
       propertyPath: focusTime
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1910787110991578, guid: 4f529793978fac14fa871f54a58d1dae, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f529793978fac14fa871f54a58d1dae, type: 2}
   m_IsPrefabParent: 0
@@ -5282,6 +5301,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114182385389001132, guid: 2dc4e9ee08402fe4c9ebb23ce4936c1b,
+        type: 2}
+      propertyPath: textToShow
+      value: 
+      objectReference: {fileID: 703008154}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2dc4e9ee08402fe4c9ebb23ce4936c1b, type: 2}
   m_IsPrefabParent: 0

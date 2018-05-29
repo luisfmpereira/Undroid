@@ -5,12 +5,18 @@ using UnityEngine;
 public class EnemyDamageController : MonoBehaviour {
 
 	public int enemyLife = 2;
+	public bool movableEnemy = false;
 
 	void Update() {
 
 		if (enemyLife <= 0) {
-			GameObject enemyParent = (this.transform.parent.gameObject).transform.parent.gameObject;
-			Destroy (enemyParent.gameObject);
+			if (!movableEnemy) {
+				GameObject enemyParent = (this.transform.parent.gameObject).transform.parent.gameObject;
+				Destroy (enemyParent.gameObject);
+			}
+
+			if(movableEnemy)
+				Destroy (this.transform.parent.gameObject);
 		}
 	}
 

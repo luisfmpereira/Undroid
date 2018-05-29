@@ -1081,6 +1081,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useQuit: 1
+  quitYes: {fileID: 468558626}
+  startGame: {fileID: 1378387418}
   areYouSureQuit: {fileID: 713376853}
 --- !u!4 &1234024630
 Transform:

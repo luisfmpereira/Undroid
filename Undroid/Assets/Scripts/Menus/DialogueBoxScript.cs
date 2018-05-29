@@ -11,6 +11,8 @@ public class DialogueBoxScript : MonoBehaviour {
 	public Text dialogueText;
 	public int dialogueTextSize = 50;
 	private float originalFixedTime;
+	private float textTimer;
+	public float maxTextTimer = 3f;
 
 
 	private bool isShowing;
@@ -25,7 +27,10 @@ public class DialogueBoxScript : MonoBehaviour {
 
 
 	void Update(){
-		if (isShowing && Input.GetButtonDown ("Fire1")) {
+		if (isShowing)
+			textTimer -= Time.deltaTime;
+
+		if (isShowing && (Input.GetButtonDown ("Fire1")||textTimer <= 0)){
 			//unlock time
 			//Time.timeScale = 1;
 			//Time.fixedDeltaTime = originalFixedTime;
@@ -33,6 +38,7 @@ public class DialogueBoxScript : MonoBehaviour {
 			if (textsToDisplay.Length == currentText + 1) {
 				dialogueBox.SetActive (false);
 				this.gameObject.SetActive (false);
+				isShowing = false;
 			}
 			else {
 				currentText++;
@@ -48,6 +54,7 @@ public class DialogueBoxScript : MonoBehaviour {
 		//Time.fixedDeltaTime = 0;
 
 		//set new text
+		textTimer = maxTextTimer;
 		isShowing = true;
 		dialogueText.text = text;
 		dialogueText.fontSize = dialogueTextSize;
