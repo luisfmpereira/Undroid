@@ -22,6 +22,7 @@ TagManager:
   - Text5
   - Text2
   - MovableEnemy
+  - KillZone
   layers:
   - Default
   - TransparentFX

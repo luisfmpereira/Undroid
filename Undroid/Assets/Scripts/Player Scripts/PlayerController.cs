@@ -251,7 +251,7 @@ public class PlayerController : MonoBehaviour
 		}
 
 		//damage taken by enemy contact
-		if (hit.gameObject.CompareTag ("Enemy") || hit.gameObject.CompareTag ("Boss") ) {
+		if (hit.gameObject.CompareTag ("Enemy") || hit.gameObject.CompareTag ("Boss") || hit.gameObject.CompareTag ("MovableEnemy")) {
 			hearts [currentHeart].enabled = false;
 			currentHeart--;
 		}
@@ -283,6 +283,9 @@ public class PlayerController : MonoBehaviour
 
 	void OnTriggerEnter2D (Collider2D hit)
 	{
+		if (hit.gameObject.CompareTag ("KillZone")) {
+			currentHeart = -1;
+		}
 		if (hit.gameObject.CompareTag ("Life") && currentHeart < 2) {
 			Destroy (hit.gameObject);
 			currentHeart++;
