@@ -74,8 +74,15 @@ public class PlayerController : MonoBehaviour
 	private float dashTimer;
 	public float dashCooldown = 1f;
 
+	//audio
+	public AudioManager audioManager;
+	public string Die = "Die";
+	public string Hurt = "Hurt";
+
+
 	void Awake ()
 	{
+		audioManager = AudioManager.instance;
 		playerRB = GetComponent<Rigidbody2D> ();
 		playerSR = GetComponent<SpriteRenderer> ();
 		playerAnim = GetComponent<Animator> ();
@@ -247,23 +254,34 @@ public class PlayerController : MonoBehaviour
 			Destroy (hit.gameObject);
 			hearts [currentHeart].enabled = false;
 			currentHeart--;
-		
+			if (currentHeart >= 0)
+				audioManager.PlaySound (Hurt);
+			else
+				audioManager.PlaySound (Die);
 		}
 
 		//damage taken by enemy contact
 		if (hit.gameObject.CompareTag ("Enemy") || hit.gameObject.CompareTag ("Boss") || hit.gameObject.CompareTag ("MovableEnemy")) {
 			hearts [currentHeart].enabled = false;
 			currentHeart--;
+			if (currentHeart >= 0)
+				audioManager.PlaySound (Hurt);
+			else
+				audioManager.PlaySound (Die);
 		}
 
 		//transfer movement to player in contact
 		if (hit.gameObject.CompareTag ("LaserDamage")) {
-			
+
 			hearts [currentHeart].enabled = false;
 			currentHeart--;
 
 			playerRB.AddForce (new Vector2 (moveDirection * 225 * -1, 0));
 
+			if (currentHeart >= 0)
+				audioManager.PlaySound (Hurt);
+			else
+				audioManager.PlaySound (Die);
 		}
 
 		//turn plyer child of the platform - used to smooth movement
@@ -285,6 +303,7 @@ public class PlayerController : MonoBehaviour
 	{
 		if (hit.gameObject.CompareTag ("KillZone")) {
 			currentHeart = -1;
+			audioManager.PlaySound (Die);
 		}
 		if (hit.gameObject.CompareTag ("Life") && currentHeart < 2) {
 			Destroy (hit.gameObject);

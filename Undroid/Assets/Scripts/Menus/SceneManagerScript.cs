@@ -16,9 +16,15 @@ public class SceneManagerScript : MonoBehaviour {
 	private float originalFixedTime;
 	public GameObject quitYes;
 	public GameObject startGame;
+	private AudioManager audioManager;
+	[SerializeField]
+	string click = "Click";
+	[SerializeField]
+	string start = "Background";
 
 
 	void Awake(){
+		audioManager = AudioManager.instance;
 		originalFixedTime = Time.fixedDeltaTime;
 
 		if(useQuit)
@@ -58,4 +64,15 @@ public class SceneManagerScript : MonoBehaviour {
 		#endif
 	}
 
+	public void playEnter(){
+		audioManager.PlaySound (click);
+	}
+
+	public void playSelect(){
+		audioManager.PlaySound ("Select");
+	}
+
+	public void playBackgroundMusic(){
+		audioManager.PlaySound (start);
+	}
 }
