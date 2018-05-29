@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CameraBossFight : MonoBehaviour {
+public class CameraBossFights : MonoBehaviour {
 
 
 	public GameObject mainCamera;
@@ -18,7 +18,7 @@ public class CameraBossFight : MonoBehaviour {
 	void OnTriggerStay2D(Collider2D hit){
 		if (hit.gameObject.CompareTag ("Player")) {
 		
-			mainCamera.GetComponent<Camera> ().orthographicSize = originalCamSize*2;
+			mainCamera.GetComponent<Camera> ().orthographicSize = originalCamSize*2.5f;
 			bossHealthPanel.SetActive (true);
 
 		}

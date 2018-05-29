@@ -168,9 +168,13 @@ MonoBehaviour:
   speed: 1
   gateTriggered: 0
   newmaxXAndY: {x: 75, y: 2.08}
+  green: {fileID: 21300006, guid: 845d1938d84e26a40b5bdaa96d18aeb8, type: 3}
+  button: {fileID: 0}
   cam: {fileID: 0}
+  focusObject: {fileID: 0}
   focusTime: 3
-  camMoveSpeed: 0.5
+  camMoveSpeed: 1
+  useFocus: 0
 --- !u!212 &212695533793017160
 SpriteRenderer:
   m_ObjectHideFlags: 1

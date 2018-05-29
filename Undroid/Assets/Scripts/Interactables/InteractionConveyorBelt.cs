@@ -5,6 +5,7 @@ using UnityEngine;
 public class InteractionConveyorBelt : MonoBehaviour {
 	public GameObject conveyorBelt;
 	private bool interacted = false;
+	public Sprite green;
 
 
 
@@ -23,9 +24,11 @@ public class InteractionConveyorBelt : MonoBehaviour {
 
 			//set camera focus for the first time
 			if (!conveyorBelt.GetComponent<ConveyorController> ().isrunning) {
+				cam.GetComponent<CameraFollow> ().isWorking = false;
+				gameObject.GetComponent<SpriteRenderer> ().sprite = green;
 				focusCamera = true;
 				focusCounter = focusTime;
-			}
+				}
 
 			//activate conveyor belt
 			conveyorBelt.GetComponent<ConveyorController> ().isrunning = true;
@@ -43,7 +46,7 @@ public class InteractionConveyorBelt : MonoBehaviour {
 	private bool focusCamera = false;
 	public float focusTime = 5f;
 	private float focusCounter = 0;
-	public float camMoveSpeed = 0.5f;
+	public float camMoveSpeed = 10;
 
 	public bool useFocus = true;
 
@@ -51,13 +54,14 @@ public class InteractionConveyorBelt : MonoBehaviour {
 
 		//camera focusing on POI
 		if (focusCamera) {
-			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(focusObject.transform.position.x, focusObject.transform.position.y, -10), camMoveSpeed);
+			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(focusObject.transform.position.x, focusObject.transform.position.y, -10), camMoveSpeed * Time.deltaTime);
 			focusCounter -= Time.deltaTime;
 		}
 
 		if (focusCounter <= 0 && focusCamera) {
-			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, GameObject.FindGameObjectWithTag("Player").transform.position.y, -10), camMoveSpeed);
+			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, GameObject.FindGameObjectWithTag("Player").transform.position.y, -10), camMoveSpeed * Time.deltaTime);
 			focusCamera = false;
+			cam.GetComponent<CameraFollow> ().isWorking = true;
 		}
 
 
