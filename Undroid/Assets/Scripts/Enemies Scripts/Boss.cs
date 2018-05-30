@@ -1,19 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boss : MonoBehaviour {
 
 
 	public int bossHealth = 3;
+	protected float bossMaxHealth;
 
 	public Rigidbody2D bulletPrefab;
 	public float bulletForce = 300;
 	public float shootCooldown = 2f;
 	protected float shootTimer;
-	public int BossLevel;
 	public GameObject PowerUpDropBoss;
+	public Image bossHealthBar;
 
+	public bool turnBossOn;
+
+	void Awake(){
+		bossMaxHealth = bossHealth;
+	}
 
 	protected void KillBoss(){
 		if (bossHealth <= 0) {
@@ -43,6 +50,11 @@ public class Boss : MonoBehaviour {
 			bossHealth--;
 			Destroy (hit.gameObject);
 		}
+	}
+
+	protected void ShowLife(){
+		
+		bossHealthBar.fillAmount = bossHealth / bossMaxHealth;
 	}
 		
 }
