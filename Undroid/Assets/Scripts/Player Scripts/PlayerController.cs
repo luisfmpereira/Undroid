@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 	//components
 	private Rigidbody2D playerRB;
 	private SpriteRenderer playerSR;
+	public SpriteRenderer playerArm;
 	private Animator playerAnim;
 	public CapsuleCollider2D playerCollider;
 
@@ -163,6 +164,7 @@ public class PlayerController : MonoBehaviour
 			moveDirection = -1;
 
 		flipSprite (playerSR, xMove); //control sprite direction
+		flipSprite (playerArm , xMove);
 
 	}
 

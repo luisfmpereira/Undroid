@@ -1,0 +1,1257 @@
+fileFormatVersion: 2
+guid: 99b2bafc3b9ed5b4c90b3c96051c6c22
+timeCreated: 1527711061
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PhilipSprite30-05_0
+    21300002: PhilipSprite30-05_1
+    21300004: PhilipSprite30-05_2
+    21300006: PhilipSprite30-05_3
+    21300008: PhilipSprite30-05_4
+    21300010: PhilipSprite30-05_5
+    21300012: PhilipSprite30-05_6
+    21300014: PhilipSprite30-05_7
+    21300016: PhilipSprite30-05_8
+    21300018: PhilipSprite30-05_9
+    21300020: PhilipSprite30-05_10
+    21300022: PhilipSprite30-05_11
+    21300024: PhilipSprite30-05_12
+    21300026: PhilipSprite30-05_13
+    21300028: PhilipSprite30-05_14
+    21300030: PhilipSprite30-05_15
+    21300032: PhilipSprite30-05_16
+    21300034: PhilipSprite30-05_17
+    21300036: PhilipSprite30-05_18
+    21300038: PhilipSprite30-05_19
+    21300040: PhilipSprite30-05_20
+    21300042: PhilipSprite30-05_21
+    21300044: PhilipSprite30-05_22
+    21300046: PhilipSprite30-05_23
+    21300048: PhilipSprite30-05_24
+    21300050: PhilipSprite30-05_25
+    21300052: PhilipSprite30-05_26
+    21300054: PhilipSprite30-05_27
+    21300056: PhilipSprite30-05_28
+    21300058: PhilipSprite30-05_29
+    21300060: PhilipSprite30-05_30
+    21300062: PhilipSprite30-05_31
+    21300064: PhilipSprite30-05_32
+    21300066: PhilipSprite30-05_33
+    21300068: PhilipSprite30-05_34
+    21300070: PhilipSprite30-05_35
+    21300072: PhilipSprite30-05_36
+    21300074: PhilipSprite30-05_37
+    21300076: PhilipSprite30-05_38
+    21300078: PhilipSprite30-05_39
+    21300080: PhilipSprite30-05_40
+    21300082: PhilipSprite30-05_41
+    21300084: PhilipSprite30-05_42
+    21300086: PhilipSprite30-05_43
+    21300088: PhilipSprite30-05_44
+    21300090: PhilipSprite30-05_45
+    21300092: PhilipSprite30-05_46
+    21300094: PhilipSprite30-05_47
+    21300096: PhilipSprite30-05_48
+    21300098: PhilipSprite30-05_49
+    21300100: PhilipSprite30-05_50
+    21300102: PhilipSprite30-05_51
+    21300104: PhilipSprite30-05_52
+    21300106: PhilipSprite30-05_53
+    21300108: PhilipSprite30-05_54
+    21300110: PhilipSprite30-05_55
+    21300112: PhilipSprite30-05_56
+    21300114: PhilipSprite30-05_57
+    21300116: PhilipSprite30-05_58
+    21300118: PhilipSprite30-05_59
+    21300120: PhilipSprite30-05_60
+    21300122: PhilipSprite30-05_61
+    21300124: PhilipSprite30-05_62
+    21300126: PhilipSprite30-05_63
+    21300128: PhilipSprite30-05_64
+    21300130: PhilipSprite30-05_65
+    21300132: PhilipSprite30-05_66
+    21300134: PhilipSprite30-05_67
+    21300136: PhilipSprite30-05_68
+    21300138: PhilipSprite30-05_69
+    21300140: PhilipSprite30-05_70
+    21300142: PhilipSprite30-05_71
+    21300144: PhilipSprite30-05_72
+    21300146: PhilipSprite30-05_73
+    21300148: PhilipSprite30-05_74
+    21300150: PhilipSprite30-05_75
+    21300152: PhilipSprite30-05_76
+    21300154: PhilipSprite30-05_77
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 180
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PhilipSprite30-05_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2169
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_1
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 2169
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_2
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 2169
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_3
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 2169
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_4
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 2169
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_5
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 2169
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_6
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 2169
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_7
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 2169
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_8
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 2169
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_9
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 2169
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_10
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 2169
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1857
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_12
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1857
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_13
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1857
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_14
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1857
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_15
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1857
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_16
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 1857
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_17
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1857
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_18
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1857
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_19
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1857
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_20
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 1857
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_21
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 1857
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1545
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_23
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1545
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_24
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1545
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_25
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1545
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_26
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1545
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_27
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 1545
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_28
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1545
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_29
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1545
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_30
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1545
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1231
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_32
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1233
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_33
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1233
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_34
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1233
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_35
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1233
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_36
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 1233
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_37
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1233
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_38
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1233
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_39
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1233
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_40
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 1233
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_41
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 1233
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_42
+      rect:
+        serializedVersion: 2
+        x: 2915
+        y: 1233
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 931
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_44
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 931
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_45
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 931
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_46
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 931
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_47
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 931
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_48
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 931
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_49
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 931
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_50
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 931
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_51
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 931
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_52
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 931
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_53
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 931
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_54
+      rect:
+        serializedVersion: 2
+        x: 2915
+        y: 931
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 618
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_56
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 618
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_57
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 618
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_58
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 618
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_59
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 618
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_60
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 618
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_61
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 618
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_62
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 618
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_63
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 618
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_64
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 297
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_65
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 297
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_66
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 297
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_67
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 297
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_68
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 297
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 265
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_70
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 265
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_71
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 0
+        width: 265
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_72
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 0
+        width: 265
+        height: 299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_73
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 0
+        width: 252
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_74
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 0
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_75
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 0
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_76
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 0
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PhilipSprite30-05_77
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 0
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
