@@ -73,16 +73,22 @@ public class PlayerController : MonoBehaviour
 	public float dashSpeed = 6f;
 	private float dashTimer;
 	public float dashCooldown = 1f;
+	public float dashTimerAnim;
+	public float dashCdAnim = 1;
 
 	//audio
 	public AudioManager audioManager;
 	public string Die = "Die";
 	public string Hurt = "Hurt";
 
+	//shoot
+	public float shootTimer;
+	public float shootCd = 0.2f;
+
 
 	void Awake ()
 	{
-		audioManager = AudioManager.instance;
+		
 		playerRB = GetComponent<Rigidbody2D> ();
 		playerSR = GetComponent<SpriteRenderer> ();
 		playerAnim = GetComponent<Animator> ();
@@ -98,6 +104,10 @@ public class PlayerController : MonoBehaviour
 
 		groundCheckRadius = 0.1f; //radius for grounded
 
+	}
+
+	void Start (){
+		audioManager = AudioManager.instance;
 	}
 		
 	void Update ()
@@ -123,6 +133,19 @@ public class PlayerController : MonoBehaviour
 		if (allowDash && dashTimer > 0) {
 			dashTimer -= Time.deltaTime;
 		}
+
+		if (dashTimerAnim > 0) {
+			dashTimerAnim -= Time.deltaTime;
+		} 
+		if (dashTimerAnim < 0) {
+			playerAnim.SetBool ("Dash", false);
+		}
+		if(shootTimer > 0){
+			shootTimer -= Time.deltaTime;
+			} 
+		if (shootTimer < 0) {
+				playerAnim.SetBool ("Shooting", false);
+			}
 			
 	}
 
@@ -224,9 +247,9 @@ public class PlayerController : MonoBehaviour
 				bullet = Instantiate (playerBulletPrefab, muzzlePos.position, Quaternion.identity) as Rigidbody2D;
 				//add force to bullet
 				bullet.AddForce (new Vector2 (moveDirection, 0) * bulletSpeed);
-
 				Destroy (bullet.gameObject, 3);
-
+				playerAnim.SetBool ("Shooting", true);
+				shootTimer = shootCd;
 			}
 		}
 	}
@@ -237,6 +260,8 @@ public class PlayerController : MonoBehaviour
 			if (Input.GetButtonDown ("Dash") && dashTimer <= 0) {
 				playerRB.AddForce (new Vector2 (moveDirection * dashSpeed, 0));
 				dashTimer = dashCooldown;
+				dashTimerAnim = dashCdAnim;
+				playerAnim.SetBool ("Dash", true);
 			}
 
 		}

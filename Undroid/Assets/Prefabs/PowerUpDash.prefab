@@ -99,7 +99,8 @@ MonoBehaviour:
   powerUpBoot: 0
   powerUpShoot: 0
   powerUpDash: 1
-  Player2: {fileID: 9100000, guid: 77b31653d047a47458211fa827fbfad0, type: 2}
+  textToShow: {fileID: 1894675764503236, guid: 4e278946b1d683a42901f642e88a1926, type: 2}
+  Player2: {fileID: 9100000, guid: 4363dc57a0b43714e911fad96d64c850, type: 2}
 --- !u!212 &212481985487876304
 SpriteRenderer:
   m_ObjectHideFlags: 1
