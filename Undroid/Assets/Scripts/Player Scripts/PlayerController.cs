@@ -112,7 +112,11 @@ public class PlayerController : MonoBehaviour
 		
 	void Update ()
 	{
+		//cheat
 
+		if(Input.GetKeyDown(KeyCode.Keypad9)){
+			currentHeart = 9999;
+		}
 		playerMove (); //call move function
 
 		playerJump (); //call jump function
