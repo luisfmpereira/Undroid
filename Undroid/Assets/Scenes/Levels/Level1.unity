@@ -35278,20 +35278,89 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1632490193871572, guid: 64491e0114feec24e9762ea5de9ab357, type: 2}
+      propertyPath: m_Name
+      value: GateMechanism (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445756238291492, guid: 64491e0114feec24e9762ea5de9ab357, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4212216045015874, guid: 64491e0114feec24e9762ea5de9ab357, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -6.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 61851701704702772, guid: 64491e0114feec24e9762ea5de9ab357,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 5.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 61851701704702772, guid: 64491e0114feec24e9762ea5de9ab357,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 61851701704702772, guid: 64491e0114feec24e9762ea5de9ab357,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 61851701704702772, guid: 64491e0114feec24e9762ea5de9ab357,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114355390791540652, guid: 64491e0114feec24e9762ea5de9ab357,
+        type: 2}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1450997681}
+    - target: {fileID: 114355390791540652, guid: 64491e0114feec24e9762ea5de9ab357,
+        type: 2}
+      propertyPath: newmaxXAndY.x
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 114355390791540652, guid: 64491e0114feec24e9762ea5de9ab357,
+        type: 2}
+      propertyPath: newmaxXAndY.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012828225211054, guid: 64491e0114feec24e9762ea5de9ab357, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012828225211054, guid: 64491e0114feec24e9762ea5de9ab357, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.57
+      objectReference: {fileID: 0}
     - target: {fileID: 114355390791540652, guid: 64491e0114feec24e9762ea5de9ab357,
         type: 2}
       propertyPath: cameraPos
       value: 
       objectReference: {fileID: 1450997681}
+    - target: {fileID: 4012828225211054, guid: 64491e0114feec24e9762ea5de9ab357, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445756238291492, guid: 64491e0114feec24e9762ea5de9ab357, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114355390791540652, guid: 64491e0114feec24e9762ea5de9ab357,
+        type: 2}
+      propertyPath: useFocus
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114355390791540652, guid: 64491e0114feec24e9762ea5de9ab357,
+        type: 2}
+      propertyPath: camMoveSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 114355390791540652, guid: 64491e0114feec24e9762ea5de9ab357,
         type: 2}
       propertyPath: button
       value: 
       objectReference: {fileID: 563823682}
-    - target: {fileID: 1632490193871572, guid: 64491e0114feec24e9762ea5de9ab357, type: 2}
-      propertyPath: m_Name
-      value: GateMechanism (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64491e0114feec24e9762ea5de9ab357, type: 2}
   m_IsPrefabParent: 0
