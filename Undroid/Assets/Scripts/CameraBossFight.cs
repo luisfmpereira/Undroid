@@ -8,7 +8,9 @@ public class CameraBossFight : MonoBehaviour {
 
 	public GameObject mainCamera;
 	public float originalCamSize;
+	public float newCamSize;
 	public GameObject bossHealthPanel;
+	public GameObject boss;
 
 	void Awake(){
 		mainCamera = GameObject.FindGameObjectWithTag ("MainCamera");
@@ -17,8 +19,8 @@ public class CameraBossFight : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D hit){
 		if (hit.gameObject.CompareTag ("Player")) {
-		
-			mainCamera.GetComponent<Camera> ().orthographicSize = originalCamSize*2;
+			boss.GetComponent<Boss> ().turnBossOn = true;
+			mainCamera.GetComponent<Camera> ().orthographicSize = newCamSize;
 			bossHealthPanel.SetActive (true);
 
 		}
@@ -28,7 +30,7 @@ public class CameraBossFight : MonoBehaviour {
 
 	void OnTriggerExit2D(Collider2D hit){
 		if (hit.gameObject.CompareTag ("Player")) {
-
+			boss.GetComponent<Boss> ().turnBossOn = false;
 			mainCamera.GetComponent<Camera> ().orthographicSize = originalCamSize;
 			bossHealthPanel.SetActive (false);
 		}

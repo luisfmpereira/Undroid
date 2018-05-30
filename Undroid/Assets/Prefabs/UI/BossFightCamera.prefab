@@ -79,4 +79,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 0}
   originalCamSize: 0
+  newCamSize: 10
   bossHealthPanel: {fileID: 0}
+  boss: {fileID: 0}

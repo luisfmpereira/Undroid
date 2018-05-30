@@ -12,12 +12,10 @@ public class BossLevel2 : Boss {
 	public float jumpCooldown = 5f;
 	private float jumpTimer;
 
-	public Image bossHealthBar;
-	protected float bossMaxHealth = 3;
-
 	private float angleToMultiply = 30 * Mathf.Deg2Rad;
 
-	void Awake(){
+
+	void Start(){
 		bossRB = GetComponent<Rigidbody2D> ();
 		bossSR = GetComponent<SpriteRenderer> ();
 		jumpTimer = jumpCooldown;
@@ -26,18 +24,20 @@ public class BossLevel2 : Boss {
 
 	void Update(){
 
+		ShowLife ();
 
-		bossHealthBar.fillAmount = bossHealth / bossMaxHealth;
+		if (turnBossOn) {
+			
 
 
-		shootTimer -= Time.deltaTime;
-		if(bossRB.velocity.y <= 0.1)
-			jumpTimer -= Time.deltaTime;
+			shootTimer -= Time.deltaTime;
+			if (bossRB.velocity.y <= 0.1)
+				jumpTimer -= Time.deltaTime;
 
-		KillBoss ();
+			KillBoss ();
 
-		JumpAndShoot ();
-
+			JumpAndShoot ();
+		}
 	}
 
 
