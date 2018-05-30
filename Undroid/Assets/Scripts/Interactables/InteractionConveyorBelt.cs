@@ -24,6 +24,7 @@ public class InteractionConveyorBelt : MonoBehaviour {
 
 			//set camera focus for the first time
 			if (!conveyorBelt.GetComponent<ConveyorController> ().isrunning) {
+				if(useFocus)
 				cam.GetComponent<CameraFollow> ().isWorking = false;
 				gameObject.GetComponent<SpriteRenderer> ().sprite = green;
 				focusCamera = true;

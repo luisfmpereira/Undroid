@@ -395,6 +395,11 @@ Prefab:
       propertyPath: button
       value: 
       objectReference: {fileID: 206203057}
+    - target: {fileID: 114355390791540652, guid: 64491e0114feec24e9762ea5de9ab357,
+        type: 2}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1450997681}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64491e0114feec24e9762ea5de9ab357, type: 2}
   m_IsPrefabParent: 0
@@ -36175,84 +36180,26 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114260010024091840, guid: 7334bb643264ccb41b59161c19cbe756,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1956814937}
-    - target: {fileID: 114984538732202496, guid: 7334bb643264ccb41b59161c19cbe756,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1956814937}
-    - target: {fileID: 114241152335663144, guid: 7334bb643264ccb41b59161c19cbe756,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1956814938}
     - target: {fileID: 114951272814651872, guid: 7334bb643264ccb41b59161c19cbe756,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1956814938}
-    - target: {fileID: 1985747218764032, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1515021542062242, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114708309782742080, guid: 7334bb643264ccb41b59161c19cbe756,
+    - target: {fileID: 114241152335663144, guid: 7334bb643264ccb41b59161c19cbe756,
         type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 114708309782742080, guid: 7334bb643264ccb41b59161c19cbe756,
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1956814938}
+    - target: {fileID: 114984538732202496, guid: 7334bb643264ccb41b59161c19cbe756,
         type: 2}
-      propertyPath: m_FontData.m_MinSize
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114708309782742080, guid: 7334bb643264ccb41b59161c19cbe756,
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1956814937}
+    - target: {fileID: 114260010024091840, guid: 7334bb643264ccb41b59161c19cbe756,
         type: 2}
-      propertyPath: m_FontData.m_BestFit
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114708309782742080, guid: 7334bb643264ccb41b59161c19cbe756,
-        type: 2}
-      propertyPath: m_FontData.m_RichText
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114708309782742080, guid: 7334bb643264ccb41b59161c19cbe756,
-        type: 2}
-      propertyPath: m_FontData.m_HorizontalOverflow
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114708309782742080, guid: 7334bb643264ccb41b59161c19cbe756,
-        type: 2}
-      propertyPath: m_FontData.m_MaxSize
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 114708309782742080, guid: 7334bb643264ccb41b59161c19cbe756,
-        type: 2}
-      propertyPath: m_Text
-      value: Dialogue Text...
-      objectReference: {fileID: 0}
-    - target: {fileID: 114957082840700478, guid: 7334bb643264ccb41b59161c19cbe756,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114118942770901524, guid: 7334bb643264ccb41b59161c19cbe756,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114381600124346440, guid: 7334bb643264ccb41b59161c19cbe756,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1956814937}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
   m_IsPrefabParent: 0

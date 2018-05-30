@@ -18,6 +18,7 @@ public class InteractionButtonManager : MonoBehaviour {
 	{
 		if (hit.gameObject.tag == "Player" && interacted == true) {
 			if (!platform.GetComponent<MovingPlatformManager> ().isPressed) {
+				if(useFocus)
 				cam.GetComponent<CameraFollow> ().isWorking = false;
 				focusCamera = true;
 				focusCounter = focusTime;
