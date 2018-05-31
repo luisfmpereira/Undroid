@@ -11,8 +11,9 @@ using UnityEngine.SceneManagement;
 /// Fire 2 = JoyB = s - crouch
 /// Fire 3 = JoyRB = x - fire
 /// Jump = JoyA = space - jump
-/// Dash = JoyX = shift = dash
-///  
+/// Dash = JoyX = shift - dash
+/// Pause = JoyStart = esc - pause  
+/// 
 /// </summary>
 
 

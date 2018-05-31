@@ -8,7 +8,7 @@ public class BoxDestroyAreaScript : MonoBehaviour {
 
 
 	void OnTriggerEnter2D(Collider2D hit){
-		if(hit.gameObject.CompareTag("WoodBox")){
+		if(hit.gameObject.CompareTag("WoodBox") || hit.gameObject.CompareTag("MetalBox")){
 			Destroy (hit.gameObject);
 		}
 
