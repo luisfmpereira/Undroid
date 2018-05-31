@@ -32,6 +32,8 @@ public class PlayerController : MonoBehaviour
 	private Vector2 standSizeColl = new Vector2(0.4f,1.5f);
 	private Vector2 standOffColl = new Vector2(0f,0f);
 
+	//
+	public bool canMove = true;
 	//movement variables
 	public float maxSpeed = 3f;
 	private int moveDirection;
@@ -89,7 +91,7 @@ public class PlayerController : MonoBehaviour
 
 	void Awake ()
 	{
-		
+		canMove = true;
 		playerRB = GetComponent<Rigidbody2D> ();
 		playerSR = GetComponent<SpriteRenderer> ();
 		playerAnim = GetComponent<Animator> ();
@@ -105,29 +107,32 @@ public class PlayerController : MonoBehaviour
 
 		groundCheckRadius = 0.1f; //radius for grounded
 
+
 	}
 
 	void Start (){
 		audioManager = AudioManager.instance;
+
 	}
 		
 	void Update ()
 	{
+		if (canMove) {
+			playerMove (); //call move function
 
-		playerMove (); //call move function
+			playerJump (); //call jump function
 
-		playerJump (); //call jump function
+			playerCrouch (); // call crouch function
 
-		playerCrouch (); // call crouch function
+			playerShoot ();
 
-		playerShoot ();
-
-		playerDash ();
-	
+			playerDash ();
+		}
 
 		//restart level if all lives are lost
 		if (currentHeart < 0) {
-			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
+			playerAnim.SetBool ("Die", true);
+			canMove = false;
 		}
 
 		//dash cooldown
@@ -249,7 +254,6 @@ public class PlayerController : MonoBehaviour
 				//add force to bullet
 				bullet.AddForce (new Vector2 (moveDirection, 0) * bulletSpeed);
 				Destroy (bullet.gameObject, 3);
-				playerAnim.SetBool ("Shooting", true);
 				shootTimer = shootCd;
 			}
 		}
@@ -280,6 +284,7 @@ public class PlayerController : MonoBehaviour
 			Destroy (hit.gameObject);
 			hearts [currentHeart].enabled = false;
 			currentHeart--;
+			playerAnim.SetBool ("Hurt", true);
 			if (currentHeart >= 0)
 				audioManager.PlaySound (Hurt);
 			else
@@ -290,6 +295,7 @@ public class PlayerController : MonoBehaviour
 		if (hit.gameObject.CompareTag ("Enemy") || hit.gameObject.CompareTag ("Boss") || hit.gameObject.CompareTag ("MovableEnemy")) {
 			hearts [currentHeart].enabled = false;
 			currentHeart--;
+			playerAnim.SetBool ("Hurt", true);
 			if (currentHeart >= 0)
 				audioManager.PlaySound (Hurt);
 			else
@@ -298,10 +304,9 @@ public class PlayerController : MonoBehaviour
 
 		//transfer movement to player in contact
 		if (hit.gameObject.CompareTag ("LaserDamage")) {
-
 			hearts [currentHeart].enabled = false;
 			currentHeart--;
-
+			playerAnim.SetBool ("Hurt", true);
 			playerRB.AddForce (new Vector2 (moveDirection * 225 * -1, 0));
 
 			if (currentHeart >= 0)
@@ -343,5 +348,15 @@ public class PlayerController : MonoBehaviour
 		if (hit.gameObject.CompareTag ("Laser")) {
 			hit.transform.GetChild(1).transform.GetComponent<Animator>().SetBool("start", true);
 		}
+	}
+
+	public void PlayerDied (){
+		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
+	}
+
+	public void CancelAnimHurt (){
+		playerAnim.SetBool ("Hurt", false);
+		playerAnim.SetBool("Die", false);
+		canMove = true;
 	}
 }

@@ -1,0 +1,912 @@
+fileFormatVersion: 2
+guid: 1743e4ab3562fe042a647ecff9e5a3bf
+timeCreated: 1527737747
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Tiro_0
+    21300002: Tiro_1
+    21300004: Tiro_2
+    21300006: Tiro_3
+    21300008: Tiro_4
+    21300010: Tiro_5
+    21300012: Tiro_6
+    21300014: Tiro_7
+    21300016: Tiro_8
+    21300018: Tiro_9
+    21300020: Tiro_10
+    21300022: Tiro_11
+    21300024: Tiro_12
+    21300026: Tiro_13
+    21300028: Tiro_14
+    21300030: Tiro_15
+    21300032: Tiro_16
+    21300034: Tiro_17
+    21300036: Tiro_18
+    21300038: Tiro_19
+    21300040: Tiro_20
+    21300042: Tiro_21
+    21300044: Tiro_22
+    21300046: Tiro_23
+    21300048: Tiro_24
+    21300050: Tiro_25
+    21300052: Tiro_26
+    21300054: Tiro_27
+    21300056: Tiro_28
+    21300058: Tiro_29
+    21300060: Tiro_30
+    21300062: Tiro_31
+    21300064: Tiro_32
+    21300066: Tiro_33
+    21300068: Tiro_34
+    21300070: Tiro_35
+    21300072: Tiro_36
+    21300074: Tiro_37
+    21300076: Tiro_38
+    21300078: Tiro_39
+    21300080: Tiro_40
+    21300082: Tiro_41
+    21300084: Tiro_42
+    21300086: Tiro_43
+    21300088: Tiro_44
+    21300090: Tiro_45
+    21300092: Tiro_46
+    21300094: Tiro_47
+    21300096: Tiro_48
+    21300098: Tiro_49
+    21300100: Tiro_50
+    21300102: Tiro_51
+    21300104: Tiro_52
+    21300106: Tiro_53
+    21300108: Tiro_54
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 180
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tiro_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2215
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_1
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 2215
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_2
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 2215
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_3
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 2215
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_4
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 2215
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_5
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 2215
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_6
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 2215
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_7
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 2215
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_8
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 2215
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_9
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 2215
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_10
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 2215
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1903
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_12
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1903
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_13
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1903
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_14
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1903
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_15
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1903
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_16
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 1903
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_17
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1903
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_18
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1903
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_19
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1903
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_20
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 1903
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_21
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 1903
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1591
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_23
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1591
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_24
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1591
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_25
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1591
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_26
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1591
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_27
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 1591
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_28
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1591
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_29
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1591
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_30
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1591
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1279
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_32
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1279
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_33
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1279
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_34
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1279
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_35
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1279
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_36
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 1279
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_37
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1279
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_38
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1279
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 967
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_40
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 967
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_41
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 967
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_42
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 967
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_43
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 967
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_44
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 967
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 655
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_46
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 655
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_47
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 655
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_48
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 343
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_49
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 343
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_50
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 343
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_51
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 343
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_52
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 343
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_53
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 343
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tiro_54
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 31
+        width: 265
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
