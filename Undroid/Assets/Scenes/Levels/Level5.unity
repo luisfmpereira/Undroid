@@ -19291,20 +19291,6 @@ CompositeCollider2D:
         Y: 190000000
       - X: 0
         Y: 190000000
-    - - X: 19999998
-        Y: 200000000
-      - X: 19999998
-        Y: 210000000
-      - X: 10000001
-        Y: 210000000
-      - X: 10000001
-        Y: 200000000
-      - X: 10000000
-        Y: 200000000
-      - X: 10000001
-        Y: 190000000
-      - X: 20000000
-        Y: 190000000
     - - X: 9999999
         Y: 200000000
       - X: 9999999
@@ -19318,6 +19304,20 @@ CompositeCollider2D:
       - X: 1
         Y: 190000000
       - X: 10000000
+        Y: 190000000
+    - - X: 19999998
+        Y: 200000000
+      - X: 19999998
+        Y: 210000000
+      - X: 10000001
+        Y: 210000000
+      - X: 10000001
+        Y: 200000000
+      - X: 10000000
+        Y: 200000000
+      - X: 10000001
+        Y: 190000000
+      - X: 20000000
         Y: 190000000
     - - X: 190000000
         Y: 10000002
@@ -19604,13 +19604,6 @@ CompositeCollider2D:
       - {x: -1, y: 20}
       - {x: -0.99999994, y: 19}
       - {x: 0, y: 19}
-    - - {x: 1.9999999, y: 20}
-      - {x: 1.9999999, y: 21}
-      - {x: 1.0000001, y: 21}
-      - {x: 1.0000001, y: 20}
-      - {x: 1, y: 20}
-      - {x: 1.0000001, y: 19}
-      - {x: 2, y: 19}
     - - {x: 0.99999994, y: 20}
       - {x: 0.99999994, y: 21}
       - {x: 0.0000001, y: 21}
@@ -19618,6 +19611,13 @@ CompositeCollider2D:
       - {x: 0, y: 20}
       - {x: 0.0000001, y: 19}
       - {x: 1, y: 19}
+    - - {x: 1.9999999, y: 20}
+      - {x: 1.9999999, y: 21}
+      - {x: 1.0000001, y: 21}
+      - {x: 1.0000001, y: 20}
+      - {x: 1, y: 20}
+      - {x: 1.0000001, y: 19}
+      - {x: 2, y: 19}
     - - {x: 19, y: 1.0000002}
       - {x: 19, y: 1.0000001}
       - {x: 39, y: 1.0000001}
@@ -23238,52 +23238,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1515021542062242, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1985747218764032, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1969845421516080, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114118942770901524, guid: 7334bb643264ccb41b59161c19cbe756,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114118942770901524, guid: 7334bb643264ccb41b59161c19cbe756,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 67213a1ecb6d8644da56be280e1d8aab,
-        type: 3}
-    - target: {fileID: 114118942770901524, guid: 7334bb643264ccb41b59161c19cbe756,
-        type: 2}
-      propertyPath: m_PreserveAspect
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1633047878436116, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114381600124346440, guid: 7334bb643264ccb41b59161c19cbe756,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114957082840700478, guid: 7334bb643264ccb41b59161c19cbe756,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1060217267212184, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1167925619601832, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
       propertyPath: m_IsActive
