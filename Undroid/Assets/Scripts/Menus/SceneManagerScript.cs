@@ -15,7 +15,7 @@ public class SceneManagerScript : MonoBehaviour {
 	public bool useQuit;
 	private float originalFixedTime;
 	public GameObject quitYes;
-	public GameObject startGame;
+	public GameObject mainButton;
 	private AudioManager audioManager;
 	[SerializeField]
 	string click = "Click";
@@ -31,6 +31,11 @@ public class SceneManagerScript : MonoBehaviour {
 			areYouSureQuit.SetActive (false);
 
 	}
+
+	public void SelectFirst(){
+		EventSystem.current.SetSelectedGameObject (mainButton);
+	}
+
 
 	public void LoadScene (string sceneName){
 
@@ -53,7 +58,7 @@ public class SceneManagerScript : MonoBehaviour {
 
 	public void SureQuitNo(){
 		areYouSureQuit.SetActive (false);
-		EventSystem.current.SetSelectedGameObject (startGame);
+		EventSystem.current.SetSelectedGameObject (mainButton);
 	}
 
 	public void QuitGame(){
