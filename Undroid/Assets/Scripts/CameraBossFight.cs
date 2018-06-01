@@ -17,7 +17,7 @@ public class CameraBossFight : MonoBehaviour {
 		originalCamSize = mainCamera.GetComponent<Camera> ().orthographicSize;
 	}
 
-	void OnTriggerStay2D(Collider2D hit){
+	void OnTriggerEnter2D(Collider2D hit){
 		if (hit.gameObject.CompareTag ("Player")) {
 			boss.GetComponent<Boss> ().turnBossOn = true;
 			mainCamera.GetComponent<Camera> ().orthographicSize = newCamSize;

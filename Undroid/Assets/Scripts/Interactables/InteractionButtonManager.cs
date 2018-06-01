@@ -6,7 +6,16 @@ public class InteractionButtonManager : MonoBehaviour {
 	public GameObject platform;
 	private bool interacted;
 	public Sprite green;
+	private AudioManager audiomanager;
 
+
+	void Awake(){
+		cam = GameObject.FindGameObjectWithTag ("MainCamera");
+	}
+
+	void Start(){
+		audiomanager = AudioManager.instance;
+	}
 	void Update () {
 		interacted = Input.GetButtonDown ("Fire1");
 
@@ -18,6 +27,7 @@ public class InteractionButtonManager : MonoBehaviour {
 	{
 		if (hit.gameObject.tag == "Player" && interacted == true) {
 			if (!platform.GetComponent<MovingPlatformManager> ().isPressed) {
+				audiomanager.PlaySound ("MovingPlatformOn");
 				if(useFocus)
 				cam.GetComponent<CameraFollow> ().isWorking = false;
 				focusCamera = true;
@@ -41,10 +51,6 @@ public class InteractionButtonManager : MonoBehaviour {
 
 	public bool useFocus = true;
 
-
-	void Awake(){
-		cam = GameObject.FindGameObjectWithTag ("MainCamera");
-	}
 
 	void FocusCameraOnPOI(){
 

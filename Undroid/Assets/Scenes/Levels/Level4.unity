@@ -283,6 +283,23 @@ GameObject:
   m_PrefabParentObject: {fileID: 1979958422588712, guid: 6f0c5afdc6bf0f04096f536dfcbbfcc8,
     type: 2}
   m_PrefabInternal: {fileID: 1377426418}
+--- !u!95 &102707695
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 102707694}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ec1642f2db2f61d43a32975ec6586005, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &120346678
 Prefab:
   m_ObjectHideFlags: 0
@@ -31494,7 +31511,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 664930770}
   m_Enabled: 0
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 33d01c86bef37994bb78745784fd13c8, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -33263,6 +33280,12 @@ Prefab:
       propertyPath: laser
       value: 
       objectReference: {fileID: 951278497}
+    - target: {fileID: 212797887713329912, guid: 6f0c5afdc6bf0f04096f536dfcbbfcc8,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 336ad58a297200947a097cf81632fe1c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f0c5afdc6bf0f04096f536dfcbbfcc8, type: 2}
   m_IsPrefabParent: 0
@@ -33830,7 +33853,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4973239453459552, guid: fca134f4a275e2a4e9c4f8f3215772ce, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4973239453459552, guid: fca134f4a275e2a4e9c4f8f3215772ce, type: 2}
       propertyPath: m_LocalPosition.y
@@ -33875,6 +33898,16 @@ Prefab:
       propertyPath: hearts.Array.data[2]
       value: 
       objectReference: {fileID: 1851766229}
+    - target: {fileID: 50043977665630110, guid: fca134f4a275e2a4e9c4f8f3215772ce,
+        type: 2}
+      propertyPath: m_SleepingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 70797696476656810, guid: fca134f4a275e2a4e9c4f8f3215772ce,
+        type: 2}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fca134f4a275e2a4e9c4f8f3215772ce, type: 2}
   m_IsPrefabParent: 0

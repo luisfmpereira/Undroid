@@ -10,6 +10,7 @@ public class MovingPlatformManager : MonoBehaviour {
 	public Transform[] points;
 	private int pointSelected = 0;
 
+
 	public bool isPressed = false; 
 
 
@@ -37,6 +38,15 @@ public class MovingPlatformManager : MonoBehaviour {
 
 		currentPoint = points [pointSelected];
 
+	}
+	void OnCollisionEnter2D(Collision2D other)	{	
+		if (other.gameObject.CompareTag ("Player"))
+			other.transform.SetParent (platform.GetComponent<Transform>());
+		}
+	void OnCollisionExit2D (Collision2D hit)
+	{
+		if (hit.gameObject.CompareTag ("Player"))
+			hit.transform.SetParent (null);
 	}
 
 }

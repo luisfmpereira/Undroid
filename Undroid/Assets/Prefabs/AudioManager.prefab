@@ -62,7 +62,7 @@ MonoBehaviour:
   - name: Background
     clip: {fileID: 8300000, guid: 7d8ef98a41e73a54499287a456d270a8, type: 3}
     volume: 0.1
-    pitch: 1
+    pitch: 0.8
     randomVolume: 0.1
     randomPitch: 0.1
     loop: 1
@@ -84,6 +84,41 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 63292b69e0e247f43a8add9c32fe6f4c, type: 3}
     volume: 0.4
     pitch: 1
+    randomVolume: 0.1
+    randomPitch: 0.1
+    loop: 0
+  - name: MovingPlatformOn
+    clip: {fileID: 8300000, guid: 32843d637ba634b4583cc0d98ca8a39c, type: 3}
+    volume: 0.1
+    pitch: 0.9
+    randomVolume: 0.1
+    randomPitch: 0.1
+    loop: 0
+  - name: PowerUp
+    clip: {fileID: 8300000, guid: e971ac02437a68d4d987f38c5a78408e, type: 3}
+    volume: 0.1
+    pitch: 0.9
+    randomVolume: 0.1
+    randomPitch: 0.1
+    loop: 0
+  - name: Shoot
+    clip: {fileID: 8300000, guid: 97165249ad32b434eb28e3de221800be, type: 3}
+    volume: 0.1
+    pitch: 0.8
+    randomVolume: 0.1
+    randomPitch: 0.1
+    loop: 0
+  - name: Life
+    clip: {fileID: 8300000, guid: 9cf9d4171e7eb984e920e809f2816acf, type: 3}
+    volume: 0.1
+    pitch: 0.8
+    randomVolume: 0.1
+    randomPitch: 0.1
+    loop: 0
+  - name: Dash
+    clip: {fileID: 8300000, guid: 99c3e0874d4e4ab4fab5dcb8b519dcff, type: 3}
+    volume: 0.1
+    pitch: 0.8
     randomVolume: 0.1
     randomPitch: 0.1
     loop: 0

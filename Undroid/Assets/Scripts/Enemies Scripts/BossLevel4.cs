@@ -10,10 +10,12 @@ public class BossLevel4 : Boss{
 	private int selectedPosition;
 	public float chanceToSpawnNewEnemy;
 	public GameObject laser;
+	public Animator boss;
 
 	// Use this for initialization
 	void Start () {
 		selectedPosition = 0;
+		boss = GetComponent<Animator> ();
 	}
 
 	void Update () {
@@ -36,8 +38,10 @@ public class BossLevel4 : Boss{
 		if (this.transform.position == positions [selectedPosition].position) {
 			selectedPosition = Random.Range (0, positions.Length - 1);
 
-			if(Random.Range (0f, 1f) < chanceToSpawnNewEnemy)
+			if(Random.Range (0f, 1f) < chanceToSpawnNewEnemy){
 				SpawnNewEnemy ();
+				boss.SetBool ("Robot", true);
+			}
 		}
 	}
 
@@ -61,5 +65,7 @@ public class BossLevel4 : Boss{
 		DamageByPlayer(hit);
 	}
 
-
+	void SetRobotFalse(){
+		boss.SetBool ("Robot", false);
+	}
 }

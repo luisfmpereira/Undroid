@@ -83,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1717301102743280}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25, y: 0.31, z: 0}
+  m_LocalPosition: {x: 0.55, y: 0.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4973239453459552}
@@ -122,7 +122,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1111841826931786}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: -0.12, z: 0}
+  m_LocalPosition: {x: 114.96, y: -0.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4135649848232130}
@@ -149,7 +149,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &70797696476656810
 CapsuleCollider2D:
@@ -194,6 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cca3e7cab968124280aba8b191b8f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerRB: {fileID: 0}
   playerCollider: {fileID: 0}
   canMove: 1
   maxSpeed: 5
@@ -218,15 +219,17 @@ MonoBehaviour:
   - {fileID: 0}
   currentSceneName: Level4
   allowDash: 1
-  dashSpeed: 300
+  dashSpeed: 8
   dashCooldown: 1
   dashTimerAnim: 0
-  dashCdAnim: 1
+  dashCdAnim: 0.3
+  doDash: 0
   audioManager: {fileID: 0}
   Die: Die
   Hurt: Hurt
   shootTimer: 0
-  shootCd: 0.2
+  shootCd: 1
+  canShootCd: 1
 --- !u!212 &212563891660054836
 SpriteRenderer:
   m_ObjectHideFlags: 1

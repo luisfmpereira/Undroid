@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 {
 
 	//components
-	private Rigidbody2D playerRB;
+	public Rigidbody2D playerRB;
 	private SpriteRenderer playerSR;
 	private Animator playerAnim;
 	public CapsuleCollider2D playerCollider;
@@ -73,11 +73,12 @@ public class PlayerController : MonoBehaviour
 
 	//dash
 	public bool allowDash;
-	public float dashSpeed = 6f;
+	public float dashSpeed = 8;
 	private float dashTimer;
 	public float dashCooldown = 1f;
 	public float dashTimerAnim;
-	public float dashCdAnim = 1;
+	public float dashCdAnim = 0.3f;
+	public bool doDash;
 
 	//audio
 	public AudioManager audioManager;
@@ -86,7 +87,8 @@ public class PlayerController : MonoBehaviour
 
 	//shoot
 	public float shootTimer;
-	public float shootCd = 0.2f;
+	public float shootCd = 0.5f;
+	public bool canShootCd = true;
 
 
 	void Awake ()
@@ -144,13 +146,14 @@ public class PlayerController : MonoBehaviour
 			dashTimerAnim -= Time.deltaTime;
 		} 
 		if (dashTimerAnim < 0) {
+			doDash = false;
 			playerAnim.SetBool ("Dash", false);
 		}
 		if(shootTimer > 0){
 			shootTimer -= Time.deltaTime;
 			} 
 		if (shootTimer < 0) {
-				playerAnim.SetBool ("Shooting", false);
+			canShootCd = true;
 			}
 			
 	}
@@ -161,7 +164,8 @@ public class PlayerController : MonoBehaviour
 
 		float xMove = Input.GetAxis ("Horizontal"); //get player input for the movement
 		playerAnim.SetFloat ("Speed", Mathf.Abs (xMove)); //set "Speed" float on animator controller to start running
-		playerRB.position = new Vector2 (playerRB.position.x + xMove * maxSpeed * Time.deltaTime, playerRB.position.y); //set new player position
+		playerRB.velocity = new Vector2 (xMove * maxSpeed, playerRB.velocity.y);
+		//playerRB.position = new Vector2 (playerRB.position.x + xMove * maxSpeed * Time.deltaTime, playerRB.position.y); //set new player position
 
 		if (xMove > 0)
 			moveDirection = 1;
@@ -247,8 +251,10 @@ public class PlayerController : MonoBehaviour
 
 	public void playerShoot ()
 	{
-		if (allowShooting) {
+		if (allowShooting && canShootCd) {
 			if (Input.GetButtonDown ("Fire3")) {
+				canShootCd = false;
+				audioManager.PlaySound ("Shoot");
 				Rigidbody2D bullet;
 				bullet = Instantiate (playerBulletPrefab, muzzlePos.position, Quaternion.identity) as Rigidbody2D;
 				//add force to bullet
@@ -261,14 +267,18 @@ public class PlayerController : MonoBehaviour
 
 	public void playerDash ()
 	{
-		if (allowDash) {
+		if (allowDash)
+		{
 			if (Input.GetButtonDown ("Dash") && dashTimer <= 0) {
-				playerRB.AddForce (new Vector2 (moveDirection * dashSpeed, 0));
+				doDash = true;
+				audioManager.PlaySound ("Dash");		
 				dashTimer = dashCooldown;
 				dashTimerAnim = dashCdAnim;
 				playerAnim.SetBool ("Dash", true);
 			}
-
+			if (doDash) {
+				playerRB.velocity = new Vector2 (moveDirection * dashSpeed, playerRB.velocity.y);
+			}
 		}
 
 	}
@@ -307,7 +317,7 @@ public class PlayerController : MonoBehaviour
 			hearts [currentHeart].enabled = false;
 			currentHeart--;
 			playerAnim.SetBool ("Hurt", true);
-			playerRB.AddForce (new Vector2 (moveDirection * 225 * -1, 0));
+			playerRB.AddForce (new Vector2 (moveDirection * 225, 0));
 
 			if (currentHeart >= 0)
 				audioManager.PlaySound (Hurt);
@@ -316,19 +326,17 @@ public class PlayerController : MonoBehaviour
 		}
 
 		//turn plyer child of the platform - used to smooth movement
-		if (hit.gameObject.CompareTag ("Platform"))
-			transform.parent = hit.transform;
 
 
 	}
-
+	/*
 	void OnCollisionExit2D (Collision2D hit)
 	{
 		if (hit.gameObject.CompareTag ("Platform"))
 			transform.parent = null;
 	}
 
-
+*/
 
 	void OnTriggerEnter2D (Collider2D hit)
 	{
@@ -340,6 +348,7 @@ public class PlayerController : MonoBehaviour
 			Destroy (hit.gameObject);
 			currentHeart++;
 			if (currentHeart < hearts.Length) {
+				audioManager.PlaySound ("Life");
 				hearts [currentHeart].enabled = true;
 			} else {
 				currentHeart--;

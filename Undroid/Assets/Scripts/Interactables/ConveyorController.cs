@@ -9,6 +9,7 @@ public class ConveyorController : MonoBehaviour {
 	public bool goRight;
 	private int direction;
 
+
 	string[] movableTags = { "Player", "WoodBox", "MetalBox", "MovableEnemy" };
 
 	void Update(){

@@ -83,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1790934227524514}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25, y: 0.31, z: 0}
+  m_LocalPosition: {x: 0.305, y: 0.659, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4830327034297316}
@@ -122,7 +122,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1066224756947368}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.2, y: 12.66, z: 0}
+  m_LocalPosition: {x: 67.57, y: 0.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4279597204669532}
@@ -194,7 +194,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cca3e7cab968124280aba8b191b8f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerRB: {fileID: 0}
   playerCollider: {fileID: 0}
+  canMove: 1
   maxSpeed: 5
   groundCheck: {fileID: 4674259514544310}
   ceilCheck: {fileID: 4785073148206354}
@@ -208,7 +210,7 @@ MonoBehaviour:
   doubleJumpModifier: 1
   playerBulletPrefab: {fileID: 50524648910763498, guid: f8e10c703a395394c98434eadb11cd07,
     type: 2}
-  allowShooting: 1
+  allowShooting: 0
   bulletSpeed: 300
   muzzlePos: {fileID: 4279597204669532}
   hearts:
@@ -219,6 +221,13 @@ MonoBehaviour:
   allowDash: 0
   dashSpeed: 300
   dashCooldown: 1
+  dashTimerAnim: 0
+  dashCdAnim: 1
+  audioManager: {fileID: 0}
+  Die: Die
+  Hurt: Hurt
+  shootTimer: 0
+  shootCd: 0.2
 --- !u!212 &212679727438097800
 SpriteRenderer:
   m_ObjectHideFlags: 1

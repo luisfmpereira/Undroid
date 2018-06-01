@@ -8,8 +8,13 @@ public class AddPu : MonoBehaviour {
 	public bool powerUpShoot = false;
 	public bool powerUpDash = false;
 	public GameObject textColliderToActivate;
+	private AudioManager audiomanager;
 
 	public RuntimeAnimatorController Player2;
+
+	void Awake(){
+		audiomanager = AudioManager.instance;
+	}
 
 	void Update(){
 		interaction = Input.GetButtonDown ("Fire1");
@@ -17,6 +22,7 @@ public class AddPu : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D hit){
 		if (hit.gameObject.CompareTag ("Player") && interaction) {
+			audiomanager.PlaySound ("PowerUp");
 			textColliderToActivate.SetActive (true);
 			if (powerUpBoot) {
 				hit.gameObject.GetComponent<PlayerController> ().allowDoubleJump = true;
