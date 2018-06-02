@@ -19,6 +19,7 @@ public class Openlevel : MonoBehaviour {
 	void OnTriggerStay2D(Collider2D hit){
 		if (hit.gameObject.CompareTag ("Player") && interaction) {
 			anim.SetBool ("doorIsOpen", true);
+			PlayerPrefs.SetInt (SceneName, 1);
 		}
 	}
 
