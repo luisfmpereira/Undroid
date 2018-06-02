@@ -120,6 +120,9 @@ public class EnemyController : MonoBehaviour {
 
 	}
 
+	void KillEnemy(){
+		Destroy (this.gameObject);
+	}
 
 	void flipSprite (SpriteRenderer SR, float direction, CircleCollider2D AI){
 

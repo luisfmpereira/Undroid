@@ -44,11 +44,5 @@ public class LevelSelection : MonoBehaviour {
 		PlayerPrefs.SetInt ("Level6", 1);
 	}
 
-	public void ResetGame(){
-		PlayerPrefs.SetInt ("Level2", 0);
-		PlayerPrefs.SetInt ("Level3", 0);
-		PlayerPrefs.SetInt ("Level4", 0);
-		PlayerPrefs.SetInt ("Level5", 0);
-		PlayerPrefs.SetInt ("Level6", 0);
-	}
+
 }

@@ -21,6 +21,8 @@ public class SceneManagerScript : MonoBehaviour {
 	string click = "Click";
 	[SerializeField]
 	string start = "Background";
+	[SerializeField]
+	string select = "Select";
 
 
 	void Awake(){
@@ -74,10 +76,19 @@ public class SceneManagerScript : MonoBehaviour {
 	}
 
 	public void playSelect(){
-		audioManager.PlaySound ("Select");
+		audioManager.PlaySound (select);
 	}
 
 	public void playBackgroundMusic(){
 		audioManager.PlaySound (start);
 	}
+
+	public void ResetGame(){
+		PlayerPrefs.SetInt ("Level2", 0);
+		PlayerPrefs.SetInt ("Level3", 0);
+		PlayerPrefs.SetInt ("Level4", 0);
+		PlayerPrefs.SetInt ("Level5", 0);
+		PlayerPrefs.SetInt ("Level6", 0);
+	}
+
 }

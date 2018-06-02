@@ -6,18 +6,19 @@ public class EnemyDamageController : MonoBehaviour {
 
 	public int enemyLife = 2;
 	public bool movableEnemy = false;
+	public Animator anim;
+
+	void Awake(){
+		anim = GetComponentInParent<Animator> ();
+		anim.SetBool ("Die", false);
+	}
 
 	void Update() {
 
 		if (enemyLife <= 0) {
-			if (!movableEnemy) {
-				GameObject enemyParent = (this.transform.parent.gameObject).transform.parent.gameObject;
-				Destroy (enemyParent.gameObject);
-			}
-
-			if(movableEnemy)
-				Destroy (this.transform.parent.gameObject);
+			anim.SetBool ("Die", true);
 		}
+			
 	}
 
 
@@ -34,4 +35,5 @@ public class EnemyDamageController : MonoBehaviour {
 		}
 
 	}
+
 }

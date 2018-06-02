@@ -43,7 +43,9 @@ public class EnemyMovable : MonoBehaviour {
 			EnemyShooting ();
 	}
 
-
+	void KillEnemy(){
+		Destroy (this.gameObject);
+	}
 
 	void MoveEnemy(){
 		moveTimer -= Time.deltaTime;

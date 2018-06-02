@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 50117558850107184}
   - component: {fileID: 70641269367314148}
   - component: {fileID: 95464047040847684}
+  - component: {fileID: 114806266824220494}
   m_Layer: 11
   m_Name: EnemySprite
   m_TagString: Enemy
@@ -313,14 +314,25 @@ MonoBehaviour:
   enemyLocations:
   - {fileID: 4274531777823696}
   - {fileID: 4536056770018454}
-  timer: 0
   shootingCooldown: 2
   isShooting: 0
   staticEnemy: 1
   startShootingRight: 0
+  canShoot: 1
   bulletPrefab: {fileID: 50214019752817142, guid: 41cd647f7ff536d4d9db30847f4b461c,
     type: 2}
   heFlip: 0
+--- !u!114 &114806266824220494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1975087483087304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd831e1fca4ac4f5dac4c3cbc14938e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114868744832085100
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -333,6 +345,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyLife: 2
+  movableEnemy: 0
+  anim: {fileID: 0}
 --- !u!212 &212336743137077328
 SpriteRenderer:
   m_ObjectHideFlags: 1
