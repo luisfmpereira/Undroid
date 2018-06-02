@@ -219,15 +219,17 @@ MonoBehaviour:
   - {fileID: 0}
   currentSceneName: 
   allowDash: 0
-  dashSpeed: 300
+  dashSpeed: 150
   dashCooldown: 1
   dashTimerAnim: 0
-  dashCdAnim: 1
+  dashCdAnim: 0.4
+  doDash: 0
   audioManager: {fileID: 0}
   Die: Die
   Hurt: Hurt
   shootTimer: 0
   shootCd: 0.2
+  canShootCd: 1
 --- !u!212 &212679727438097800
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -300,10 +300,11 @@ MonoBehaviour:
   - {fileID: 0}
   currentSceneName: 
   allowDash: 0
-  dashSpeed: 6
+  dashSpeed: 150
   dashCooldown: 1
   dashTimerAnim: 0
-  dashCdAnim: 1
+  dashCdAnim: 0.4
+  doDash: 0
   audioManager: {fileID: 0}
   Die: Die
   Hurt: Hurt

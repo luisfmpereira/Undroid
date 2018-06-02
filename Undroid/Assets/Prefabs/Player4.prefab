@@ -219,10 +219,10 @@ MonoBehaviour:
   - {fileID: 0}
   currentSceneName: Level4
   allowDash: 1
-  dashSpeed: 8
+  dashSpeed: 150
   dashCooldown: 1
   dashTimerAnim: 0
-  dashCdAnim: 0.3
+  dashCdAnim: 0.4
   doDash: 0
   audioManager: {fileID: 0}
   Die: Die
