@@ -31780,22 +31780,6 @@ CompositeCollider2D:
         Y: 60000000
       - X: 1220000000
         Y: 60000000
-    - - X: 1460000000
-        Y: 60000000
-      - X: 1440000000
-        Y: 60000000
-      - X: 1440000000
-        Y: 40000000
-      - X: 1460000000
-        Y: 40000000
-    - - X: 490000000
-        Y: 60000000
-      - X: 460000000
-        Y: 60000000
-      - X: 460000000
-        Y: 40000000
-      - X: 490000000
-        Y: 40000000
     - - X: 1030000000
         Y: 60000000
       - X: 1010000000
@@ -31804,6 +31788,14 @@ CompositeCollider2D:
         Y: 40000000
       - X: 1030000000
         Y: 40000000
+    - - X: 1460000000
+        Y: 60000000
+      - X: 1440000000
+        Y: 60000000
+      - X: 1440000000
+        Y: 40000000
+      - X: 1460000000
+        Y: 40000000
     - - X: 810000000
         Y: 60000000
       - X: 790000000
@@ -31811,6 +31803,14 @@ CompositeCollider2D:
       - X: 790000000
         Y: 40000000
       - X: 810000000
+        Y: 40000000
+    - - X: 490000000
+        Y: 60000000
+      - X: 460000000
+        Y: 60000000
+      - X: 460000000
+        Y: 40000000
+      - X: 490000000
         Y: 40000000
     - - X: 1390000000
         Y: 50000000
@@ -31983,38 +31983,38 @@ CompositeCollider2D:
       - {x: 142, y: 11}
       - {x: 142, y: 9}
       - {x: 144, y: 9}
-    - - {x: 44, y: 9}
-      - {x: 40, y: 9}
-      - {x: 40, y: 7}
-      - {x: 44, y: 7}
     - - {x: 135, y: 9}
       - {x: 133, y: 9}
       - {x: 133, y: 7}
       - {x: 135, y: 7}
-    - - {x: 122, y: 8}
-      - {x: 120, y: 8}
-      - {x: 120, y: 6}
-      - {x: 122, y: 6}
+    - - {x: 44, y: 9}
+      - {x: 40, y: 9}
+      - {x: 40, y: 7}
+      - {x: 44, y: 7}
     - - {x: 27, y: 8}
       - {x: 25, y: 8}
       - {x: 25, y: 6}
       - {x: 27, y: 6}
-    - - {x: 49, y: 6}
-      - {x: 46, y: 6}
-      - {x: 46, y: 4}
-      - {x: 49, y: 4}
-    - - {x: 146, y: 6}
-      - {x: 144, y: 6}
-      - {x: 144, y: 4}
-      - {x: 146, y: 4}
+    - - {x: 122, y: 8}
+      - {x: 120, y: 8}
+      - {x: 120, y: 6}
+      - {x: 122, y: 6}
     - - {x: 103, y: 6}
       - {x: 101, y: 6}
       - {x: 101, y: 4}
       - {x: 103, y: 4}
+    - - {x: 146, y: 6}
+      - {x: 144, y: 6}
+      - {x: 144, y: 4}
+      - {x: 146, y: 4}
     - - {x: 81, y: 6}
       - {x: 79, y: 6}
       - {x: 79, y: 4}
       - {x: 81, y: 4}
+    - - {x: 49, y: 6}
+      - {x: 46, y: 6}
+      - {x: 46, y: 4}
+      - {x: 49, y: 4}
     - - {x: 139, y: 5}
       - {x: 137, y: 5}
       - {x: 137, y: 3}
@@ -33590,6 +33590,11 @@ Prefab:
       propertyPath: maxXAndY.y
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 20477873757682458, guid: fce48ef4339bd624da7593cb0fa98443,
+        type: 2}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fce48ef4339bd624da7593cb0fa98443, type: 2}
   m_IsPrefabParent: 0
@@ -33907,6 +33912,11 @@ Prefab:
         type: 2}
       propertyPath: m_UsedByEffector
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114345932915016114, guid: fca134f4a275e2a4e9c4f8f3215772ce,
+        type: 2}
+      propertyPath: dashSpeed
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fca134f4a275e2a4e9c4f8f3215772ce, type: 2}
@@ -34825,7 +34835,22 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1167925619601832, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224009948294004778, guid: 7334bb643264ccb41b59161c19cbe756,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224009948294004778, guid: 7334bb643264ccb41b59161c19cbe756,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224009948294004778, guid: 7334bb643264ccb41b59161c19cbe756,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 1920
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}

@@ -22,14 +22,10 @@ public class CameraBossFight : MonoBehaviour {
 			boss.GetComponent<Boss> ().turnBossOn = true;
 			mainCamera.GetComponent<Camera> ().orthographicSize = newCamSize;
 
-
+			bossHealthPanel.SetActive (true);
 		}
 
 	}
-	void OntriggerEnter2D(Collider2D col){
-		bossHealthPanel.SetActive (true);
-	}
-
 
 	void OnTriggerExit2D(Collider2D hit){
 		if (hit.gameObject.CompareTag ("Player")) {

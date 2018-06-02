@@ -277,7 +277,7 @@ public class PlayerController : MonoBehaviour
 				playerAnim.SetBool ("Dash", true);
 			}
 			if (doDash) {
-				playerRB.velocity = new Vector2 (moveDirection * dashSpeed, playerRB.velocity.y);
+				playerRB.velocity = new Vector2 (moveDirection * dashSpeed * Time.deltaTime, playerRB.velocity.y);
 			}
 		}
 
