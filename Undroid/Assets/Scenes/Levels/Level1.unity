@@ -39927,6 +39927,7 @@ Prefab:
       value: -0.65
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     - target: {fileID: 61851701704702772, guid: 64491e0114feec24e9762ea5de9ab357,
         type: 2}
       propertyPath: m_Offset.y
@@ -39963,6 +39964,8 @@ Prefab:
       value: 1.2644806
 >>>>>>> 61390d61c66ab04e84da45deda3e73310c6cc82b
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of f32175b... ignore
 =======
 >>>>>>> parent of f32175b... ignore
     m_RemovedComponents: []
@@ -40817,6 +40820,7 @@ Prefab:
     - target: {fileID: 1985747218764032, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
       propertyPath: m_IsActive
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 1
 <<<<<<< HEAD
 =======
@@ -40846,6 +40850,9 @@ Prefab:
         type: 2}
       propertyPath: m_UiScaleMode
       value: 1
+=======
+      value: 0
+>>>>>>> parent of f32175b... ignore
       objectReference: {fileID: 0}
     - target: {fileID: 114478480012922064, guid: 7334bb643264ccb41b59161c19cbe756,
         type: 2}
