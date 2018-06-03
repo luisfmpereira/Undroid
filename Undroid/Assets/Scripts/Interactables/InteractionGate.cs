@@ -13,6 +13,7 @@ public class InteractionGate : MonoBehaviour {
 	public Vector2 newmaxXAndY;
 	public Sprite green;
 	public GameObject button;
+	private GameObject player;
 
 	void Update(){
 		interacted = Input.GetButtonDown ("Fire1");
@@ -56,6 +57,7 @@ public class InteractionGate : MonoBehaviour {
 
 	void Awake(){
 		cam = GameObject.FindGameObjectWithTag ("MainCamera");
+		player = GameObject.FindGameObjectWithTag ("Player");
 	}
 
 	void FocusCameraOnPOI(){
@@ -64,6 +66,7 @@ public class InteractionGate : MonoBehaviour {
 		if (focusCamera) {
 			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(focusObject.transform.position.x, focusObject.transform.position.y, -10), camMoveSpeed * Time.deltaTime);
 			focusCounter -= Time.deltaTime;
+			player.GetComponent<PlayerController> ().canMove = false;
 		}
 
 		if (focusCounter <= 0 && focusCamera) {
@@ -71,6 +74,7 @@ public class InteractionGate : MonoBehaviour {
 			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, GameObject.FindGameObjectWithTag("Player").transform.position.y, -10), camMoveSpeed * Time.deltaTime);
 			focusCamera = false;
 			cam.GetComponent<CameraFollow> ().isWorking = true;
+			player.GetComponent<PlayerController> ().canMove = true;
 		}
 
 

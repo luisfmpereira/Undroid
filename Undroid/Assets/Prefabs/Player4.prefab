@@ -122,7 +122,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1111841826931786}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 114.96, y: -0.12, z: 0}
+  m_LocalPosition: {x: -1.19, y: 0.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4135649848232130}
@@ -161,7 +161,7 @@ CapsuleCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.4, y: 1.5}
@@ -219,7 +219,7 @@ MonoBehaviour:
   - {fileID: 0}
   currentSceneName: Level4
   allowDash: 1
-  dashSpeed: 150
+  dashSpeed: 500
   dashCooldown: 1
   dashTimerAnim: 0
   dashCdAnim: 0.4
@@ -228,8 +228,14 @@ MonoBehaviour:
   Die: Die
   Hurt: Hurt
   shootTimer: 0
-  shootCd: 1
+  shootCd: 0.3
   canShootCd: 1
+  checkpoint: {x: 0, y: 0, z: 0}
+  usedCheckpoint: 0
+  haveBoss: 1
+  noFriction: {fileID: 6200000, guid: 33d01c86bef37994bb78745784fd13c8, type: 2}
+  withFriction: {fileID: 6200000, guid: 14b2570361733c04fa0bf67fe5e96212, type: 2}
+  Boss: {fileID: 0}
 --- !u!212 &212563891660054836
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -264,7 +270,7 @@ SpriteRenderer:
   m_SortingLayerID: 66600565
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 897ccfe124f629a4698b30539c60d38a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 236e613df3cac9746a71be56a090e004, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
 	//add extra force to double jump
 	private bool doubleJumped;
 	//if has double jumped
+	private bool isjumping = false;
 
 	//shooting variables
 	public Rigidbody2D playerBulletPrefab;
@@ -90,6 +91,18 @@ public class PlayerController : MonoBehaviour
 	public float shootCd = 0.5f;
 	public bool canShootCd = true;
 
+	//Checkpoint
+	public Vector3 checkpoint;
+	public bool usedCheckpoint;
+
+	//ResetLevel
+	public bool haveBoss = false;
+
+	//material
+	public PhysicsMaterial2D noFriction;
+	public PhysicsMaterial2D withFriction;
+
+
 
 	void Awake ()
 	{
@@ -108,7 +121,7 @@ public class PlayerController : MonoBehaviour
 		currentHeart = hearts.Length - 1; //reset player hearts
 
 		groundCheckRadius = 0.1f; //radius for grounded
-
+		checkpoint =  this.transform.position;
 
 	}
 
@@ -120,6 +133,7 @@ public class PlayerController : MonoBehaviour
 	void Update ()
 	{
 		if (canMove) {
+			this.GetComponent<CapsuleCollider2D> ().sharedMaterial = noFriction;
 			playerMove (); //call move function
 
 			playerJump (); //call jump function
@@ -129,8 +143,14 @@ public class PlayerController : MonoBehaviour
 			playerShoot ();
 
 			playerDash ();
-		}
 
+		} else {
+			this.GetComponent<CapsuleCollider2D> ().sharedMaterial = withFriction;
+			playerAnim.SetBool("Jumping",false);
+			playerAnim.SetBool ("Crouching", false);
+			playerAnim.SetFloat ("Speed", 0);
+
+		}
 		//restart level if all lives are lost
 		if (currentHeart < 0) {
 			playerAnim.SetBool ("Die", true);
@@ -155,6 +175,17 @@ public class PlayerController : MonoBehaviour
 		if (shootTimer < 0) {
 			canShootCd = true;
 			}
+
+		if (currentHeart == 2) {
+			hearts [0].enabled = true;
+			hearts [1].enabled = true;
+			hearts [2].enabled = true;
+		} else if (currentHeart == 1) {
+			hearts [0].enabled = true;
+			hearts [1].enabled = true;
+		} else if (currentHeart == 1) {
+			hearts [0].enabled = true;
+		}
 			
 	}
 
@@ -194,15 +225,16 @@ public class PlayerController : MonoBehaviour
 			grounded = false;
 		} else
 			grounded = true;
+			if (Input.GetButtonDown ("Jump") && grounded) {
+				isjumping = true;
+				playerRB.velocity = (Vector2.up * jumpVelocity); //regular jump
+				jumpCounter++;
+			}
 
-		if (Input.GetButtonDown ("Jump") && grounded) {
-			playerRB.velocity = (Vector2.up * jumpVelocity); //regular jump
-			jumpCounter++;
-		}
-
-		if (Input.GetButtonDown ("Jump") && !grounded && !doubleJumped && allowDoubleJump) {
-			playerRB.velocity = (Vector2.up * jumpVelocity); //double jump
-			doubleJumped = true;
+			if (Input.GetButtonDown ("Jump") && !grounded && !doubleJumped && allowDoubleJump) {
+				playerRB.velocity = (Vector2.up * jumpVelocity); //double jump
+				doubleJumped = true;
+	
 		}
 
 		if (grounded) {
@@ -210,11 +242,15 @@ public class PlayerController : MonoBehaviour
 			playerAnim.SetBool ("Jumping", false); //set animation
 		}
 
-		if (Mathf.Abs (playerRB.velocity.y) > 0.0001)
+		if (Mathf.Abs (playerRB.velocity.y) > 0.0001){
+		if(isjumping)
 			playerAnim.SetBool ("Jumping", true);//animation variables
-		
+		}
 		else
+		{
 			playerAnim.SetBool ("Jumping", false);//animation variables
+			isjumping = false;
+		}
 
 
 	}
@@ -288,44 +324,45 @@ public class PlayerController : MonoBehaviour
 	//collisions
 	void OnCollisionEnter2D (Collision2D hit)
 	{
+		if (playerAnim.GetBool ("Hurt") == false) {
+			//damage taken by enemy bullet
+			if (hit.gameObject.CompareTag ("EnemyBullet")) {
+				Destroy (hit.gameObject);
+				hearts [currentHeart].enabled = false;
+				currentHeart--;
+				playerAnim.SetBool ("Hurt", true);
+				if (currentHeart >= 0)
+					audioManager.PlaySound (Hurt);
+				else
+					audioManager.PlaySound (Die);
+			}
 
-		//damage taken by enemy bullet
-		if (hit.gameObject.CompareTag ("EnemyBullet")) {
-			Destroy (hit.gameObject);
-			hearts [currentHeart].enabled = false;
-			currentHeart--;
-			playerAnim.SetBool ("Hurt", true);
-			if (currentHeart >= 0)
-				audioManager.PlaySound (Hurt);
-			else
-				audioManager.PlaySound (Die);
+			//damage taken by enemy contact
+			if (hit.gameObject.CompareTag ("Enemy") || hit.gameObject.CompareTag ("Boss") || hit.gameObject.CompareTag ("MovableEnemy")) {
+				hearts [currentHeart].enabled = false;
+				currentHeart--;
+				playerAnim.SetBool ("Hurt", true);
+				if (currentHeart >= 0)
+					audioManager.PlaySound (Hurt);
+				else
+					audioManager.PlaySound (Die);
+			}
+
+			//transfer movement to player in contact
+			if (hit.gameObject.CompareTag ("LaserDamage")) {
+				hearts [currentHeart].enabled = false;
+				currentHeart--;
+				playerAnim.SetBool ("Hurt", true);
+				playerRB.AddForce (new Vector2 (moveDirection * 225, 0));
+
+				if (currentHeart >= 0)
+					audioManager.PlaySound (Hurt);
+				else
+					audioManager.PlaySound (Die);
+			}
 		}
 
-		//damage taken by enemy contact
-		if (hit.gameObject.CompareTag ("Enemy") || hit.gameObject.CompareTag ("Boss") || hit.gameObject.CompareTag ("MovableEnemy")) {
-			hearts [currentHeart].enabled = false;
-			currentHeart--;
-			playerAnim.SetBool ("Hurt", true);
-			if (currentHeart >= 0)
-				audioManager.PlaySound (Hurt);
-			else
-				audioManager.PlaySound (Die);
-		}
 
-		//transfer movement to player in contact
-		if (hit.gameObject.CompareTag ("LaserDamage")) {
-			hearts [currentHeart].enabled = false;
-			currentHeart--;
-			playerAnim.SetBool ("Hurt", true);
-			playerRB.AddForce (new Vector2 (moveDirection * 225, 0));
-
-			if (currentHeart >= 0)
-				audioManager.PlaySound (Hurt);
-			else
-				audioManager.PlaySound (Die);
-		}
-
-		//turn plyer child of the platform - used to smooth movement
 
 
 	}
@@ -349,7 +386,6 @@ public class PlayerController : MonoBehaviour
 			currentHeart++;
 			if (currentHeart < hearts.Length) {
 				audioManager.PlaySound ("Life");
-				hearts [currentHeart].enabled = true;
 			} else {
 				currentHeart--;
 			}
@@ -357,15 +393,31 @@ public class PlayerController : MonoBehaviour
 		if (hit.gameObject.CompareTag ("Laser")) {
 			hit.transform.GetChild(1).transform.GetComponent<Animator>().SetBool("start", true);
 		}
+		//ChangePlayerCheckpoint
+		if(hit.gameObject.CompareTag("Checkpoint1")){
+			usedCheckpoint = true;
+			checkpoint = hit.gameObject.transform.position;
+		}
 	}
 
 	public void PlayerDied (){
-		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
+		restartConfig ();
+		transform.position = checkpoint;
+		playerAnim.SetBool("Die", false);
 	}
 
 	public void CancelAnimHurt (){
 		playerAnim.SetBool ("Hurt", false);
-		playerAnim.SetBool("Die", false);
+			canMove = true;
+	}
+	public GameObject Boss;
+	public void restartConfig(){
+		if (haveBoss == true) {
+			Boss = GameObject.FindGameObjectWithTag ("Boss");
+			Boss.GetComponent<Boss> ().resetBossLife ();
+		}
+		transform.parent = null; //remove player from platform children if he dies while connected
+		currentHeart = hearts.Length - 1; //reset player hearts
 		canMove = true;
 	}
 }

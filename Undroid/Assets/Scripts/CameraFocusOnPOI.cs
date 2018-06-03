@@ -5,12 +5,12 @@ using UnityEngine;
 public class CameraFocusOnPOI : MonoBehaviour {
 
 	private bool camTriggered = false;
-
+	private GameObject player;
 	//focus variables
 	public GameObject cam;
 	public GameObject focusObject;
 	private bool focusCamera = false;
-	public float focusTime = 5f;
+	public float focusTime = 2f;
 	private float focusCounter = 0;
 	public float camMoveSpeed = 10;
 
@@ -21,6 +21,7 @@ public class CameraFocusOnPOI : MonoBehaviour {
 
 	void Awake(){
 		cam = GameObject.FindGameObjectWithTag ("MainCamera");
+		player = GameObject.FindGameObjectWithTag ("Player");
 	}
 
 	void FixedUpdate(){
@@ -50,7 +51,7 @@ public class CameraFocusOnPOI : MonoBehaviour {
 			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(focusObject.transform.position.x, focusObject.transform.position.y, -10), camMoveSpeed * Time.deltaTime);
 			focusCounter -= Time.deltaTime;
 			cam.GetComponent<Camera>().orthographicSize = Mathf.Lerp(originalCamSize,newCamSize,5f);
-
+			player.GetComponent<PlayerController> ().canMove = false;
 
 		}
 
@@ -58,6 +59,7 @@ public class CameraFocusOnPOI : MonoBehaviour {
 			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, GameObject.FindGameObjectWithTag("Player").transform.position.y, -10), camMoveSpeed * Time.deltaTime);
 			focusCamera = false;
 			cam.GetComponent<Camera>().orthographicSize = Mathf.Lerp(newCamSize,originalCamSize,5f);
+			player.GetComponent<PlayerController> ().canMove = true;
 
 		}
 

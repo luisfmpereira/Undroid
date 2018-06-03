@@ -7,10 +7,12 @@ public class InteractionButtonManager : MonoBehaviour {
 	private bool interacted;
 	public Sprite green;
 	private AudioManager audiomanager;
+	private GameObject player;
 
 
 	void Awake(){
 		cam = GameObject.FindGameObjectWithTag ("MainCamera");
+		player = GameObject.FindGameObjectWithTag ("Player");
 	}
 
 	void Start(){
@@ -45,7 +47,7 @@ public class InteractionButtonManager : MonoBehaviour {
 	public GameObject cam;
 	public GameObject focusObject;
 	private bool focusCamera = false;
-	public float focusTime = 3f;
+	public float focusTime = 2f;
 	private float focusCounter = 0;
 	public float camMoveSpeed = 10;
 
@@ -58,6 +60,7 @@ public class InteractionButtonManager : MonoBehaviour {
 		if (focusCamera) {
 			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(focusObject.transform.position.x, focusObject.transform.position.y, -10), camMoveSpeed * Time.deltaTime);
 			focusCounter -= Time.deltaTime;
+			player.GetComponent<PlayerController> ().canMove = false;
 		}
 
 		if (focusCounter <= 0 && focusCamera) {
@@ -65,6 +68,7 @@ public class InteractionButtonManager : MonoBehaviour {
 			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, GameObject.FindGameObjectWithTag("Player").transform.position.y, -10), camMoveSpeed * Time.deltaTime);
 			focusCamera = false;
 			cam.GetComponent<CameraFollow> ().isWorking = true;
+			player.GetComponent<PlayerController> ().canMove = true;
 		}
 
 

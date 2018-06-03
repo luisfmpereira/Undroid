@@ -79,5 +79,5 @@ public class BossLevel2 : Boss {
 		DamageByBoxes (hit);
 		DamageByPlayer (hit);
 	}
-
+		
 }

@@ -15,17 +15,19 @@ public class Boss : MonoBehaviour {
 	protected float shootTimer;
 	public GameObject PowerUpDropBoss;
 	public Image bossHealthBar;
+	public int bossHealthFixed = 3;
 
 	public bool turnBossOn;
 
 	void Awake(){
 		bossMaxHealth = bossHealth;
+		bossHealthFixed = bossHealth;
 	}
 
 	protected void KillBoss(){
 		if (bossHealth <= 0) {
 			PowerUpDropBoss.SetActive (true);
-			Destroy (this.gameObject);
+			this.gameObject.SetActive (false);
 		}
 	}
 
@@ -57,4 +59,7 @@ public class Boss : MonoBehaviour {
 		bossHealthBar.fillAmount = bossHealth / bossMaxHealth;
 	}
 		
+	public void resetBossLife (){
+		bossHealth = bossHealthFixed;
+	}
 }

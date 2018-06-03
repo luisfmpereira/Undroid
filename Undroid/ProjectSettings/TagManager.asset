@@ -23,6 +23,7 @@ TagManager:
   - Text2
   - MovableEnemy
   - KillZone
+  - Checkpoint1
   layers:
   - Default
   - TransparentFX
