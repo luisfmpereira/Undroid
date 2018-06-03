@@ -25,7 +25,7 @@ public class BossLevel3 : Boss {
 	}
 
 	void Update(){
-		KillBoss ();
+		animateDeath ();
 		ShowLife ();
 
 		if (flip) {

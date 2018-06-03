@@ -16,19 +16,24 @@ public class Boss : MonoBehaviour {
 	public GameObject PowerUpDropBoss;
 	public Image bossHealthBar;
 	public int bossHealthFixed = 3;
+	protected Animator bossAnim;
 
 	public bool turnBossOn;
 
 	void Awake(){
 		bossMaxHealth = bossHealth;
 		bossHealthFixed = bossHealth;
+		bossAnim = GetComponent<Animator> ();
+	}
+	protected void animateDeath(){
+		if (bossHealth <= 0) {
+			bossAnim.SetBool ("Die", true);
+		}
 	}
 
 	protected void KillBoss(){
-		if (bossHealth <= 0) {
 			PowerUpDropBoss.SetActive (true);
 			this.gameObject.SetActive (false);
-		}
 	}
 
 

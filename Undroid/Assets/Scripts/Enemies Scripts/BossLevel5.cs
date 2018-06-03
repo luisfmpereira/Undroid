@@ -16,7 +16,7 @@ public class BossLevel5 : Boss {
 
 	void Update () {
 		ShowLife ();
-		KillBoss ();
+		animateDeath ();
 		if (bossHealth <= 0)
 			laser.SetActive (false);
 

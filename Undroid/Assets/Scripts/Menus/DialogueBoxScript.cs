@@ -10,7 +10,7 @@ public class DialogueBoxScript : MonoBehaviour {
 	public GameObject dialogueBox;
 	public Text dialogueText;
 	public int dialogueTextSize = 50;
-	private float originalFixedTime;
+	//private float originalFixedTime;
 	private float textTimer;
 	public float maxTextTimer = 3f;
 
@@ -19,7 +19,7 @@ public class DialogueBoxScript : MonoBehaviour {
 
 
 	void Awake() {
-		originalFixedTime = Time.fixedDeltaTime;
+		//originalFixedTime = Time.fixedDeltaTime;
 		currentText = 0;
 		dialogueText = dialogueBox.GetComponentInChildren<Text>();
 

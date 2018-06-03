@@ -20,9 +20,9 @@ public class BossLevel4 : Boss{
 
 	void Update () {
 		ShowLife ();
+		animateDeath ();
 		if (turnBossOn) {
 			MoveEnemy ();
-			KillBoss ();
 
 			if (bossHealth == 0) {
 				laser.SetActive (false);

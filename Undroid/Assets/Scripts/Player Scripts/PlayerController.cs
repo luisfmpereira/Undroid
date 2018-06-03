@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour
 	private float groundedTimer;
 	private int jumpCounter;
 	public bool grounded;
+	private bool crouching;
 
 	//double jump
 	public bool allowDoubleJump;
@@ -65,6 +66,11 @@ public class PlayerController : MonoBehaviour
 	public bool allowShooting;
 	public float bulletSpeed;
 	public Transform muzzlePos;
+
+	private Vector2 muzzlePositive = new Vector2(0.55f,0.65f);
+	private Vector2 muzzleNegative = new Vector2(-0.55f,0.65f);
+	private Vector2 muzzleCrouchPositive = new Vector2(0.55f,0f);
+	private Vector2 muzzleCrouchNegative = new Vector2(-0.55f,0f);
 
 
 	//life
@@ -90,6 +96,7 @@ public class PlayerController : MonoBehaviour
 	public float shootTimer;
 	public float shootCd = 0.5f;
 	public bool canShootCd = true;
+	public int bulletRotation;
 
 	//Checkpoint
 	public Vector3 checkpoint;
@@ -187,6 +194,18 @@ public class PlayerController : MonoBehaviour
 			hearts [0].enabled = true;
 		}
 			
+
+		//change muzzle positions to crouching and standing positions
+		if (moveDirection == 1 && !crouching)
+			muzzlePos.localPosition = muzzlePositive;
+		if (moveDirection == -1 && !crouching)
+			muzzlePos.localPosition = muzzleNegative;
+
+		if (moveDirection == 1 && crouching)
+			muzzlePos.localPosition = muzzleCrouchPositive;
+		if (moveDirection == -1 && crouching)
+			muzzlePos.localPosition = muzzleCrouchNegative;
+
 	}
 
 	//control player movement
@@ -198,10 +217,17 @@ public class PlayerController : MonoBehaviour
 		playerRB.velocity = new Vector2 (xMove * maxSpeed, playerRB.velocity.y);
 		//playerRB.position = new Vector2 (playerRB.position.x + xMove * maxSpeed * Time.deltaTime, playerRB.position.y); //set new player position
 
-		if (xMove > 0)
+		if (xMove > 0) {
 			moveDirection = 1;
-		if (xMove < 0)
+			bulletRotation = 0;
+
+		}
+		if (xMove < 0) {
 			moveDirection = -1;
+			bulletRotation = 180;
+
+			
+		}
 
 		flipSprite (playerSR, xMove); //control sprite direction
 
@@ -270,29 +296,36 @@ public class PlayerController : MonoBehaviour
 
 	public void playerCrouch ()
 	{
-
+	
 		if (Input.GetButton ("Fire2")) {
 			playerCollider.size = crouchSizeColl;
 			playerCollider.offset = crouchOffColl;
 			maxSpeed = 2f;
+			crouching = true;
 			playerAnim.SetBool ("Crouching", true);
 		} else if (!Physics2D.OverlapCircle (ceilCheck.position, groundCheckRadius, whatIsGround)) {
 			//verify if ceiling above player
 			playerCollider.size = standSizeColl;
 			playerCollider.offset = standOffColl;
 			maxSpeed = 3f;
+			crouching = false;
 			playerAnim.SetBool ("Crouching", false);
 		}
 	}
 
+
+
 	public void playerShoot ()
 	{
+		
+		
 		if (allowShooting && canShootCd) {
 			if (Input.GetButtonDown ("Fire3")) {
 				canShootCd = false;
 				audioManager.PlaySound ("Shoot");
 				Rigidbody2D bullet;
-				bullet = Instantiate (playerBulletPrefab, muzzlePos.position, Quaternion.identity) as Rigidbody2D;
+
+				bullet = Instantiate (playerBulletPrefab, muzzlePos.position, Quaternion.Euler(0,0,bulletRotation)) as Rigidbody2D;
 				//add force to bullet
 				bullet.AddForce (new Vector2 (moveDirection, 0) * bulletSpeed);
 				Destroy (bullet.gameObject, 3);

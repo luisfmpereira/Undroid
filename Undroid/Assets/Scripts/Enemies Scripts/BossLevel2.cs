@@ -25,17 +25,13 @@ public class BossLevel2 : Boss {
 	void Update(){
 
 		ShowLife ();
+		animateDeath ();
 
 		if (turnBossOn) {
 			
-
-
 			shootTimer -= Time.deltaTime;
 			if (bossRB.velocity.y <= 0.1)
 				jumpTimer -= Time.deltaTime;
-
-			KillBoss ();
-
 			JumpAndShoot ();
 		}
 	}

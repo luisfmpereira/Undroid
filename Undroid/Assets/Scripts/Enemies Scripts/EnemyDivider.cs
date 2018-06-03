@@ -7,6 +7,7 @@ public class EnemyDivider : MonoBehaviour {
 	public bool newBrokenEnemy;
 	public float movement = 0.1f;
 	public bool selectOnlyBroken;
+	public bool selectOnlyWorking;
 	public bool brokenGoLeft;
 
 	void Awake(){
@@ -17,10 +18,12 @@ public class EnemyDivider : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D hit){
 		if (hit.gameObject.CompareTag ("MovableEnemy")) {
-			if (!selectOnlyBroken)
+			if (!selectOnlyBroken && !selectOnlyWorking)
 				newBrokenEnemy = !newBrokenEnemy;
-			else
+			else if (!selectOnlyWorking)
 				newBrokenEnemy = true;
+			else if (selectOnlyWorking)
+				newBrokenEnemy = false;
 		}
 	}
 
