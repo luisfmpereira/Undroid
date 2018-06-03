@@ -423,7 +423,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b001690b7c6e4a94581d5c54f4609e5a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: db0813149bfcb4c5e80ce2b79a55239d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -453,4 +453,5 @@ MonoBehaviour:
   mainButton: {fileID: 0}
   click: Click
   start: Background
+  select: Select
   areYouSureQuit: {fileID: 0}
