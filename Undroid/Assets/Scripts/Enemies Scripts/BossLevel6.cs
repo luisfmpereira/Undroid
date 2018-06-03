@@ -15,10 +15,9 @@ public class BossLevel6 : Boss {
 	private Vector2 muzzleLeft;
 
 	public float dashSpeed;
-	private bool move;
 	private float moveTimer;
 	public float moveCooldown;
-	private bool flip;
+	private bool hasFlipped;
 
 
 	void Start(){
@@ -37,28 +36,16 @@ public class BossLevel6 : Boss {
 			laser.SetActive (false);
 
 		if (turnBossOn) {
+			moveTimer -= Time.deltaTime;
 
 			if (Mathf.Abs (bossRB.velocity.x) <= 0) {
-				shootTimer -= Time.deltaTime;
 				Shooting ();
+				FlipOnce();
 
 			}
 
-			if (move)
+			if (moveTimer <= 0)
 				MoveEnemy ();
-
-			if (flip) {
-				bossSR.flipX = !bossSR.flipX;
-				bulletForce *= -1;
-
-				if (bossSR.flipX)
-					muzzlePosition.localPosition = muzzleRight;
-				if (!bossSR.flipX)
-					muzzlePosition.localPosition = muzzleLeft;
-				
-				flip = false;
-			}
-
 	
 		}
 
@@ -67,12 +54,34 @@ public class BossLevel6 : Boss {
 	void MoveEnemy(){
 
 		bossRB.velocity = new Vector2(dashSpeed,0);
-		move = false;
+		hasFlipped = false;
+		moveTimer = moveCooldown;
 	}
 
 
+	void FlipOnce(){
+		if (!hasFlipped) {
+			bossSR.flipX = !bossSR.flipX;
+
+			if (bossSR.flipX) {
+				muzzlePosition.localPosition = muzzleRight;
+				bulletForce = 300;
+				dashSpeed = 16;
+			}
+			if (!bossSR.flipX) {
+				muzzlePosition.localPosition = muzzleLeft;
+				bulletForce = -300;
+				dashSpeed = -16;
+			}
+
+			hasFlipped = true;
+		}
+
+	}
+
 	void Shooting(){
-		
+		shootTimer -= Time.deltaTime;
+
 		if (shootTimer <= 0) {
 			if (Random.Range (0f, 10f) < 5)
 				propToSpawn = bulletPrefab;
@@ -80,7 +89,6 @@ public class BossLevel6 : Boss {
 				propToSpawn = metalBox;
 			
 			Instantiate (propToSpawn, muzzlePosition.position, Quaternion.identity).AddForce(new Vector2(bulletForce,0));
-			move = true;
 			shootTimer = shootCooldown;
 		}
 		
