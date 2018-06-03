@@ -616,7 +616,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1234024629}
-        m_MethodName: LoadScene
+        m_MethodName: startGame
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -939,6 +939,7 @@ MonoBehaviour:
   click: Click
   start: Background
   select: Select
+  started: 0
   areYouSureQuit: {fileID: 0}
 --- !u!4 &1234024630
 Transform:
@@ -1196,7 +1197,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1234024629}
-        m_MethodName: LoadScene
+        m_MethodName: startGame
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1402,7 +1403,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1234024629}
-        m_MethodName: LoadScene
+        m_MethodName: startGame
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1578,7 +1579,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1234024629}
-        m_MethodName: LoadScene
+        m_MethodName: startGame
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2184,7 +2185,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1234024629}
-        m_MethodName: LoadScene
+        m_MethodName: startGame
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2360,7 +2361,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1234024629}
-        m_MethodName: LoadScene
+        m_MethodName: startGame
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

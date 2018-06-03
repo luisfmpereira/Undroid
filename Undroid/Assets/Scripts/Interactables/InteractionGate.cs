@@ -14,6 +14,7 @@ public class InteractionGate : MonoBehaviour {
 	public Sprite green;
 	public GameObject button;
 	private GameObject player;
+	private AudioManager audiomanager;
 
 	void Update(){
 		interacted = Input.GetButtonDown ("Fire1");
@@ -28,6 +29,7 @@ public class InteractionGate : MonoBehaviour {
 	void OnTriggerStay2D (Collider2D hit){
 		if(hit.gameObject.tag == "Player" && interacted == true){
 			if (!gateTriggered) {
+				audiomanager.PlaySound("DoorOpen");
 				if(useFocus)
 				cam.GetComponent<CameraFollow> ().isWorking = false;
 				focusCamera = true;
@@ -58,6 +60,7 @@ public class InteractionGate : MonoBehaviour {
 	void Awake(){
 		cam = GameObject.FindGameObjectWithTag ("MainCamera");
 		player = GameObject.FindGameObjectWithTag ("Player");
+		audiomanager = AudioManager.instance;
 	}
 
 	void FocusCameraOnPOI(){

@@ -1787,11 +1787,6 @@ Prefab:
       propertyPath: hearts.Array.data[2]
       value: 
       objectReference: {fileID: 251401298}
-    - target: {fileID: 114916283353183700, guid: cb2b71808ded5d746a6b505ed4d3191a,
-        type: 2}
-      propertyPath: muzzlePos
-      value: 
-      objectReference: {fileID: 1560453560}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb2b71808ded5d746a6b505ed4d3191a, type: 2}
   m_IsPrefabParent: 0
@@ -33012,11 +33007,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fce48ef4339bd624da7593cb0fa98443, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1560453560 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4018474281345920, guid: cb2b71808ded5d746a6b505ed4d3191a,
-    type: 2}
-  m_PrefabInternal: {fileID: 510393784}
 --- !u!1001 &1563301125
 Prefab:
   m_ObjectHideFlags: 0

@@ -24,7 +24,10 @@ public class BoxSpawnAreaScript : MonoBehaviour {
 
 	void Update(){
 		if (boxCount <= 0) {
-			Instantiate (WoodBox, locations [Random.Range (0, locations.Length)].position,Quaternion.identity);
+			Instantiate (WoodBox, locations [1].position,Quaternion.identity);
+			Instantiate (WoodBox, locations [2].position,Quaternion.identity);
+			Instantiate (WoodBox, locations [3].position,Quaternion.identity);
+			Instantiate (WoodBox, locations [0].position,Quaternion.identity);
 		}
 	}
 

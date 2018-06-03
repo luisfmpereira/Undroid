@@ -23,6 +23,7 @@ public class SceneManagerScript : MonoBehaviour {
 	string start = "Background";
 	[SerializeField]
 	string select = "Select";
+	public bool started = false;
 
 
 	void Awake(){
@@ -31,9 +32,11 @@ public class SceneManagerScript : MonoBehaviour {
 
 		if(useQuit)
 			areYouSureQuit.SetActive (false);
-
+		
 	}
-
+	void Start(){
+		started = true;
+	}
 	public void SelectFirst(){
 		EventSystem.current.SetSelectedGameObject (mainButton);
 	}
@@ -73,7 +76,7 @@ public class SceneManagerScript : MonoBehaviour {
 
 	public void playEnter(){
 		audioManager.PlaySound (click);
-	}
+		}
 
 	public void playSelect(){
 		audioManager.PlaySound (select);
@@ -90,5 +93,17 @@ public class SceneManagerScript : MonoBehaviour {
 		PlayerPrefs.SetInt ("Level5", 0);
 		PlayerPrefs.SetInt ("Level6", 0);
 	}
+	public void startMenu(){
+		SceneManager.LoadScene ("MainMenu");
+		Time.timeScale = 1;
+		Time.fixedDeltaTime = originalFixedTime;
+		audioManager.PlaySound ("MusicBGMenu");
+	}
 
+	public void startGame(string sceneName){
+		SceneManager.LoadScene (sceneName);
+		Time.timeScale = 1;
+		Time.fixedDeltaTime = originalFixedTime;
+		audioManager.StopSound ("MusicBGMenu");
+	}
 }

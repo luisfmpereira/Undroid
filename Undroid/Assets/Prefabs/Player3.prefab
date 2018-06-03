@@ -219,10 +219,10 @@ MonoBehaviour:
   - {fileID: 0}
   currentSceneName: 
   allowDash: 0
-  dashSpeed: 500
+  dashSpeed: 20
   dashCooldown: 1
   dashTimerAnim: 0
-  dashCdAnim: 0.4
+  dashCdAnim: 0.3
   doDash: 0
   audioManager: {fileID: 0}
   Die: Die
@@ -230,6 +230,7 @@ MonoBehaviour:
   shootTimer: 0
   shootCd: 0.3
   canShootCd: 1
+  bulletRotation: 0
   checkpoint: {x: 0, y: 0, z: 0}
   usedCheckpoint: 0
   haveBoss: 0

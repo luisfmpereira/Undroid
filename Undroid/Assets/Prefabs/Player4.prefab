@@ -159,7 +159,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 1111841826931786}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 33d01c86bef37994bb78745784fd13c8, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
@@ -194,10 +194,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cca3e7cab968124280aba8b191b8f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerRB: {fileID: 0}
-  playerCollider: {fileID: 0}
+  playerRB: {fileID: 50043977665630110}
+  playerCollider: {fileID: 70797696476656810}
   canMove: 1
-  maxSpeed: 5
+  maxSpeed: 3
   groundCheck: {fileID: 4684066403772528}
   ceilCheck: {fileID: 4787122519769882}
   whatIsGround:
@@ -205,7 +205,7 @@ MonoBehaviour:
     m_Bits: 256
   jumpVelocity: 6.5
   maxGroundedTimer: 0.5
-  grounded: 0
+  grounded: 1
   allowDoubleJump: 1
   doubleJumpModifier: 1
   playerBulletPrefab: {fileID: 50524648910763498, guid: f8e10c703a395394c98434eadb11cd07,
@@ -219,10 +219,10 @@ MonoBehaviour:
   - {fileID: 0}
   currentSceneName: Level4
   allowDash: 1
-  dashSpeed: 500
+  dashSpeed: 20
   dashCooldown: 1
-  dashTimerAnim: 0
-  dashCdAnim: 0.4
+  dashTimerAnim: -0.0009161867
+  dashCdAnim: 0.3
   doDash: 0
   audioManager: {fileID: 0}
   Die: Die
@@ -230,7 +230,8 @@ MonoBehaviour:
   shootTimer: 0
   shootCd: 0.3
   canShootCd: 1
-  checkpoint: {x: 0, y: 0, z: 0}
+  bulletRotation: 0
+  checkpoint: {x: -1.19, y: 0.16, z: 0}
   usedCheckpoint: 0
   haveBoss: 1
   noFriction: {fileID: 6200000, guid: 33d01c86bef37994bb78745784fd13c8, type: 2}

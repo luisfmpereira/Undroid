@@ -29,10 +29,15 @@ public class EnemyController : MonoBehaviour {
 	private int bulletDirection;
 	public bool heFlip = false;
 
+	private AudioManager audiomanager;
+
+	public bool heDied = false;
 
 
 	void Awake(){
+		
 		bulletDirection = startShootingRight ? 1 : -1;
+		audiomanager = AudioManager.instance;
 	}
 
 	void Start () {
@@ -43,19 +48,18 @@ public class EnemyController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (!heDied) {
+			if (staticEnemy) {
+				StaticEnemyShooting ();
+			}
 
-		if (staticEnemy) {
-			StaticEnemyShooting ();
+			if (isShooting) {
+				EnemyShooting ();
+
+			} 
+			if (!staticEnemy)
+				MoveEnemy ();
 		}
-
-		if (isShooting) {
-			EnemyShooting ();
-
-		} 
-		if(!staticEnemy)
-			MoveEnemy ();
-
-
 	}
 
 	public void MoveEnemy (){

@@ -17,16 +17,21 @@ public class Boss : MonoBehaviour {
 	public Image bossHealthBar;
 	public int bossHealthFixed = 3;
 	protected Animator bossAnim;
+	public GameObject player;
 
 	public bool turnBossOn;
 
 	void Awake(){
+		player = GameObject.FindGameObjectWithTag ("Player");
 		bossMaxHealth = bossHealth;
 		bossHealthFixed = bossHealth;
 		bossAnim = GetComponent<Animator> ();
 	}
+		
 	protected void animateDeath(){
 		if (bossHealth <= 0) {
+			player.GetComponent<PlayerController> ().BossDiedSound ();
+			player.GetComponent<PlayerController> ().bossDied = true;
 			bossAnim.SetBool ("Die", true);
 		}
 	}

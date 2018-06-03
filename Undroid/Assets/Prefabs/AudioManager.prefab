@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114407757873398990}
   m_Layer: 0
   m_Name: AudioManager
-  m_TagString: Untagged
+  m_TagString: AudioManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
   sounds:
   - name: Click
     clip: {fileID: 8300000, guid: 208190c742198d243a070390e6be0e12, type: 3}
-    volume: 0.4
+    volume: 0.2
     pitch: 1
     randomVolume: 0.1
     randomPitch: 0.1
@@ -68,7 +68,7 @@ MonoBehaviour:
     loop: 1
   - name: Select
     clip: {fileID: 8300000, guid: 6cdaf57e69b8ef94cb9220c8aa48b394, type: 3}
-    volume: 0.4
+    volume: 0.2
     pitch: 1
     randomVolume: 0.1
     randomPitch: 0.1
@@ -118,6 +118,62 @@ MonoBehaviour:
   - name: Dash
     clip: {fileID: 8300000, guid: 99c3e0874d4e4ab4fab5dcb8b519dcff, type: 3}
     volume: 0.1
+    pitch: 0.8
+    randomVolume: 0.1
+    randomPitch: 0.1
+    loop: 0
+  - name: MetalBreak
+    clip: {fileID: 8300000, guid: ba45becade1fee14aa6368c69712f8d9, type: 3}
+    volume: 0.1
+    pitch: 0.8
+    randomVolume: 0.1
+    randomPitch: 0.1
+    loop: 0
+  - name: WoodBreak
+    clip: {fileID: 8300000, guid: a2e8c658c16104243b53e19e076bf681, type: 3}
+    volume: 0.1
+    pitch: 0.8
+    randomVolume: 0.1
+    randomPitch: 0.1
+    loop: 0
+  - name: RobotDie
+    clip: {fileID: 8300000, guid: 353ec4e1afc709d43b2a792c1bfcb723, type: 3}
+    volume: 0.1
+    pitch: 0.8
+    randomVolume: 0.1
+    randomPitch: 0.1
+    loop: 0
+  - name: MusicBGMenu
+    clip: {fileID: 8300000, guid: 4303caa2bb782de4aa39c6c33867f173, type: 3}
+    volume: 0.4
+    pitch: 1
+    randomVolume: 0.1
+    randomPitch: 0.1
+    loop: 1
+  - name: MusicBGBoss
+    clip: {fileID: 8300000, guid: d86fb3bf3823b07498ac79374a089cf2, type: 3}
+    volume: 0.4
+    pitch: 1
+    randomVolume: 0.1
+    randomPitch: 0.1
+    loop: 1
+  - name: LaserOff
+    clip: {fileID: 8300000, guid: d7bb25edb8979e842881a1f222ee7abe, type: 3}
+    volume: 0.1
+    pitch: 0.8
+    randomVolume: 0.1
+    randomPitch: 0.1
+    loop: 0
+  - name: DoorOpen
+    clip: {fileID: 8300000, guid: d0b8128718ec2c546ab38112a1c65f19, type: 3}
+    volume: 0.1
+    pitch: 0.8
+    randomVolume: 0.1
+    randomPitch: 0.1
+    loop: 0
+  - name: Explosion
+    clip: {fileID: 8300000, guid: 41b21a987ba163f448c36789ad5dfb62, type: 3}
+    volume: 0.2
     pitch: 0.8
     randomVolume: 0.1
     randomPitch: 0.1

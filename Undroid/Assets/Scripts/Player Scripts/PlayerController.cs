@@ -104,10 +104,14 @@ public class PlayerController : MonoBehaviour
 
 	//ResetLevel
 	public bool haveBoss = false;
+	public bool bossDied = false;
 
 	//material
 	public PhysicsMaterial2D noFriction;
 	public PhysicsMaterial2D withFriction;
+
+
+
 
 
 
@@ -136,12 +140,20 @@ public class PlayerController : MonoBehaviour
 		audioManager = AudioManager.instance;
 
 	}
+
+	void FixedUpdate (){
+		if (canMove) {
+			this.GetComponent<CapsuleCollider2D> ().sharedMaterial = noFriction;
+			playerMove (); //call move function
+
+			playerDash ();
+		}
+	}
 		
 	void Update ()
 	{
 		if (canMove) {
 			this.GetComponent<CapsuleCollider2D> ().sharedMaterial = noFriction;
-			playerMove (); //call move function
 
 			playerJump (); //call jump function
 
@@ -149,7 +161,6 @@ public class PlayerController : MonoBehaviour
 
 			playerShoot ();
 
-			playerDash ();
 
 		} else {
 			this.GetComponent<CapsuleCollider2D> ().sharedMaterial = withFriction;
@@ -341,12 +352,12 @@ public class PlayerController : MonoBehaviour
 			if (Input.GetButtonDown ("Dash") && dashTimer <= 0) {
 				doDash = true;
 				audioManager.PlaySound ("Dash");		
-				dashTimer = dashCooldown;
-				dashTimerAnim = dashCdAnim;
+				dashTimer = dashCooldown ;
+				dashTimerAnim = dashCdAnim ;
 				playerAnim.SetBool ("Dash", true);
 			}
 			if (doDash) {
-				playerRB.velocity = new Vector2 (moveDirection * dashSpeed * Time.deltaTime, playerRB.velocity.y);
+				playerRB.velocity = new Vector2 (moveDirection * dashSpeed, playerRB.velocity.y);
 			}
 		}
 
@@ -445,12 +456,16 @@ public class PlayerController : MonoBehaviour
 	}
 	public GameObject Boss;
 	public void restartConfig(){
-		if (haveBoss == true) {
+		if (haveBoss && !bossDied) {
 			Boss = GameObject.FindGameObjectWithTag ("Boss");
 			Boss.GetComponent<Boss> ().resetBossLife ();
 		}
 		transform.parent = null; //remove player from platform children if he dies while connected
 		currentHeart = hearts.Length - 1; //reset player hearts
 		canMove = true;
+	}
+
+	public void BossDiedSound(){
+		audioManager.PlaySound("RobotDie");
 	}
 }

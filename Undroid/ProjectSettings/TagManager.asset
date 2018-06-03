@@ -24,6 +24,7 @@ TagManager:
   - MovableEnemy
   - KillZone
   - Checkpoint1
+  - AudioManager
   layers:
   - Default
   - TransparentFX

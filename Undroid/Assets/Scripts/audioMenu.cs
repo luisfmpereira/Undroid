@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class audioMenu : MonoBehaviour {
-	private AudioManager audioManager;
+	public AudioManager audioManager;
 	[SerializeField]
 	string click = "Click";
 	[SerializeField]
 	string select = "Select";
 	// Use this for initialization
-	void Awake () {
-		audioManager = AudioManager.instance;
-	}
+
 	public void playEnter(){
 		audioManager.PlaySound (click);
 	}
