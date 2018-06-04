@@ -1126,6 +1126,31 @@ Prefab:
       propertyPath: goRight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114187839778159354, guid: 78992dbd2a2687d438fe2d1c5437ee99,
+        type: 2}
+      propertyPath: isrunning
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114207708450106120, guid: 78992dbd2a2687d438fe2d1c5437ee99,
+        type: 2}
+      propertyPath: Right
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114758808396830576, guid: 78992dbd2a2687d438fe2d1c5437ee99,
+        type: 2}
+      propertyPath: Right
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114207708450106120, guid: 78992dbd2a2687d438fe2d1c5437ee99,
+        type: 2}
+      propertyPath: turnon
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114758808396830576, guid: 78992dbd2a2687d438fe2d1c5437ee99,
+        type: 2}
+      propertyPath: turnon
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78992dbd2a2687d438fe2d1c5437ee99, type: 2}
   m_IsPrefabParent: 0
@@ -32446,6 +32471,21 @@ Prefab:
       propertyPath: goRight
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114187839778159354, guid: 78992dbd2a2687d438fe2d1c5437ee99,
+        type: 2}
+      propertyPath: isrunning
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114207708450106120, guid: 78992dbd2a2687d438fe2d1c5437ee99,
+        type: 2}
+      propertyPath: turnon
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114758808396830576, guid: 78992dbd2a2687d438fe2d1c5437ee99,
+        type: 2}
+      propertyPath: turnon
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78992dbd2a2687d438fe2d1c5437ee99, type: 2}
   m_IsPrefabParent: 0
@@ -32691,6 +32731,31 @@ Prefab:
     - target: {fileID: 114187839778159354, guid: 78992dbd2a2687d438fe2d1c5437ee99,
         type: 2}
       propertyPath: goRight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114187839778159354, guid: 78992dbd2a2687d438fe2d1c5437ee99,
+        type: 2}
+      propertyPath: isrunning
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114758808396830576, guid: 78992dbd2a2687d438fe2d1c5437ee99,
+        type: 2}
+      propertyPath: turnon
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114207708450106120, guid: 78992dbd2a2687d438fe2d1c5437ee99,
+        type: 2}
+      propertyPath: turnon
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114758808396830576, guid: 78992dbd2a2687d438fe2d1c5437ee99,
+        type: 2}
+      propertyPath: Right
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114207708450106120, guid: 78992dbd2a2687d438fe2d1c5437ee99,
+        type: 2}
+      propertyPath: Right
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

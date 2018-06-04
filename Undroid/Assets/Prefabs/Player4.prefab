@@ -219,7 +219,7 @@ MonoBehaviour:
   - {fileID: 0}
   currentSceneName: Level4
   allowDash: 1
-  dashSpeed: 20
+  dashSpeed: 15
   dashCooldown: 1
   dashTimerAnim: -0.0009161867
   dashCdAnim: 0.3
@@ -234,6 +234,7 @@ MonoBehaviour:
   checkpoint: {x: -1.19, y: 0.16, z: 0}
   usedCheckpoint: 0
   haveBoss: 1
+  bossDied: 0
   noFriction: {fileID: 6200000, guid: 33d01c86bef37994bb78745784fd13c8, type: 2}
   withFriction: {fileID: 6200000, guid: 14b2570361733c04fa0bf67fe5e96212, type: 2}
   Boss: {fileID: 0}

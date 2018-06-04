@@ -30,10 +30,13 @@ public class InteractionConveyorBelt : MonoBehaviour {
 				gameObject.GetComponent<SpriteRenderer> ().sprite = green;
 				focusCamera = true;
 				focusCounter = focusTime;
+
 				}
 
 			//activate conveyor belt
 			conveyorBelt.GetComponent<ConveyorController> ().isrunning = true;
+			conveyorBelt.transform.GetChild (0).GetComponent<turnOnConveyor> ().turnon = true;
+			conveyorBelt.transform.GetChild (1).GetComponent<turnOnConveyor> ().turnon = true;
 
 		}
 	}

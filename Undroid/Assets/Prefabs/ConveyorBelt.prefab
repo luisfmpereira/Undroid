@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4741607013146320}
   - component: {fileID: 212653994011792558}
   - component: {fileID: 95056346788313814}
+  - component: {fileID: 114207708450106120}
   m_Layer: 0
   m_Name: conveyor_0 (1)
   m_TagString: Untagged
@@ -57,6 +58,7 @@ GameObject:
   - component: {fileID: 4698813022456830}
   - component: {fileID: 212730181314799416}
   - component: {fileID: 95234304061899330}
+  - component: {fileID: 114758808396830576}
   m_Layer: 0
   m_Name: conveyor_0
   m_TagString: Untagged
@@ -96,8 +98,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1314704987034866}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.92, y: 5.47, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16.077578, y: -1.2469287, z: 0.04296875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4698813022456830}
@@ -201,8 +203,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2
-  isrunning: 1
-  goRight: 0
+  isrunning: 0
+  goRight: 1
+--- !u!114 &114207708450106120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1162526304013010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ed456833e3a7942be177a914ba80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnon: 0
+--- !u!114 &114758808396830576
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1473185610349956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ed456833e3a7942be177a914ba80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnon: 0
 --- !u!212 &212230115808567262
 SpriteRenderer:
   m_ObjectHideFlags: 1
