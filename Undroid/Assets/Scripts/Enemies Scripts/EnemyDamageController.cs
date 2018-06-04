@@ -14,22 +14,30 @@ public class EnemyDamageController : MonoBehaviour {
 		anim = GetComponentInParent<Animator> ();
 		anim.SetBool ("Die", false);
 		audiomanager = AudioManager.instance;
-		enemy = this.transform.parent.gameObject.transform.parent.gameObject;
+		if(!movableEnemy)
+			enemy = this.transform.parent.gameObject.transform.parent.gameObject;
 	}
 
 	void Update() {
 
 		if (enemyLife <= 0) {
 			audiomanager.PlaySound ("Explosion");
-			enemy.GetComponent<EnemyController> ().heDied = true;
 			anim.SetBool ("Die", true);
+			if(!movableEnemy)
+				enemy.GetComponent<EnemyController> ().heDied = true;
+
 			}
 			
 	}
 
 
 	void OnTriggerEnter2D (Collider2D hit){
-		
+
+		if (hit.gameObject.CompareTag ("PlayerBullet")) {
+			Destroy (hit.gameObject);
+			enemyLife--;
+		}
+
 		if (hit.gameObject.CompareTag ("WoodBox")) {
 			Destroy (hit.gameObject);
 			enemyLife--;

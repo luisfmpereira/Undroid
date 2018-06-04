@@ -2,19 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AddPu : MonoBehaviour {
+public class AddPU : MonoBehaviour {
 	private bool interaction;
 	public bool powerUpBoot = false;
 	public bool powerUpShoot = false;
 	public bool powerUpDash = false;
-	public GameObject textColliderToActivate;
-	private AudioManager audiomanager;
+	public bool powerUpLife = false;
+	public GameObject textToShow;
 
 	public RuntimeAnimatorController Player2;
-
-	void Awake(){
-		audiomanager = AudioManager.instance;
-	}
 
 	void Update(){
 		interaction = Input.GetButtonDown ("Fire1");
@@ -22,23 +18,18 @@ public class AddPu : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D hit){
 		if (hit.gameObject.CompareTag ("Player") && interaction) {
-			audiomanager.PlaySound ("PowerUp");
-			textColliderToActivate.SetActive (true);
+			textToShow.SetActive (true);
 			if (powerUpBoot) {
 				hit.gameObject.GetComponent<PlayerController> ().allowDoubleJump = true;
 				hit.gameObject.GetComponent<Animator> ().runtimeAnimatorController = Player2;
-			}
-			else if (powerUpShoot) {
+			} else if (powerUpShoot) {
 				hit.gameObject.GetComponent<PlayerController> ().allowShooting = true;
 				hit.gameObject.GetComponent<Animator> ().runtimeAnimatorController = Player2;
-			}
-			else if (powerUpDash) {
+			} else if (powerUpDash) {
 				hit.gameObject.GetComponent<PlayerController> ().allowDash = true;
 				hit.gameObject.GetComponent<Animator> ().runtimeAnimatorController = Player2;
-			}
-
+			} 
 			gameObject.SetActive (false);
-
 		}
 	}
 }

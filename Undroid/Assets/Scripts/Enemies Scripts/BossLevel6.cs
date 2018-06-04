@@ -93,4 +93,8 @@ public class BossLevel6 : Boss {
 		}
 		
 	}
+
+	void OnTriggerEnter2D(Collider2D hit){
+		DamageByPlayer(hit);
+	}
 }

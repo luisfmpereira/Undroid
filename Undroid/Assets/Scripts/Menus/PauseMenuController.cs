@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PauseMenuController : MonoBehaviour
 {
@@ -18,6 +19,9 @@ public class PauseMenuController : MonoBehaviour
 	private float originalFixedTime;
 	public GameObject pauseMenu;
 	private AudioManager audiomanager;
+	public GameObject howToPlay;
+	public GameObject mainButton;
+	public GameObject howToPlayBack;
 
 
 
@@ -56,6 +60,16 @@ public class PauseMenuController : MonoBehaviour
 		//stop simulation
 		Time.timeScale = 0;
 		Time.fixedDeltaTime = 0;
+	}
+
+	public void ShowHowToPlay(){
+		howToPlay.SetActive (true);
+		EventSystem.current.SetSelectedGameObject (howToPlayBack);
+	}
+
+	public void HideHowToPlay(){
+		howToPlay.SetActive (false);
+		EventSystem.current.SetSelectedGameObject (mainButton);
 	}
 
 

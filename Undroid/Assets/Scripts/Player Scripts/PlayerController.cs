@@ -8,10 +8,10 @@ using UnityEngine.SceneManagement;
 /// Player controller.
 /// 
 /// Fire 1 = JoyY = e - interact
-/// Fire 2 = JoyB = s - crouch
-/// Fire 3 = JoyRB = x - fire
+/// Fire 2 = JoyB = down - crouch
+/// Fire 3 = JoyRB = w - fire
 /// Jump = JoyA = space - jump
-/// Dash = JoyX = shift - dash
+/// Dash = JoyX = q - dash
 /// Pause = JoyStart = esc - pause  
 /// 
 /// </summary>
@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
 
 	//life
 	public Image[] hearts;
-	private int currentHeart;
+	public int currentHeart;
 	public string currentSceneName;
 
 	//dash
@@ -109,11 +109,6 @@ public class PlayerController : MonoBehaviour
 	//material
 	public PhysicsMaterial2D noFriction;
 	public PhysicsMaterial2D withFriction;
-
-
-
-
-
 
 	void Awake ()
 	{

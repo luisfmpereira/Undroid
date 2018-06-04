@@ -52,7 +52,7 @@ public class BossLevel4 : Boss{
 
 		GameObject newEnemy = Instantiate (movableEnemyPrefab, this.transform.position, Quaternion.identity);
 		newEnemy.GetComponent<EnemyMovable> ().moveCooldown = Random.Range (3f, 6f);//randomize movement cooldown
-		newEnemy.GetComponentInChildren<EnemyDamageController> ().enemyLife = Random.Range (2, 5);
+		newEnemy.GetComponentInChildren<EnemyDamageController> ().enemyLife = Random.Range (1, 2);
 		newEnemy.GetComponent<EnemyMovable> ().shootingCooldown = Random.Range (2f, 4f);//randomize movement cooldown
 		newEnemy.GetComponent<EnemyMovable> ().brokenEnemy =false;//randomize movement cooldown
 		newEnemy.GetComponent<EnemyMovable> ().allowedToShoot = true;//randomize movement cooldown

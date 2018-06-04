@@ -101,6 +101,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cfd5d043f5a03a428010080ec2a129e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useQuit: 0
+  quitYes: {fileID: 0}
+  mainButton: {fileID: 0}
+  click: Click
+  start: Background
+  select: Select
+  started: 0
   areYouSureQuit: {fileID: 0}
 --- !u!114 &114663754868089550
 MonoBehaviour:
@@ -127,5 +134,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438c7d722ec96894985be34509921510, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  click: Click
+  select: Select
   pause: 0
   pauseMenu: {fileID: 0}
+  howToPlay: {fileID: 0}
+  mainButton: {fileID: 0}
+  howToPlayBack: {fileID: 0}

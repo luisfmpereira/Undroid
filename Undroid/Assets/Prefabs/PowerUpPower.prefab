@@ -24,12 +24,12 @@ GameObject:
   - component: {fileID: 61891909464772324}
   - component: {fileID: 114182385389001132}
   m_Layer: 0
-  m_Name: ShootPowerUp
+  m_Name: PowerUpPower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4822074652897368
 Transform:
   m_ObjectHideFlags: 1
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1483513792898868}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 89.95694, y: 0.7545128, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -59,7 +59,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 1.77}
+    oldSize: {x: 1.2, y: 0.856}
     newSize: {x: 17.48, y: 24.800001}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -97,10 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpBoot: 0
-  powerUpShoot: 1
+  powerUpShoot: 0
   powerUpDash: 0
+  powerUpLife: 0
   textToShow: {fileID: 0}
-  Player2: {fileID: 9100000, guid: 77b31653d047a47458211fa827fbfad0, type: 2}
+  Player2: {fileID: 0}
 --- !u!212 &212597163976756842
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -135,7 +136,7 @@ SpriteRenderer:
   m_SortingLayerID: -1973708339
   m_SortingLayer: -3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ba2bb1d527533ee49afbbd0969aff087, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2475b99330231c24d882673bfb51a141, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

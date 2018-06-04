@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class DisableLaser : MonoBehaviour
 {
-	private bool interacted;
+
 	public GameObject laserobj;
 	public Sprite Green;
-	private AudioManager audiomanager;
+	public AudioManager audiomanager;
+	private bool interacted;
 	void Awake()
 	{
 		audiomanager = AudioManager.instance;
@@ -19,8 +20,8 @@ public class DisableLaser : MonoBehaviour
 
 	void OnTriggerStay2D (Collider2D hit)
 	{
-		if (hit.gameObject.tag == "Player" && interacted == true) {
-			audiomanager.PlaySound ("LaserOff");
+		if (hit.gameObject.tag == "Player" && interacted) {
+			//audiomanager.PlaySound ("LaserOff");
 			gameObject.GetComponent<SpriteRenderer> ().sprite = Green;
 			laserobj.SetActive (false);
 		}
