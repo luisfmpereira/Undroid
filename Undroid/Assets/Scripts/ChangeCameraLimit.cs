@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ChangeCameraLimit : MonoBehaviour {
 	public GameObject cam;
-	public new Vector2 maxXY;
-	public new Vector2 minXY;
+	public Vector2 maxXY;
+	public Vector2 minXY;
 	public bool changeMax;
 	public bool changeMin;
 

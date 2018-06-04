@@ -8,6 +8,7 @@ public class AddPU : MonoBehaviour {
 	public bool powerUpShoot = false;
 	public bool powerUpDash = false;
 	public bool powerUpLife = false;
+	public bool powerUpForce = false;
 	public GameObject textToShow;
 
 	public RuntimeAnimatorController Player2;
@@ -26,6 +27,10 @@ public class AddPU : MonoBehaviour {
 				hit.gameObject.GetComponent<PlayerController> ().allowShooting = true;
 				hit.gameObject.GetComponent<Animator> ().runtimeAnimatorController = Player2;
 			} else if (powerUpDash) {
+				hit.gameObject.GetComponent<PlayerController> ().allowDash = true;
+				hit.gameObject.GetComponent<Animator> ().runtimeAnimatorController = Player2;
+			} 
+			else if (powerUpForce) {
 				hit.gameObject.GetComponent<PlayerController> ().allowDash = true;
 				hit.gameObject.GetComponent<Animator> ().runtimeAnimatorController = Player2;
 			} 

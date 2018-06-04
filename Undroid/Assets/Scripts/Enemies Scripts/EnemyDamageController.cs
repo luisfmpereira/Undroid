@@ -7,13 +7,13 @@ public class EnemyDamageController : MonoBehaviour {
 	public int enemyLife = 2;
 	public bool movableEnemy = false;
 	public Animator anim;
-	private AudioManager audiomanager;
+	private AudioManager audioManager;
 	public GameObject enemy;
 
 	void Awake(){
 		anim = GetComponentInParent<Animator> ();
 		anim.SetBool ("Die", false);
-		audiomanager = AudioManager.instance;
+		audioManager = AudioManager.instance;
 		if(!movableEnemy)
 			enemy = this.transform.parent.gameObject.transform.parent.gameObject;
 	}
@@ -41,13 +41,13 @@ public class EnemyDamageController : MonoBehaviour {
 		if (hit.gameObject.CompareTag ("WoodBox")) {
 			Destroy (hit.gameObject);
 			enemyLife--;
-			audiomanager.PlaySound ("WoodBreak");
+			audioManager.PlaySound ("WoodBreak");
 		}
 
 		if (hit.gameObject.CompareTag ("MetalBox")) {
 			Destroy (hit.gameObject);
 			enemyLife -= 2;
-			audiomanager.PlaySound ("MetalBreak");
+			audioManager.PlaySound ("MetalBreak");
 		}
 
 	}

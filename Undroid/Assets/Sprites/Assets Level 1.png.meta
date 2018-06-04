@@ -1,0 +1,822 @@
+fileFormatVersion: 2
+guid: 7ae722374a8fd884c8b94dd826341650
+timeCreated: 1528148641
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Assets Level 1_0
+    21300002: Assets Level 1_1
+    21300004: Assets Level 1_2
+    21300006: Assets Level 1_3
+    21300008: Assets Level 1_4
+    21300010: Assets Level 1_5
+    21300012: Assets Level 1_6
+    21300014: Assets Level 1_7
+    21300016: Assets Level 1_8
+    21300018: Assets Level 1_9
+    21300020: Assets Level 1_10
+    21300022: Assets Level 1_11
+    21300024: Assets Level 1_12
+    21300026: Assets Level 1_13
+    21300028: Assets Level 1_14
+    21300030: Assets Level 1_15
+    21300032: Assets Level 1_16
+    21300034: Assets Level 1_17
+    21300036: Assets Level 1_18
+    21300038: Assets Level 1_19
+    21300040: Assets Level 1_20
+    21300042: Assets Level 1_21
+    21300044: Assets Level 1_22
+    21300046: Assets Level 1_23
+    21300048: Assets Level 1_24
+    21300050: Assets Level 1_25
+    21300052: Assets Level 1_26
+    21300054: Assets Level 1_27
+    21300056: Assets Level 1_28
+    21300058: Assets Level 1_29
+    21300060: Assets Level 1_30
+    21300062: Assets Level 1_31
+    21300064: Assets Level 1_32
+    21300066: Assets Level 1_33
+    21300068: Assets Level 1_34
+    21300070: Assets Level 1_35
+    21300072: Assets Level 1_36
+    21300074: Assets Level 1_37
+    21300076: Assets Level 1_38
+    21300078: Assets Level 1_39
+    21300080: Assets Level 1_40
+    21300082: Assets Level 1_41
+    21300084: Assets Level 1_42
+    21300086: Assets Level 1_43
+    21300088: Assets Level 1_44
+    21300090: Assets Level 1_45
+    21300092: Assets Level 1_46
+    21300094: Assets Level 1_47
+    21300096: Assets Level 1_48
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Assets Level 1_0
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 2584
+        width: 1593
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_1
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 2665
+        width: 131
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_2
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 2625
+        width: 130
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_3
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 2313
+        width: 371
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_4
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 2314
+        width: 371
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_5
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 2314
+        width: 372
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_6
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 2317
+        width: 372
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_7
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 2317
+        width: 372
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_8
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 2043
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_9
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 2043
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_10
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 2043
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_11
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 2045
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_12
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 2043
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_13
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1785
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_14
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1785
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_15
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1785
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_16
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 1786
+        width: 372
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_17
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 1785
+        width: 372
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_18
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1528
+        width: 372
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_19
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1528
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_20
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1528
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_21
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 1528
+        width: 372
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_22
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 1528
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_23
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1275
+        width: 371
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_24
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1271
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_25
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1274
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_26
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 1274
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_27
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 1277
+        width: 363
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_28
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1010
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_29
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1011
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_30
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 1010
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_31
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 1013
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_32
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 1013
+        width: 371
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_33
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 821
+        width: 260
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_34
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 823
+        width: 131
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_35
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 823
+        width: 131
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_36
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 822
+        width: 132
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_37
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 822
+        width: 132
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_38
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 822
+        width: 131
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_39
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 821
+        width: 132
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_40
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 822
+        width: 40
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_41
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 499
+        width: 256
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_42
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 499
+        width: 256
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_43
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 499
+        width: 255
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_44
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 499
+        width: 152
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_45
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 142
+        width: 235
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_46
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 142
+        width: 236
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_47
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 142
+        width: 235
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assets Level 1_48
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 142
+        width: 235
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

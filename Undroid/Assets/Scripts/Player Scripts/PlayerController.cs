@@ -112,6 +112,7 @@ public class PlayerController : MonoBehaviour
 	public PhysicsMaterial2D noFriction;
 	public PhysicsMaterial2D withFriction;
 
+
 	void Awake ()
 	{
 		canMove = true;
@@ -149,6 +150,8 @@ public class PlayerController : MonoBehaviour
 		
 	void Update ()
 	{
+		
+
 		if (canMove) {
 			this.GetComponent<CapsuleCollider2D> ().sharedMaterial = noFriction;
 
@@ -190,21 +193,22 @@ public class PlayerController : MonoBehaviour
 		if (shootTimer < 0) {
 			canShootCd = true;
 			}
-
 		if (powerUpExtraLife && currentHeart == 3) {
+			hearts [0].enabled = true;
+			hearts [1].enabled = true;
+			hearts [2].enabled = true;
+			hearts [3].enabled = true;
+		}
+		if (currentHeart == 3) {
 			hearts [0].enabled = true;
 			hearts [1].enabled = true;
 			hearts [2].enabled = true;
 		} else if (currentHeart == 2) {
 			hearts [0].enabled = true;
 			hearts [1].enabled = true;
-			hearts [2].enabled = true;
 		} else if (currentHeart == 1) {
 			hearts [0].enabled = true;
-			hearts [1].enabled = true;
-		} else if (currentHeart == 1) {
-			hearts [0].enabled = true;
-		}
+		} 
 			
 
 		//change muzzle positions to crouching and standing positions
@@ -443,6 +447,18 @@ public class PlayerController : MonoBehaviour
 			usedCheckpoint = true;
 			checkpoint = hit.gameObject.transform.position;
 		}
+
+		if (hit.gameObject.CompareTag ("BossFightCamera")) {
+			audioManager.StopSound ("Background");
+			audioManager.PlaySound ("MusicBGBoss");
+		}
+	}
+
+	void OnTriggerExit2D (Collider2D hit){
+		if (hit.gameObject.CompareTag ("BossFightCamera")) {
+			audioManager.StopSound ("MusicBGBoss");
+			audioManager.PlaySound ("Background");
+		}
 	}
 
 	public void PlayerDied (){
@@ -468,5 +484,9 @@ public class PlayerController : MonoBehaviour
 
 	public void BossDiedSound(){
 		audioManager.PlaySound("RobotDie");
+	}
+
+	public void LaserOffSound(){
+			audioManager.PlaySound ("LaserOff");
 	}
 }

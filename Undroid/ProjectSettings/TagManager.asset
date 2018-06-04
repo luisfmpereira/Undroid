@@ -25,6 +25,7 @@ TagManager:
   - KillZone
   - Checkpoint1
   - AudioManager
+  - BossFightCamera
   layers:
   - Default
   - TransparentFX

@@ -29,7 +29,6 @@ public class EnemyController : MonoBehaviour {
 	private int bulletDirection;
 	public bool heFlip = false;
 
-	private AudioManager audiomanager;
 
 	public bool heDied = false;
 
@@ -37,7 +36,6 @@ public class EnemyController : MonoBehaviour {
 	void Awake(){
 		
 		bulletDirection = startShootingRight ? 1 : -1;
-		audiomanager = AudioManager.instance;
 	}
 
 	void Start () {

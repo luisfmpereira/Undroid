@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/Settings.unity
     guid: 7ff4608eba975c34f816a954404848a7
   - enabled: 1
+    path: Assets/Scenes/Menu/AnimationIntro.unity
+    guid: e6c7839a3d2c93247a17f85c0a6c99b2
+  - enabled: 1
     path: Assets/Scenes/Levels/Level1.unity
     guid: d4543d48f1a09224c956d0bbf0983900
   - enabled: 1

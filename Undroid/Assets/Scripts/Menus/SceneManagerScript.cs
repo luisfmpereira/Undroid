@@ -83,7 +83,7 @@ public class SceneManagerScript : MonoBehaviour {
 	}
 
 	public void playBackgroundMusic(){
-		audioManager.PlaySound (start);
+		audioManager.PlaySound ("Intro");
 	}
 
 	public void ResetGame(){

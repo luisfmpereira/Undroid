@@ -7,11 +7,12 @@ public class DisableLaser : MonoBehaviour
 
 	public GameObject laserobj;
 	public Sprite Green;
-	public AudioManager audiomanager;
 	private bool interacted;
+	private GameObject player;
+	private bool alreadyDisable;
 	void Awake()
 	{
-		audiomanager = AudioManager.instance;
+		player = GameObject.FindGameObjectWithTag ("Player");
 	}
 	void Update ()
 	{
@@ -20,8 +21,9 @@ public class DisableLaser : MonoBehaviour
 
 	void OnTriggerStay2D (Collider2D hit)
 	{
-		if (hit.gameObject.tag == "Player" && interacted) {
-			//audiomanager.PlaySound ("LaserOff");
+		if (hit.gameObject.tag == "Player" && interacted && !alreadyDisable) {
+			alreadyDisable = true;
+			player.GetComponent<PlayerController> ().LaserOffSound ();
 			gameObject.GetComponent<SpriteRenderer> ().sprite = Green;
 			laserobj.SetActive (false);
 		}
