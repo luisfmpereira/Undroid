@@ -23570,6 +23570,12 @@ Prefab:
       propertyPath: textToShow
       value: 
       objectReference: {fileID: 1733769737}
+    - target: {fileID: 212597163976756842, guid: 22310354a68a76040a189d26a025ff10,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ba2bb1d527533ee49afbbd0969aff087,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22310354a68a76040a189d26a025ff10, type: 2}
   m_IsPrefabParent: 0
@@ -23801,7 +23807,7 @@ Prefab:
     - target: {fileID: 114678611980680844, guid: 695f845946fe74246b760f86f3a2759c,
         type: 2}
       propertyPath: textsToDisplay.Array.data[0]
-      value: You got the Robot Hands! You are now able to push metal boxes!
+      value: You got the Robot Arms! You are now able to push metal boxes!
       objectReference: {fileID: 0}
     - target: {fileID: 1108519222962830, guid: 695f845946fe74246b760f86f3a2759c, type: 2}
       propertyPath: m_IsActive
