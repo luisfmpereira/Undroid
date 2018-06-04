@@ -1420,7 +1420,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You got the Robot Vest! From the next level on, you get an extra life!
+  m_Text: You got the Robot Arms! Press X or Right Trigger to shoot agins your enemies!
 --- !u!114 &114742163690001164
 MonoBehaviour:
   m_ObjectHideFlags: 1

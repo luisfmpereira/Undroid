@@ -427,11 +427,19 @@ MonoBehaviour:
   - area: art
     names:
     - Vitor Oliveira
-    - Leonardo
+    - Leonardo Silva
   - area: programming
     names:
     - Luis Filipe Pereira
     - Gabriel Tameo
+  - area: sound design
+    names:
+    - Gabriel Tameo
+    - Stephanie Stopf
+  - area: special thanks to
+    names:
+    - CO.AG Music
+    - bit.ly/2f9WQpe
   areaText: {fileID: 1007511223}
   authorsText: {fileID: 538615244}
 --- !u!95 &1007511222

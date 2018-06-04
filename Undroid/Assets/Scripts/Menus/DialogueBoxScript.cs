@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class DialogueBoxScript : MonoBehaviour {
 	
@@ -10,35 +11,50 @@ public class DialogueBoxScript : MonoBehaviour {
 	public GameObject dialogueBox;
 	public Text dialogueText;
 	public int dialogueTextSize = 50;
-	//private float originalFixedTime;
 	private float textTimer;
 	public float maxTextTimer = 3f;
-
-
+	public GameObject player;
 	private bool isShowing;
+
+	//final decision only
+	public bool finalDecision = false;
+	public GameObject decisionPanel;
+	public GameObject joinButton;
 
 
 	void Awake() {
-		//originalFixedTime = Time.fixedDeltaTime;
 		currentText = 0;
 		dialogueText = dialogueBox.GetComponentInChildren<Text>();
 
+		cam = GameObject.FindGameObjectWithTag ("MainCamera");
+		player = GameObject.FindGameObjectWithTag ("Player");
+
+
 	}
 
+	void FixedUpdate(){
+
+		if(useFocus)
+			FocusCameraOnPOI ();
+	}
 
 	void Update(){
 		if (isShowing)
 			textTimer -= Time.deltaTime;
 
 		if (isShowing && (Input.GetButtonDown ("Fire1")||textTimer <= 0)){
-			//unlock time
-			//Time.timeScale = 1;
-			//Time.fixedDeltaTime = originalFixedTime;
 
 			if (textsToDisplay.Length == currentText + 1) {
 				dialogueBox.SetActive (false);
 				this.gameObject.SetActive (false);
 				isShowing = false;
+				if (finalDecision) {
+					//set the decision panel active
+					decisionPanel.SetActive (true);
+					selectJoinButton ();
+
+				}
+					
 			}
 			else {
 				currentText++;
@@ -49,16 +65,13 @@ public class DialogueBoxScript : MonoBehaviour {
 	}
 
 	void DisplayText(string text){
-		//lock time
-		//Time.timeScale = 0;
-		//Time.fixedDeltaTime = 0;
-
 		//set new text
 		textTimer = maxTextTimer;
 		isShowing = true;
 		dialogueText.text = text;
 		dialogueText.fontSize = dialogueTextSize;
 		dialogueBox.SetActive (true);
+
 	}
 
 
@@ -67,4 +80,61 @@ public class DialogueBoxScript : MonoBehaviour {
 			DisplayText (textsToDisplay[currentText]);
 		}
 	}
+
+	public void selectJoinButton(){
+		//used to reset click on the join button of the final decision
+		EventSystem.current.SetSelectedGameObject (joinButton);
+	}
+
+
+	private bool camTriggered = false;
+	//focus variables
+	public GameObject cam;
+	public GameObject focusObject;
+	private bool focusCamera = false;
+	public float camMoveSpeed = 10;
+
+	private float originalCamSize = 5f;
+	public float newCamSize = 6f;
+
+	public bool useFocus = true;
+
+
+	void OnTriggerStay2D (Collider2D hit){
+		if(hit.gameObject.tag == "Player"){
+			if (!camTriggered) {
+				focusCamera = true;
+			}
+
+			camTriggered = true;
+		}
+
+	}
+
+	void FocusCameraOnPOI(){
+
+		//camera focusing on POI
+		if (focusCamera) {
+			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(focusObject.transform.position.x, focusObject.transform.position.y, -10), camMoveSpeed * Time.deltaTime);
+			cam.GetComponent<Camera>().orthographicSize = Mathf.Lerp(originalCamSize,newCamSize,5f);
+			player.GetComponent<PlayerController> ().canMove = false;
+
+		}
+
+		if (textsToDisplay.Length == currentText + 1 && focusCamera) {
+			cam.transform.position = Vector3.MoveTowards( cam.transform.position, new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, GameObject.FindGameObjectWithTag("Player").transform.position.y, -10), camMoveSpeed * Time.deltaTime);
+			cam.GetComponent<Camera>().orthographicSize = Mathf.Lerp(newCamSize,originalCamSize,5f);
+			player.GetComponent<PlayerController> ().canMove = true;
+
+		}
+
+
+	}
+
+
+
+
+
+
+
 }

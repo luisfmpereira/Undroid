@@ -10,6 +10,8 @@ public class LevelSelection : MonoBehaviour {
 	public GameObject Level4;
 	public GameObject Level5;
 	public GameObject Level6;
+	public GameObject Level71;
+	public GameObject Level72;
 
 
 
@@ -22,6 +24,8 @@ public class LevelSelection : MonoBehaviour {
 		TestInteraction ("Level4", Level4);
 		TestInteraction ("Level5", Level5);
 		TestInteraction ("Level6", Level6);
+		TestInteraction ("Level7.1", Level71);
+		TestInteraction ("Level7.1", Level72);
 			
 	}
 
@@ -42,6 +46,9 @@ public class LevelSelection : MonoBehaviour {
 		PlayerPrefs.SetInt ("Level4", 1);
 		PlayerPrefs.SetInt ("Level5", 1);
 		PlayerPrefs.SetInt ("Level6", 1);
+		PlayerPrefs.SetInt ("Level7.1", 1);
+		PlayerPrefs.SetInt ("Level7.2", 1);
+
 	}
 
 

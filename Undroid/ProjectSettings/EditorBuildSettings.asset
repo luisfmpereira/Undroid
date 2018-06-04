@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/SplashScreen.unity
     guid: 4215bc2bb1f2a1c46a7e61a51abbded2
   - enabled: 1
+    path: Assets/Scenes/Menu/StartingCutscene.unity
+    guid: 2aeb29b3f08dffc40ad4d058f29561ba
+  - enabled: 1
     path: Assets/Scenes/Menu/MainMenu.unity
     guid: 1cd4ad5549de20946893d8a551768d04
   - enabled: 1
@@ -35,6 +38,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Level5.unity
     guid: a26fe5afdb82b45418a57fd967b26696
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level6.unity
+    guid: e54381afd0b564bdcbf30dcd954d2936
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level7.1.unity
+    guid: 318ddb067c57b6c43a90afd4c41ec0e9
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level7.2.unity
+    guid: f800014ac7966874eb5bba1bb7b4642b
   - enabled: 1
     path: Assets/Scenes/Menu/CreditScreen.unity
     guid: bf92d0629534644438062b4a8f77f40d

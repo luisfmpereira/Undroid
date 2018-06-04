@@ -92,6 +92,8 @@ public class SceneManagerScript : MonoBehaviour {
 		PlayerPrefs.SetInt ("Level4", 0);
 		PlayerPrefs.SetInt ("Level5", 0);
 		PlayerPrefs.SetInt ("Level6", 0);
+		PlayerPrefs.SetInt ("Level7.1", 0);
+		PlayerPrefs.SetInt ("Level7.2", 0);
 	}
 	public void startMenu(){
 		SceneManager.LoadScene ("MainMenu");

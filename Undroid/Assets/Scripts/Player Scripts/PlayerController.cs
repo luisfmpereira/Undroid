@@ -76,7 +76,9 @@ public class PlayerController : MonoBehaviour
 	//life
 	public Image[] hearts;
 	public int currentHeart;
+	public bool powerUpExtraLife = false;
 	public string currentSceneName;
+
 
 	//dash
 	public bool allowDash;
@@ -189,7 +191,11 @@ public class PlayerController : MonoBehaviour
 			canShootCd = true;
 			}
 
-		if (currentHeart == 2) {
+		if (powerUpExtraLife && currentHeart == 3) {
+			hearts [0].enabled = true;
+			hearts [1].enabled = true;
+			hearts [2].enabled = true;
+		} else if (currentHeart == 2) {
 			hearts [0].enabled = true;
 			hearts [1].enabled = true;
 			hearts [2].enabled = true;

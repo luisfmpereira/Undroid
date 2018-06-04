@@ -56,6 +56,7 @@ public class PauseMenuController : MonoBehaviour
 		audiomanager.StopSound ("Background");
 		audiomanager.PlaySound ("MusicBGMenu");
 		pauseMenu.SetActive (true);
+		EventSystem.current.SetSelectedGameObject (mainButton);
 
 		//stop simulation
 		Time.timeScale = 0;
@@ -112,4 +113,11 @@ public class PauseMenuController : MonoBehaviour
 	{
 		audiomanager.PlaySound (select);
 	}
+
+
+
+
+
+
+
 }

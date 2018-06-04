@@ -21,7 +21,7 @@ public class EnemyDamageController : MonoBehaviour {
 	void Update() {
 
 		if (enemyLife <= 0) {
-			audiomanager.PlaySound ("Explosion");
+			//audiomanager.PlaySound ("Explosion");
 			anim.SetBool ("Die", true);
 			if(!movableEnemy)
 				enemy.GetComponent<EnemyController> ().heDied = true;
