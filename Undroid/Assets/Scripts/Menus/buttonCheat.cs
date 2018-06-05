@@ -6,18 +6,20 @@ using UnityEngine.EventSystems;
 
 public class buttonCheat : MonoBehaviour {
 
-	public Button theButton;
-	public Sprite buttonNormal;
-	public Sprite buttonOn;
+	public Text buttonText;
 
+
+	void Awake(){
+		buttonText = this.GetComponentInChildren<Text> ();
+	}
 
 	void Update(){
 
-		if(PlayerPrefs.GetInt("CheatLife") ==1)
-			theButton.GetComponent<Image>().sprite = buttonOn;
+		if(PlayerPrefs.GetInt("CheatLife") == 1)
+			buttonText.text = "Life Cheat On";
 
-		if(PlayerPrefs.GetInt("CheatLife")==0)
-			theButton.GetComponent<Image>().sprite = buttonNormal;
+		if(PlayerPrefs.GetInt("CheatLife") == 0)
+			buttonText.text = "Life Cheat Off";
 
 
 	}

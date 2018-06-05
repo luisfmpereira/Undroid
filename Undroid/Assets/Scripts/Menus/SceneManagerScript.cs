@@ -98,7 +98,11 @@ public class SceneManagerScript : MonoBehaviour {
 	}
 
 	public void CheatLife(){
-		PlayerPrefs.SetInt ("CheatLife", 1);
+		if(PlayerPrefs.GetInt ("CheatLife") == 1)
+			PlayerPrefs.SetInt ("CheatLife", 0);
+		
+		else if(PlayerPrefs.GetInt ("CheatLife") == 0)
+			PlayerPrefs.SetInt ("CheatLife", 1);
 	}
 
 	public void startMenu(){
