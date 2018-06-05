@@ -52,6 +52,8 @@ public class DialogueBoxScript : MonoBehaviour {
 					//set the decision panel active
 					decisionPanel.SetActive (true);
 					selectJoinButton ();
+					PlayerPrefs.SetInt ("Level71", 1);
+					PlayerPrefs.SetInt ("Level72", 1);
 
 				}
 					

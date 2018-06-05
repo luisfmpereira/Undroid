@@ -10097,8 +10097,8 @@ Prefab:
     - target: {fileID: 114678611980680844, guid: 695f845946fe74246b760f86f3a2759c,
         type: 2}
       propertyPath: textsToDisplay.Array.data[0]
-      value: Do as you wish. If you prefer to die to protect your precious litte Toys.
-        But we won't go easy on you! Prepare to battle!
+      value: Do as you wish. If you prefer to die to protect your precious little
+        Toys. But we won't go easy on you! Prepare to battle!
       objectReference: {fileID: 0}
     - target: {fileID: 114678611980680844, guid: 695f845946fe74246b760f86f3a2759c,
         type: 2}
@@ -10882,6 +10882,8 @@ MonoBehaviour:
   - {fileID: 743442621}
   - {fileID: 1774329371}
   moveSpeed: 3
+  spawn1: {fileID: 258028262}
+  spawn2: {fileID: 487193494}
 --- !u!1 &1716229590 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1167925619601832, guid: 7334bb643264ccb41b59161c19cbe756,

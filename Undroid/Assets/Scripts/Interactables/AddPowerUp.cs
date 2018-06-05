@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AddPU : MonoBehaviour {
+public class AddPowerUp : MonoBehaviour {
 	private bool interaction;
 	public bool powerUpBoot = false;
 	public bool powerUpShoot = false;

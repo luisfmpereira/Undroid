@@ -94,7 +94,13 @@ public class SceneManagerScript : MonoBehaviour {
 		PlayerPrefs.SetInt ("Level6", 0);
 		PlayerPrefs.SetInt ("Level7.1", 0);
 		PlayerPrefs.SetInt ("Level7.2", 0);
+		PlayerPrefs.SetInt ("CheatLife", 0);
 	}
+
+	public void CheatLife(){
+		PlayerPrefs.SetInt ("CheatLife", 1);
+	}
+
 	public void startMenu(){
 		SceneManager.LoadScene ("MainMenu");
 		Time.timeScale = 1;

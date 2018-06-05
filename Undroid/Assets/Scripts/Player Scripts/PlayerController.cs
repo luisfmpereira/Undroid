@@ -378,8 +378,8 @@ public class PlayerController : MonoBehaviour
 
 
 	//collisions
-	void OnCollisionEnter2D (Collision2D hit)
-	{
+	void OnCollisionEnter2D (Collision2D hit){
+		if(PlayerPrefs.GetInt("CheatLife")==0){
 		if (playerAnim.GetBool ("Hurt") == false) {
 			//damage taken by enemy bullet
 			if (hit.gameObject.CompareTag ("EnemyBullet")) {
@@ -415,13 +415,14 @@ public class PlayerController : MonoBehaviour
 					audioManager.PlaySound (Hurt);
 				else
 					audioManager.PlaySound (Die);
+		
+				}
+	
 			}
+	
 		}
-
-
-
-
 	}
+		
 	/*
 	void OnCollisionExit2D (Collision2D hit)
 	{

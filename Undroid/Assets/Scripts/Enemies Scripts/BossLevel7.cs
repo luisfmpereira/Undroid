@@ -10,6 +10,8 @@ public class BossLevel7 : Boss {
 	public float moveSpeed = 2f;
 	private int selectedPosition;
 	private float angleToMultiply = 120 * Mathf.Deg2Rad;
+	public GameObject spawn1;
+	public GameObject spawn2;
 
 
 	void Start(){
@@ -26,6 +28,8 @@ public class BossLevel7 : Boss {
 			Shooting ();
 
 			if (bossHealth <= 0) {
+				spawn1.SetActive (false);
+				spawn2.SetActive (false);
 				laser.SetActive (false);
 			}
 		}
