@@ -1732,11 +1732,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4491088682955044, guid: 5225cb9148de43949a3f13dd5e183b79, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 138.6
+      value: -1.1
       objectReference: {fileID: 0}
     - target: {fileID: 4491088682955044, guid: 5225cb9148de43949a3f13dd5e183b79, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 4491088682955044, guid: 5225cb9148de43949a3f13dd5e183b79, type: 2}
       propertyPath: m_LocalPosition.z

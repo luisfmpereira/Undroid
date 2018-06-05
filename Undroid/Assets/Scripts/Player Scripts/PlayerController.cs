@@ -146,6 +146,13 @@ public class PlayerController : MonoBehaviour
 
 			playerDash ();
 		}
+		else {
+			this.GetComponent<CapsuleCollider2D> ().sharedMaterial = withFriction;
+			playerAnim.SetBool("Jumping",false);
+			playerAnim.SetBool ("Crouching", false);
+			playerAnim.SetFloat ("Speed", 0);
+
+		}
 	}
 		
 	void Update ()
