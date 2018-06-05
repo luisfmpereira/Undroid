@@ -524,7 +524,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 54624313}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af2596f676133a7458962e8fa3cd5a3c, type: 3}
+  m_Script: {fileID: 11500000, guid: ba2e88d7f67eaed4c82c2bc107d3f949, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpBoot: 1
@@ -532,7 +532,7 @@ MonoBehaviour:
   powerUpDash: 0
   powerUpLife: 0
   powerUpForce: 0
-  textToShow: {fileID: 927955226}
+  textToShow: {fileID: 1227660987}
   Player2: {fileID: 9100000, guid: 77b31653d047a47458211fa827fbfad0, type: 2}
 --- !u!61 &54624315
 BoxCollider2D:
@@ -4597,11 +4597,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4507499439724066, guid: a9a12af7df3667f41bcb6c59f8e26a72,
     type: 2}
   m_PrefabInternal: {fileID: 672361275}
---- !u!1 &927955226 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1409243534007134, guid: 7334bb643264ccb41b59161c19cbe756,
-    type: 2}
-  m_PrefabInternal: {fileID: 2087287515}
 --- !u!4 &934367349 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4007050670440572, guid: 3712bbbd43d7e8d4e808cff24db37585,
@@ -40394,11 +40389,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4830327034297316, guid: 862edc54382103e48bd33f4d7437a5ca, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -30.1
+      value: -30.4
       objectReference: {fileID: 0}
     - target: {fileID: 4830327034297316, guid: 862edc54382103e48bd33f4d7437a5ca, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.127
+      value: -4.17
       objectReference: {fileID: 0}
     - target: {fileID: 4830327034297316, guid: 862edc54382103e48bd33f4d7437a5ca, type: 2}
       propertyPath: m_LocalPosition.z
