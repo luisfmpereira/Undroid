@@ -16,7 +16,7 @@ public class DisableLaser : MonoBehaviour
 	}
 	void Update ()
 	{
-		interacted = Input.GetButtonDown ("Fire1");
+		interacted = Input.GetButton ("Fire1");
 	}
 
 	void OnTriggerStay2D (Collider2D hit)

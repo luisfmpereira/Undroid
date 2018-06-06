@@ -96,7 +96,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1591941203022894}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.15, y: -0.05, z: 0}
+  m_LocalPosition: {x: -1.06, y: -0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4614093900374478}
@@ -175,7 +175,7 @@ Animator:
   m_GameObject: {fileID: 1591941203022894}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bc711753286efb54a8d1f316eecf000b, type: 2}
+  m_Controller: {fileID: 9100000, guid: ec9516f3f5a8c374ebf9269ce7ac6ac0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
@@ -217,6 +217,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  currentHeart: 0
+  powerUpExtraLife: 0
   currentSceneName: Level4
   allowDash: 1
   dashSpeed: 15

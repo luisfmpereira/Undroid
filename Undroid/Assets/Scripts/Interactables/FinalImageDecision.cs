@@ -20,7 +20,7 @@ public class FinalImageDecision : MonoBehaviour {
 	}
 
 	void Update () {
-		interacted = Input.GetButtonDown ("Fire1");
+		interacted = Input.GetButton("Fire1");
 	}
 
 

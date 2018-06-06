@@ -19,7 +19,7 @@ public class InteractionButtonManager : MonoBehaviour {
 		audiomanager = AudioManager.instance;
 	}
 	void Update () {
-		interacted = Input.GetButtonDown ("Fire1");
+		interacted = Input.GetButton ("Fire1");
 
 		if(useFocus)
 			FocusCameraOnPOI ();

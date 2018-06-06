@@ -35740,6 +35740,11 @@ Prefab:
       propertyPath: useFocus
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114678611980680844, guid: 695f845946fe74246b760f86f3a2759c,
+        type: 2}
+      propertyPath: maxTextTimer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 695f845946fe74246b760f86f3a2759c, type: 2}
   m_IsPrefabParent: 0

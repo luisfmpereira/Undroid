@@ -486,7 +486,7 @@ public class PlayerController : MonoBehaviour
 			Boss.GetComponent<Boss> ().resetBossLife ();
 		}
 		transform.parent = null; //remove player from platform children if he dies while connected
-		currentHeart = hearts.Length - 1; //reset player hearts
+		currentHeart = hearts.Length; //reset player hearts
 		canMove = true;
 	}
 

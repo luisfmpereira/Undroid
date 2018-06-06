@@ -14,7 +14,7 @@ public class AddPowerUp : MonoBehaviour {
 	public RuntimeAnimatorController Player2;
 
 	void Update(){
-		interaction = Input.GetButtonDown ("Fire1");
+		interaction = Input.GetButton ("Fire1");
 	}
 
 	void OnTriggerStay2D(Collider2D hit){

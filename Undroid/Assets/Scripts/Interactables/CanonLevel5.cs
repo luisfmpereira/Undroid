@@ -17,7 +17,7 @@ public class CanonLevel5 : MonoBehaviour {
 
 	void Update () {
 		timer -= Time.deltaTime;
-		interacted = Input.GetButtonDown ("Fire1");
+		interacted = Input.GetButton("Fire1");
 		if (timer<=0)
 			button.GetComponent<SpriteRenderer> ().sprite = greenButton;
 	}

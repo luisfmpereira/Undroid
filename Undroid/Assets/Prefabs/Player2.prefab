@@ -122,7 +122,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1066224756947368}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.45, y: 1, z: 0}
+  m_LocalPosition: {x: -7.45, y: 0.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4279597204669532}
@@ -217,6 +217,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  currentHeart: 0
+  powerUpExtraLife: 0
   currentSceneName: 
   allowDash: 0
   dashSpeed: 350
@@ -230,9 +232,11 @@ MonoBehaviour:
   shootTimer: 0
   shootCd: 0.3
   canShootCd: 1
+  bulletRotation: 0
   checkpoint: {x: 0, y: 0, z: 0}
   usedCheckpoint: 0
   haveBoss: 0
+  bossDied: 0
   noFriction: {fileID: 6200000, guid: 33d01c86bef37994bb78745784fd13c8, type: 2}
   withFriction: {fileID: 6200000, guid: 14b2570361733c04fa0bf67fe5e96212, type: 2}
   Boss: {fileID: 0}

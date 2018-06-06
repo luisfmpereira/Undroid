@@ -13,7 +13,7 @@ public class InteractionConveyorBelt : MonoBehaviour {
 
 	void Update(){
 		//checks if player has pressed button
-		interacted = Input.GetButtonDown ("Fire1");
+		interacted = Input.GetButton ("Fire1");
 
 		if(useFocus)
 			FocusCameraOnPOI ();

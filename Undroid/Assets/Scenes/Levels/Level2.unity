@@ -781,7 +781,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.2610321}
+  m_Offset: {x: 0, y: 2.998889}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -792,7 +792,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 28, y: 4.6336155}
+  m_Size: {x: 28, y: 14.963955}
   m_EdgeRadius: 0
 --- !u!4 &168149510
 Transform:
@@ -1553,16 +1553,16 @@ Prefab:
     - target: {fileID: 224796321087038826, guid: 7334bb643264ccb41b59161c19cbe756,
         type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 224911733940130540, guid: 7334bb643264ccb41b59161c19cbe756,
         type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4788895189207092, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224015674934864320, guid: 7334bb643264ccb41b59161c19cbe756,
         type: 2}
@@ -1587,7 +1587,7 @@ Prefab:
     - target: {fileID: 224211970962549076, guid: 7334bb643264ccb41b59161c19cbe756,
         type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1985747218764032, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
       propertyPath: m_IsActive
@@ -1601,6 +1601,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1117692304079794, guid: 7334bb643264ccb41b59161c19cbe756,
     type: 2}
   m_PrefabInternal: {fileID: 363193804}
+--- !u!114 &363193806 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114397988295084566, guid: 7334bb643264ccb41b59161c19cbe756,
+    type: 2}
+  m_PrefabInternal: {fileID: 363193804}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &368729357
 GameObject:
   m_ObjectHideFlags: 0
@@ -3181,7 +3187,7 @@ MonoBehaviour:
   dialogueText: {fileID: 114708309782742080, guid: 7334bb643264ccb41b59161c19cbe756,
     type: 2}
   dialogueTextSize: 50
-  maxTextTimer: 3
+  maxTextTimer: 8
   player: {fileID: 0}
   finalDecision: 0
   decisionPanel: {fileID: 0}
@@ -3876,7 +3882,7 @@ Prefab:
         type: 2}
       propertyPath: hearts.Array.data[0]
       value: 
-      objectReference: {fileID: 1244353064}
+      objectReference: {fileID: 363193806}
     - target: {fileID: 114656062254117818, guid: d9bfd9dcf019f8b4e8915809c49a8b5b,
         type: 2}
       propertyPath: hearts.Array.data[1]
@@ -5311,12 +5317,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3712bbbd43d7e8d4e808cff24db37585, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1244353064 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114445124333131518, guid: 7334bb643264ccb41b59161c19cbe756,
-    type: 2}
-  m_PrefabInternal: {fileID: 363193804}
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!4 &1246958340 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4007050670440572, guid: 3712bbbd43d7e8d4e808cff24db37585,
@@ -8495,7 +8495,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0

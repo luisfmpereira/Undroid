@@ -14,10 +14,11 @@ public class InteractionGate : MonoBehaviour {
 	public Sprite green;
 	public GameObject button;
 	private GameObject player;
-	private AudioManager audiomanager;
+	public AudioManager audiomanager;
+
 
 	void Update(){
-		interacted = Input.GetButtonDown ("Fire1");
+		interacted = Input.GetButton ("Fire1");
 		if (gateTriggered)
 			gate.transform.position = Vector3.MoveTowards (gate.transform.position, endPoint.position, speed*Time.deltaTime);
 
@@ -61,6 +62,7 @@ public class InteractionGate : MonoBehaviour {
 		cam = GameObject.FindGameObjectWithTag ("MainCamera");
 		player = GameObject.FindGameObjectWithTag ("Player");
 		audiomanager = AudioManager.instance;
+
 	}
 
 	void FocusCameraOnPOI(){

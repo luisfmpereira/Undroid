@@ -9,11 +9,9 @@ public class BoxSpawnAreaScript : MonoBehaviour {
 	public Transform[] locations;
 	public float cd;
 
-	void OnTriggerEnter2D(Collider2D hit){
-		if (hit.gameObject.CompareTag ("WoodBox")) {
-			boxCount++;
-		}
 
+	void Start(){
+		boxCount = 4;
 	}
 
 	void OnTriggerExit2D(Collider2D hit){
@@ -22,14 +20,21 @@ public class BoxSpawnAreaScript : MonoBehaviour {
 		}
 
 	}
-
+//	void OnTriggerEnter2D(Collider2D hit){
+//		if (hit.gameObject.CompareTag ("WoodBox")) {
+//			boxCount++;
+//		}
+//
+//	}
 	void Update(){
-		
+
 		if (boxCount <= 0) {
+			
 			Instantiate (WoodBox, locations [1].position,Quaternion.identity);
 			Instantiate (WoodBox, locations [2].position,Quaternion.identity);
 			Instantiate (WoodBox, locations [3].position,Quaternion.identity);
 			Instantiate (WoodBox, locations [0].position,Quaternion.identity);
+			boxCount += 4;
 		}
 	}
 

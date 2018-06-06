@@ -29,12 +29,13 @@ public class EnemyDivider : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D hit){
 		
+		if (hit.CompareTag ("MovableEnemy")) {
+			if (newBrokenEnemy)
+				hit.gameObject.transform.position = new Vector2 (hit.gameObject.transform.position.x + movement * Time.deltaTime, hit.gameObject.transform.position.y);
 
-		if (newBrokenEnemy)
-			hit.gameObject.transform.position = new Vector2 (hit.gameObject.transform.position.x + movement*Time.deltaTime, hit.gameObject.transform.position.y);
-
-		if (!newBrokenEnemy) {
-			hit.gameObject.transform.position = new Vector2 (hit.gameObject.transform.position.x - movement*Time.deltaTime, hit.gameObject.transform.position.y);
+			if (!newBrokenEnemy) {
+				hit.gameObject.transform.position = new Vector2 (hit.gameObject.transform.position.x - movement * Time.deltaTime, hit.gameObject.transform.position.y);
+			}
 		}
 	}
 

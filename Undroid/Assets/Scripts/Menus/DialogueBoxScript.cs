@@ -22,6 +22,21 @@ public class DialogueBoxScript : MonoBehaviour {
 	public GameObject joinButton;
 
 
+	private bool camTriggered = false;
+	//focus variables
+	public GameObject cam;
+	public GameObject focusObject;
+	private bool focusCamera = false;
+	public float camMoveSpeed = 10;
+
+	private float originalCamSize = 5f;
+	public float newCamSize = 6f;
+
+	public bool useFocus = true;
+
+
+
+
 	void Awake() {
 		currentText = 0;
 		dialogueText = dialogueBox.GetComponentInChildren<Text>();
@@ -88,18 +103,6 @@ public class DialogueBoxScript : MonoBehaviour {
 		EventSystem.current.SetSelectedGameObject (joinButton);
 	}
 
-
-	private bool camTriggered = false;
-	//focus variables
-	public GameObject cam;
-	public GameObject focusObject;
-	private bool focusCamera = false;
-	public float camMoveSpeed = 10;
-
-	private float originalCamSize = 5f;
-	public float newCamSize = 6f;
-
-	public bool useFocus = true;
 
 
 	void OnTriggerStay2D (Collider2D hit){

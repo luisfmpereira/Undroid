@@ -13,13 +13,14 @@ public class Openlevel : MonoBehaviour {
 	}
 
 	void Update(){
-		interaction = Input.GetButtonDown ("Fire1");
+		interaction = Input.GetButton ("Fire1");
 	}
 
 	void OnTriggerStay2D(Collider2D hit){
 		if (hit.gameObject.CompareTag ("Player") && interaction) {
-			anim.SetBool ("doorIsOpen", true);
 			PlayerPrefs.SetInt (SceneName, 1);
+			anim.SetBool ("doorIsOpen", true);
+
 		}
 	}
 

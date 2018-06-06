@@ -36,7 +36,7 @@ GameObject:
   - component: {fileID: 4144422029073668}
   - component: {fileID: 212113861006813838}
   - component: {fileID: 60913781754190378}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DamageCollider
   m_TagString: LaserDamage
   m_Icon: {fileID: 0}
