@@ -886,7 +886,7 @@ Prefab:
     - target: {fileID: 114678611980680844, guid: 695f845946fe74246b760f86f3a2759c,
         type: 2}
       propertyPath: textsToDisplay.Array.data[0]
-      value: This is a Checkpoint. If you lose all of your lives, you respawn here.
+      value: This is a Checkpoint. If you lose all of your lives, you'll respawn here.
       objectReference: {fileID: 0}
     - target: {fileID: 114678611980680844, guid: 695f845946fe74246b760f86f3a2759c,
         type: 2}
@@ -6087,6 +6087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textsToDisplay:
   - You got the Robot Boots! Press the Jump button twice to perform a Double Jump!
+  - 'Philip: Hm, what is this? Maybe it will help me.'
   dialogueBox: {fileID: 1455040490}
   dialogueTextSize: 50
   maxTextTimer: 8
@@ -43725,7 +43726,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4897179952214132, guid: 695f845946fe74246b760f86f3a2759c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -30.13
+      value: -27.41
       objectReference: {fileID: 0}
     - target: {fileID: 4897179952214132, guid: 695f845946fe74246b760f86f3a2759c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -43771,7 +43772,7 @@ Prefab:
     - target: {fileID: 114678611980680844, guid: 695f845946fe74246b760f86f3a2759c,
         type: 2}
       propertyPath: textsToDisplay.Array.data[0]
-      value: "Est\xE1 tudo diferente, o que aconteceu aqui?!"
+      value: 'Philip: Wow, I can barely remember this was a toy factory.'
       objectReference: {fileID: 0}
     - target: {fileID: 114678611980680844, guid: 695f845946fe74246b760f86f3a2759c,
         type: 2}
