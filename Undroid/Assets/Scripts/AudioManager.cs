@@ -50,6 +50,8 @@ public class AudioManager : MonoBehaviour
 	[SerializeField]
 	Sound[] sounds;
 
+
+
 	void Awake()
 	{
 		if (instance != null)
@@ -91,6 +93,7 @@ public class AudioManager : MonoBehaviour
 		// no sound with _name
 		Debug.LogWarning("AudioManager: Sound not found in list, " + _name);
 	}
+		
 
 	public void StopSound(string _name)
 	{

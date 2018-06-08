@@ -9,7 +9,7 @@ public class DialogueBoxScript : MonoBehaviour {
 	public string [] textsToDisplay;
 	private int currentText;
 	public GameObject dialogueBox;
-	public Text dialogueText;
+	private Text dialogueText;
 	public int dialogueTextSize = 50;
 	private float textTimer;
 	public float maxTextTimer = 3f;
@@ -60,7 +60,7 @@ public class DialogueBoxScript : MonoBehaviour {
 		if (isShowing && (Input.GetButtonDown ("Fire1")||textTimer <= 0)){
 
 			if (textsToDisplay.Length == currentText + 1) {
-				dialogueBox.SetActive (false);
+				dialogueBox.GetComponent<Animator>().SetBool("End",true);
 				this.gameObject.SetActive (false);
 				isShowing = false;
 				if (finalDecision) {
@@ -88,6 +88,7 @@ public class DialogueBoxScript : MonoBehaviour {
 		dialogueText.text = text;
 		dialogueText.fontSize = dialogueTextSize;
 		dialogueBox.SetActive (true);
+		dialogueBox.GetComponent<Animator>().SetBool("Start",true);
 
 	}
 
@@ -106,7 +107,7 @@ public class DialogueBoxScript : MonoBehaviour {
 
 
 	void OnTriggerStay2D (Collider2D hit){
-		if(hit.gameObject.tag == "Player"){
+		if(hit.gameObject.CompareTag("Player")){
 			if (!camTriggered) {
 				focusCamera = true;
 			}

@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossLevel4 : Boss{
 
 	public GameObject movableEnemyPrefab;
+	public GameObject tp;
 	public Transform[] positions;
 	public float moveSpeed = 2f;
 	private int selectedPosition;
@@ -49,7 +50,7 @@ public class BossLevel4 : Boss{
 
 
 	void SpawnNewEnemy(){
-
+		Instantiate (tp, this.transform.position, Quaternion.identity);
 		GameObject newEnemy = Instantiate (movableEnemyPrefab, this.transform.position, Quaternion.identity);
 		newEnemy.GetComponent<EnemyMovable> ().moveCooldown = Random.Range (3f, 6f);//randomize movement cooldown
 		newEnemy.GetComponentInChildren<EnemyDamageController> ().enemyLife = Random.Range (1, 2);

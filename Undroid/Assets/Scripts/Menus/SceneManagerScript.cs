@@ -118,4 +118,8 @@ public class SceneManagerScript : MonoBehaviour {
 		Time.fixedDeltaTime = originalFixedTime;
 		audioManager.StopSound ("MusicBGMenu");
 	}
+
+	public void PauseSound(){
+		AudioListener.pause = !AudioListener.pause;
+	}
 }

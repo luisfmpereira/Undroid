@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 61275154256102008}
   - component: {fileID: 50814785972089538}
   - component: {fileID: 114315640161326798}
+  - component: {fileID: 95596832885880380}
   m_Layer: 15
   m_Name: BossTroula
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +63,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61275154256102008
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -79,7 +80,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.0703125, y: 2.4140625}
+    oldSize: {x: 2.65, y: 3}
     newSize: {x: 2.0703125, y: 2.4140625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -88,6 +89,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0703125, y: 2.4140625}
   m_EdgeRadius: 0
+--- !u!95 &95596832885880380
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1979958422588712}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ec1642f2db2f61d43a32975ec6586005, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114315640161326798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,14 +117,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc8e4765c6a39b4c861d2301eb3245d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossHealth: 30
+  bossHealth: 20
   bulletPrefab: {fileID: 0}
   bulletForce: 300
   shootCooldown: 2
-  PowerUpDropBoss: {fileID: 1755123324168226, guid: 1e4205ad3f2b0c746928f4415bbd0ba7,
-    type: 2}
+  PowerUpDropBoss: {fileID: 0}
+  bossHealthBar: {fileID: 0}
+  bossHealthFixed: 3
+  player: {fileID: 0}
+  turnBossOn: 0
   movableEnemyPrefab: {fileID: 1532354609416970, guid: 702ef2c18aa2a464b835928a0b1cbc4e,
     type: 2}
+  tp: {fileID: 1108366256283328, guid: 01b0ed083c1f4f44d9265b413d5c2c7f, type: 2}
   positions:
   - {fileID: 0}
   - {fileID: 0}
@@ -116,7 +138,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   moveSpeed: 3
-  chanceToSpawnNewEnemy: 0.7
+  chanceToSpawnNewEnemy: 0.4
+  laser: {fileID: 0}
+  boss: {fileID: 0}
 --- !u!212 &212797887713329912
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -151,7 +175,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 34a4f4b5b45c84444a879d329af87ff4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 336ad58a297200947a097cf81632fe1c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

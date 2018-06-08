@@ -283,23 +283,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1979958422588712, guid: 6f0c5afdc6bf0f04096f536dfcbbfcc8,
     type: 2}
   m_PrefabInternal: {fileID: 1377426418}
---- !u!95 &102707695
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 102707694}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ec1642f2db2f61d43a32975ec6586005, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &120346678
 Prefab:
   m_ObjectHideFlags: 0
@@ -34681,6 +34664,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114315640161326798, guid: 6f0c5afdc6bf0f04096f536dfcbbfcc8,
         type: 2}
+      propertyPath: PowerUpDropBoss
+      value: 
+      objectReference: {fileID: 1133045586}
+    - target: {fileID: 114315640161326798, guid: 6f0c5afdc6bf0f04096f536dfcbbfcc8,
+        type: 2}
+      propertyPath: bossHealthBar
+      value: 
+      objectReference: {fileID: 236641155}
+    - target: {fileID: 114315640161326798, guid: 6f0c5afdc6bf0f04096f536dfcbbfcc8,
+        type: 2}
       propertyPath: positions.Array.data[0]
       value: 
       objectReference: {fileID: 517966847}
@@ -34714,46 +34707,11 @@ Prefab:
       propertyPath: positions.Array.data[6]
       value: 
       objectReference: {fileID: 493971915}
-    - target: {fileID: 50814785972089538, guid: 6f0c5afdc6bf0f04096f536dfcbbfcc8,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114315640161326798, guid: 6f0c5afdc6bf0f04096f536dfcbbfcc8,
-        type: 2}
-      propertyPath: bossHealthBar
-      value: 
-      objectReference: {fileID: 236641155}
-    - target: {fileID: 1979958422588712, guid: 6f0c5afdc6bf0f04096f536dfcbbfcc8, type: 2}
-      propertyPath: m_TagString
-      value: Boss
-      objectReference: {fileID: 0}
     - target: {fileID: 114315640161326798, guid: 6f0c5afdc6bf0f04096f536dfcbbfcc8,
         type: 2}
       propertyPath: laser
       value: 
       objectReference: {fileID: 698096106}
-    - target: {fileID: 212797887713329912, guid: 6f0c5afdc6bf0f04096f536dfcbbfcc8,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 336ad58a297200947a097cf81632fe1c,
-        type: 3}
-    - target: {fileID: 114315640161326798, guid: 6f0c5afdc6bf0f04096f536dfcbbfcc8,
-        type: 2}
-      propertyPath: chanceToSpawnNewEnemy
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114315640161326798, guid: 6f0c5afdc6bf0f04096f536dfcbbfcc8,
-        type: 2}
-      propertyPath: bossHealth
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 114315640161326798, guid: 6f0c5afdc6bf0f04096f536dfcbbfcc8,
-        type: 2}
-      propertyPath: PowerUpDropBoss
-      value: 
-      objectReference: {fileID: 1133045586}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f0c5afdc6bf0f04096f536dfcbbfcc8, type: 2}
   m_IsPrefabParent: 0

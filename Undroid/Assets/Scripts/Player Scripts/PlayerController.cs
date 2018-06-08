@@ -88,6 +88,7 @@ public class PlayerController : MonoBehaviour
 	public float dashTimerAnim;
 	public float dashCdAnim = 0.3f;
 	public bool doDash;
+	public bool interactionDash;
 
 	//audio
 	public AudioManager audioManager;
@@ -157,7 +158,10 @@ public class PlayerController : MonoBehaviour
 		
 	void Update ()
 	{
-		
+		if (Input.GetButtonDown ("Dash")) {
+			interactionDash = true;
+		} else
+			interactionDash = false;
 
 		if (canMove) {
 			this.GetComponent<CapsuleCollider2D> ().sharedMaterial = noFriction;
@@ -361,7 +365,7 @@ public class PlayerController : MonoBehaviour
 	{
 		if (allowDash)
 		{
-			if (Input.GetButtonDown ("Dash") && dashTimer <= 0) {
+			if (interactionDash && dashTimer <= 0) {
 				doDash = true;
 				audioManager.PlaySound ("Dash");		
 				dashTimer = dashCooldown ;
