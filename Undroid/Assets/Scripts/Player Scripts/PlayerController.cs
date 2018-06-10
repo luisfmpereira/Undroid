@@ -210,14 +210,14 @@ public class PlayerController : MonoBehaviour
 			hearts [2].enabled = true;
 			hearts [3].enabled = true;
 		}
-		if (currentHeart == 3) {
+		if (currentHeart == 2) {
 			hearts [0].enabled = true;
 			hearts [1].enabled = true;
 			hearts [2].enabled = true;
-		} else if (currentHeart == 2) {
+		} else if (currentHeart == 1) {
 			hearts [0].enabled = true;
 			hearts [1].enabled = true;
-		} else if (currentHeart == 1) {
+		} else if (currentHeart == 0) {
 			hearts [0].enabled = true;
 		} 
 			
@@ -477,6 +477,10 @@ public class PlayerController : MonoBehaviour
 		restartConfig ();
 		transform.position = checkpoint;
 		playerAnim.SetBool("Die", false);
+		if (powerUpExtraLife) {
+			currentHeart = 3;
+		} else
+			currentHeart = 2;
 	}
 
 	public void CancelAnimHurt (){
@@ -490,7 +494,6 @@ public class PlayerController : MonoBehaviour
 			Boss.GetComponent<Boss> ().resetBossLife ();
 		}
 		transform.parent = null; //remove player from platform children if he dies while connected
-		currentHeart = hearts.Length; //reset player hearts
 		canMove = true;
 	}
 

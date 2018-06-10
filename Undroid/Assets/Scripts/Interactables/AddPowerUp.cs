@@ -34,6 +34,10 @@ public class AddPowerUp : MonoBehaviour {
 				hit.gameObject.GetComponent<PlayerController> ().allowDash = true;
 				hit.gameObject.GetComponent<Animator> ().runtimeAnimatorController = Player2;
 			} 
+			else if (powerUpLife) {
+				hit.gameObject.GetComponent<PlayerController> ().powerUpExtraLife = true;
+				hit.gameObject.GetComponent<Animator> ().runtimeAnimatorController = Player2;
+			} 
 			gameObject.SetActive (false);
 		}
 	}
