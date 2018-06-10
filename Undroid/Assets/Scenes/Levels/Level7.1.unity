@@ -18973,6 +18973,11 @@ Prefab:
       propertyPath: hearts.Array.data[3]
       value: 
       objectReference: {fileID: 1909301016}
+    - target: {fileID: 114457234366298422, guid: 377a968236d888e4baee62ccf324c1de,
+        type: 2}
+      propertyPath: haveBoss
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 377a968236d888e4baee62ccf324c1de, type: 2}
   m_IsPrefabParent: 0
