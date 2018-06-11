@@ -518,4 +518,8 @@ public class PlayerController : MonoBehaviour
 	public void LaserOffSound(){
 			audioManager.PlaySound ("LaserOff");
 	}
+
+	public void EnemyExplosion(){
+		audioManager.PlaySound ("Explosion");
+	}
 }

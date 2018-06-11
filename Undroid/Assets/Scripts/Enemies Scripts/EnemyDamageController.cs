@@ -9,6 +9,7 @@ public class EnemyDamageController : MonoBehaviour {
 	public Animator anim;
 	private AudioManager audioManager;
 	public GameObject enemy;
+	public GameObject Player;
 
 	void Awake(){
 		anim = GetComponentInParent<Animator> ();
@@ -16,13 +17,13 @@ public class EnemyDamageController : MonoBehaviour {
 		audioManager = AudioManager.instance;
 		if (!movableEnemy)
 			enemy = this.transform.parent.gameObject.transform.parent.gameObject;
-		
+		Player = GameObject.FindGameObjectWithTag ("Player");
 	}
 
 	void Update() {
 
 		if (enemyLife <= 0) {
-		//	audioManager.PlaySound ("Explosion");
+			Player.GetComponent<PlayerController> ().EnemyExplosion ();
 			anim.SetBool ("Die", true);
 			if(!movableEnemy)
 				enemy.GetComponent<EnemyController> ().heDied = true;
