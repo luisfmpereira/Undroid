@@ -26,6 +26,7 @@ TagManager:
   - Checkpoint1
   - AudioManager
   - BossFightCamera
+  - EnemyKillingArea
   layers:
   - Default
   - TransparentFX

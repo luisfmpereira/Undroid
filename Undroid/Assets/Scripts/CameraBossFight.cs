@@ -25,6 +25,8 @@ public class CameraBossFight : MonoBehaviour {
 			bossHealthPanel.SetActive (true);
 		}
 
+
+
 	}
 
 	void OnTriggerExit2D(Collider2D hit){
@@ -35,4 +37,5 @@ public class CameraBossFight : MonoBehaviour {
 		}
 
 	}
+		
 }

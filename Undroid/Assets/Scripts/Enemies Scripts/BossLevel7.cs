@@ -12,11 +12,13 @@ public class BossLevel7 : Boss {
 	private float angleToMultiply = 120 * Mathf.Deg2Rad;
 	public GameObject spawn1;
 	public GameObject spawn2;
+	public GameObject enemyKillingArea;
 
 
 	void Start(){
 		animator = GetComponent<Animator> ();
 		selectedPosition = 0;
+		enemyKillingArea.GetComponent<BoxCollider2D>().enabled = false;
 		
 	}
 
@@ -26,14 +28,13 @@ public class BossLevel7 : Boss {
 		if (turnBossOn) {
 			MoveEnemy ();
 			Shooting ();
-
-			if (bossHealth <= 0) {
-				spawn1.SetActive (false);
-				spawn2.SetActive (false);
-				laser.SetActive (false);
-			}
 		}
-
+		if (bossHealth <= 0) {
+			spawn1.SetActive (false);
+			spawn2.SetActive (false);
+			laser.SetActive (false);
+			enemyKillingArea.GetComponent<BoxCollider2D>().enabled = true;
+		}
 	}
 
 
@@ -60,6 +61,10 @@ public class BossLevel7 : Boss {
 
 	void OnTriggerEnter2D(Collider2D hit){
 		DamageByPlayer (hit);
+
+		if (hit.gameObject.CompareTag ("Player")) {
+			selectedPosition = Random.Range (0, positions.Length - 1);
+		}
 	}
 }
 

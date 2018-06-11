@@ -9,16 +9,20 @@ public class BossLevel5 : Boss {
 	private int selectedPosition;
 	private float angleToMultiply = 120 * Mathf.Deg2Rad;
 	public GameObject laser;
+	public GameObject enemyKillingArea;
 
 	void Start () {
 		selectedPosition = 0;
+		enemyKillingArea.GetComponent<BoxCollider2D>().enabled = false;
 	}
 
 	void Update () {
 		ShowLife ();
 		animateDeath ();
-		if (bossHealth <= 0)
+		if (bossHealth <= 0) {
 			laser.SetActive (false);
+			enemyKillingArea.GetComponent<BoxCollider2D> ().enabled = true;
+		}
 
 		if (turnBossOn) {
 			

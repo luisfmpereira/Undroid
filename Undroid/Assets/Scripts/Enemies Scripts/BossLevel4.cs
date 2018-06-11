@@ -11,25 +11,27 @@ public class BossLevel4 : Boss{
 	private int selectedPosition;
 	public float chanceToSpawnNewEnemy;
 	public GameObject laser;
+	public GameObject enemyKillingArea;
 	public Animator boss;
+
 
 	// Use this for initialization
 	void Start () {
 		selectedPosition = 0;
 		boss = GetComponent<Animator> ();
+		enemyKillingArea.GetComponent<BoxCollider2D>().enabled = false;
 	}
 
 	void Update () {
 		ShowLife ();
 		animateDeath ();
-		if (turnBossOn) {
+		if (turnBossOn) 
 			MoveEnemy ();
 
-			if (bossHealth == 0) {
-				laser.SetActive (false);
-			}
+		if (bossHealth == 0) {
+			laser.SetActive (false);
+			enemyKillingArea.GetComponent<BoxCollider2D>().enabled = true;
 		}
-
 	}
 
 	void MoveEnemy(){
@@ -64,6 +66,10 @@ public class BossLevel4 : Boss{
 
 	void OnTriggerEnter2D(Collider2D hit){
 		DamageByPlayer(hit);
+
+		if (hit.gameObject.CompareTag ("Player")) {
+			selectedPosition = Random.Range (0, positions.Length - 1);
+		}
 	}
 
 	void SetRobotFalse(){

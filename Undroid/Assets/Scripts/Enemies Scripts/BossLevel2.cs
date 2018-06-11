@@ -7,6 +7,7 @@ public class BossLevel2 : Boss {
 	
 	private Rigidbody2D bossRB;
 	private SpriteRenderer bossSR;
+	private SpriteRenderer bulletSR;
 
 	public float jumpForce;
 	public float jumpCooldown = 5f;
@@ -19,6 +20,8 @@ public class BossLevel2 : Boss {
 		bossRB = GetComponent<Rigidbody2D> ();
 		bossSR = GetComponent<SpriteRenderer> ();
 		jumpTimer = jumpCooldown;
+		bulletSR = bulletPrefab.gameObject.GetComponent<SpriteRenderer> ();
+		bulletSR.flipX = true;
 	}
 
 
@@ -67,6 +70,7 @@ public class BossLevel2 : Boss {
 	void Flip(){
 		bossSR.flipX = !bossSR.flipX;
 		bulletForce *= -1;
+		bulletSR.flipX = !bulletSR.flipX;
 	}
 
 

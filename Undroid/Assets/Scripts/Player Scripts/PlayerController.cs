@@ -451,6 +451,20 @@ public class PlayerController : MonoBehaviour
 				currentHeart--;
 			}
 		}
+
+
+		if (hit.gameObject.CompareTag ("Life") && currentHeart < 3 && powerUpExtraLife) {
+			Destroy (hit.gameObject);
+			currentHeart++;
+			if (currentHeart < hearts.Length) {
+				audioManager.PlaySound ("Life");
+			} else {
+				currentHeart--;
+			}
+		}
+
+
+
 		if (hit.gameObject.CompareTag ("Laser")) {
 			hit.transform.GetChild(1).transform.GetComponent<Animator>().SetBool("start", true);
 		}

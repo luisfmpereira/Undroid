@@ -14,14 +14,15 @@ public class EnemyDamageController : MonoBehaviour {
 		anim = GetComponentInParent<Animator> ();
 		anim.SetBool ("Die", false);
 		audioManager = AudioManager.instance;
-		if(!movableEnemy)
+		if (!movableEnemy)
 			enemy = this.transform.parent.gameObject.transform.parent.gameObject;
+		
 	}
 
 	void Update() {
 
 		if (enemyLife <= 0) {
-			audioManager.PlaySound ("Explosion");
+		//	audioManager.PlaySound ("Explosion");
 			anim.SetBool ("Die", true);
 			if(!movableEnemy)
 				enemy.GetComponent<EnemyController> ().heDied = true;
@@ -50,6 +51,12 @@ public class EnemyDamageController : MonoBehaviour {
 			audioManager.PlaySound ("MetalBreak");
 		}
 
+	}
+
+	void OnTriggerStay2D(Collider2D hit){
+		if (hit.gameObject.CompareTag ("EnemyKillingArea")) {
+			enemyLife = 0;
+		}
 	}
 
 }
