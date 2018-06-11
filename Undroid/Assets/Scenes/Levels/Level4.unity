@@ -34136,6 +34136,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1486482904627778, guid: 7334bb643264ccb41b59161c19cbe756,
     type: 2}
   m_PrefabInternal: {fileID: 1658164906}
+--- !u!1 &744731026 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1954731501973246, guid: b6a80122125e13940abb454cda4a2e5a,
+    type: 2}
+  m_PrefabInternal: {fileID: 401550247}
 --- !u!1001 &803126488
 Prefab:
   m_ObjectHideFlags: 0
@@ -36307,12 +36312,38 @@ Prefab:
     - target: {fileID: 224414218960803252, guid: 7334bb643264ccb41b59161c19cbe756,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 230
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 224402386494096976, guid: 7334bb643264ccb41b59161c19cbe756,
         type: 2}
       propertyPath: m_RootOrder
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 224211970962549076, guid: 7334bb643264ccb41b59161c19cbe756,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 224211970962549076, guid: 7334bb643264ccb41b59161c19cbe756,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 224414218960803252, guid: 7334bb643264ccb41b59161c19cbe756,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114708309782742080, guid: 7334bb643264ccb41b59161c19cbe756,
+        type: 2}
+      propertyPath: m_Text
+      value: I feel strange, the same time that I'm loving having these powers and
+        fighting for something so important to me, I still don't feel like me at all.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114708309782742080, guid: 7334bb643264ccb41b59161c19cbe756,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
@@ -36624,6 +36655,11 @@ Prefab:
       propertyPath: dialogueBox
       value: 
       objectReference: {fileID: 1412807014}
+    - target: {fileID: 114678611980680844, guid: 695f845946fe74246b760f86f3a2759c,
+        type: 2}
+      propertyPath: useFocus
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 695f845946fe74246b760f86f3a2759c, type: 2}
   m_IsPrefabParent: 0
@@ -37712,6 +37748,11 @@ Prefab:
       propertyPath: dialogueBox
       value: 
       objectReference: {fileID: 1412807014}
+    - target: {fileID: 114678611980680844, guid: 695f845946fe74246b760f86f3a2759c,
+        type: 2}
+      propertyPath: focusObject
+      value: 
+      objectReference: {fileID: 744731026}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 695f845946fe74246b760f86f3a2759c, type: 2}
   m_IsPrefabParent: 0

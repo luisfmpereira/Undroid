@@ -10,7 +10,6 @@ public class DialogueBoxScript : MonoBehaviour {
 	private int currentText;
 	public GameObject dialogueBox;
 	private Text dialogueText;
-	public int dialogueTextSize = 50;
 	private float textTimer;
 	public float maxTextTimer = 3f;
 	public GameObject player;
@@ -86,7 +85,6 @@ public class DialogueBoxScript : MonoBehaviour {
 		textTimer = maxTextTimer;
 		isShowing = true;
 		dialogueText.text = text;
-		dialogueText.fontSize = dialogueTextSize;
 		dialogueBox.SetActive (true);
 		dialogueBox.GetComponent<Animator>().SetBool("Start",true);
 

@@ -1605,7 +1605,7 @@ Prefab:
     - target: {fileID: 224414218960803252, guid: 7334bb643264ccb41b59161c19cbe756,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 230
+      value: 120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7334bb643264ccb41b59161c19cbe756, type: 2}
@@ -3199,7 +3199,6 @@ MonoBehaviour:
     your enemies!
   - 'Philip: Well, sure this laser eyes will help me destroy the droids and cyborgs.'
   dialogueBox: {fileID: 1186619245}
-  dialogueTextSize: 50
   maxTextTimer: 8
   player: {fileID: 0}
   finalDecision: 0
