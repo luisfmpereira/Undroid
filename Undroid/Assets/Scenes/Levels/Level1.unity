@@ -3530,7 +3530,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4629285283307358, guid: 86b74207cd70dfb40baca5474bbc8ac1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 11.16
+      value: 13.56
       objectReference: {fileID: 0}
     - target: {fileID: 4289021914947080, guid: 86b74207cd70dfb40baca5474bbc8ac1, type: 2}
       propertyPath: m_LocalPosition.x
@@ -6004,10 +6004,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textsToDisplay:
-  - You got the Robot Boots! Press the Jump button twice to perform a Double Jump!
   - 'Philip: Hm, what is this? Maybe it will help me.'
+  - You got the Robot Boots! Press the Jump button twice to perform a Double Jump!
   dialogueBox: {fileID: 1455040490}
-  maxTextTimer: 8
+  maxTextTimer: 5
   player: {fileID: 0}
   finalDecision: 0
   decisionPanel: {fileID: 0}
@@ -19411,8 +19411,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: -33, y: -6, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 10
+      m_TileIndex: 14
+      m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -40482,7 +40482,7 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 211
     m_Data: {fileID: 11400000, guid: c6ce5623bae00ca499a2ab494af61fd4, type: 2}
-  - m_RefCount: 3034
+  - m_RefCount: 3033
     m_Data: {fileID: 11400000, guid: ff39063386cbe8d46a1b10bd6f1ba3f8, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 08f7272281154304b8bfe3454c05dc16, type: 2}
@@ -40508,7 +40508,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 9ec575ab295e56e4f875c20a8c7a8339, type: 2}
   - m_RefCount: 213
     m_Data: {fileID: 11400000, guid: cac127b3ce4df2b4ab78fb190586772d, type: 2}
-  - m_RefCount: 11
+  - m_RefCount: 12
     m_Data: {fileID: 11400000, guid: ecbaeacfb8d823d498ed2f214128bd49, type: 2}
   - m_RefCount: 37
     m_Data: {fileID: 11400000, guid: 2a164dc5dee46e2498179bcaedb59b4b, type: 2}
@@ -40535,13 +40535,13 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 7
     m_Data: {fileID: 21300006, guid: eecc8948d39a6d846a13f107e973ab05, type: 3}
-  - m_RefCount: 3034
+  - m_RefCount: 3033
     m_Data: {fileID: 21300008, guid: dd3a4df1de7f0494ea17641ed08b532c, type: 3}
   - m_RefCount: 211
     m_Data: {fileID: 21300002, guid: dd3a4df1de7f0494ea17641ed08b532c, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: 21300050, guid: 80e65185ff8621747b08e64479c77ad5, type: 3}
-  - m_RefCount: 11
+  - m_RefCount: 12
     m_Data: {fileID: 21300022, guid: 80e65185ff8621747b08e64479c77ad5, type: 3}
   - m_RefCount: 37
     m_Data: {fileID: 21300036, guid: 80e65185ff8621747b08e64479c77ad5, type: 3}
